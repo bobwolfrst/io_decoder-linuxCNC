@@ -1,0 +1,5 @@
+# File e cartelle da ignorare e non caricare su GitHub
+
+# Ignora la cartella completa del firmware Arduino
+#arduino_firmware_privato/
+io_decoder_old
