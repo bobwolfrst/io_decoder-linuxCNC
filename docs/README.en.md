@@ -5,7 +5,7 @@
 - [**Description**](#Description)  
 - [**Main features**](#Main-features)  
 - [**Installation**](#Installation)   
-    -   Requirements  
+    -   [Requirements](#Requirements)  
     -   Installation commands  
 - [**Usage**](#Usage)  
     -   Configuration examples  
