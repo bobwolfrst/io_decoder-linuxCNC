@@ -41,7 +41,7 @@ Il driver è scritto in C per integrarsi perfettamente nel Real-Time di LinuxCNC
 | **Uscite digitali** | da 8 a 128 con funzionalità aggiuntive.   |
 | **Uscite DAC** | 2 con funzionalità aggiuntive. |
 
-* **Documentazione tecnica:** Disponibile nel [README](./README.md).
+* **Documentazione tecnica ed installazione:** Disponibile nel [README](./README.md).
 
 ---
 
