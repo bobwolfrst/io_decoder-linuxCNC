@@ -5,7 +5,7 @@
 - [**Descrizione**](#Descrizione)  
 - [**Caratteristiche principali**](#Caratteristiche-principali)  
 - [**Installazione**](#Installazione)   
-    -   [Requisiti](Requisiti)  
+    -   [Requisiti](#Requisiti)  
     -   Comandi di installazione  
 - [**Utilizzo**](#Utilizzo)  
     -   Esempi di configurazione  
