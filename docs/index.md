@@ -41,7 +41,7 @@ Il driver è scritto in C per integrarsi perfettamente nel Real-Time di LinuxCNC
 | **Uscite digitali** | da 8 a 128 con funzionalità aggiuntive.   |
 | **Uscite DAC** | 2 con funzionalità aggiuntive. |
 
-* **Documentazione tecnica ed installazione:** Disponibile nel [README](README.md).
+* **Documentazione tecnica ed installazione:** Disponibile nel [README](./README.it.md)..
 
 ---
 
@@ -50,7 +50,7 @@ Il driver è scritto in C per integrarsi perfettamente nel Real-Time di LinuxCNC
 Il software HAL è aperto alla comunità, ma per le massime prestazioni consigliamo l'utilizzo della nostra scheda dedicata **io_decoder-v4**.
 
 * **Stato del progetto:** In pre-produzione.
-* **Documentazione tecnica:** Disponibile nel [README-Installazione-Requisiti](README.md) .
+* **Documentazione tecnica:** Disponibile nel [README-Installazione-Requisiti](./README.it.md) .
 * **Contatti:** Per acquisti, prototipi o supporto all'integrazione, scrivi a: `bobwolf.rst@gmail.com
 
 ---
