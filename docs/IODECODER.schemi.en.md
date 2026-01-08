@@ -1,22 +1,24 @@
 # IO_DECODER
-
+<a id="index"></a>
 ## Index
 
-- [**Features**](#Features)  
-- [**Pinout**](#Pinout)  
-- [**Usage**](#Usage)  
-- [**Where to buy**](#Where-to-buy)  
-- [**Authors**](#Authors)  
+- [**Features**](#features)  
+- [**Pinout**](#pinout)  
+- [**Usage**](#usage)  
+- [**Where to buy**](#where-to-buy)  
+- [**Authors**](#authors)  
 
 [BACK TO README.en](README.en.md)
 
 ---
 
+<a id="features"></a>
 ## Features
 
-The system consists of a main board that carries the microcontroller with the USB connection and the peripherals provided by the installed firmware. It also provides the buses for connecting input and output expansion boards. These expansion boards are the same for inputs and outputs and can be freely swapped between the two buses. The PCB of the main board indicates the bus connector for the INPUT side and the OUTPUT side. The Pinout and Usage sections contain diagrams illustrating installation and wiring.
+The system consists of a main board that carries the microcontroller with the USB connection and the peripherals provided by the installed firmware. It also provides the buses for connecting input and output expansion boards. These expansion boards are the same for both input and output and can be freely swapped between the two buses. The main board PCB indicates the bus connector for the INPUT side and the OUTPUT side. The [**Pinout**](#pinout) and [**Usage**](#usage) sections contain diagrams illustrating the installation and electrical connection methods. 
 
-[back to index](#Index) 
+<a id="pinout"></a>
+[back to index](#index) 
 ## Pinout
 
 ### io_decoder board
@@ -28,23 +30,26 @@ The system consists of a main board that carries the microcontroller with the US
 ![schemi_io_decoder_1_master](git_USB_pannello_IO_4.png)  
 
 ### io_decoder board used as input
-  - **Digital inputs**: 8–128 (16 expansions) freely configurable with expansion boards of 8 pins each. Only clean contacts between the common pin and the digital input are accepted as valid inputs.  
+  - **Digital inputs**: 8-128 (16 expansions) freely configurable with 8-pin expansion boards. Only dry contacts between the common pin and the digital input are accepted as valid inputs.  
 ![schemi_io_decoder_input_side](git_input_pannello_espansione_4.png)  
 
 ### io_decoder board used as output
-  - **Digital outputs**: 8–128 (16 expansions) freely configurable with expansion boards of 8 pins each. Each output can drive a load of 50mA@30Vdc with a maximum of 300mA per expansion board.  
+  - **Digital outputs**: 8-128 (16 expansions) freely configurable with 8-pin expansion boards. Each output can drive a load of 50mA@30Vdc with a maximum of 300mA per expansion board.  
 ![schemi_io_decoder_output_side](git_output_pannello_espansione_4.png)  
 
-[back to index](#Index) 
+<a id="usage"></a>
+[back to index](#index) 
 ## Usage
 
 ![schemi_io_decoder_panoramica](git_assieme_usb_4.png)
 
-[back to index](#Index) 
+<a id="where-to-buy"></a>
+[back to index](#index) 
 ## Where to buy
-The system is still in prototype phase.
+For info: bobwolf.rst@gmail.com
 
-[back to index](#Index) 
+<a id="authors"></a>
+[back to index](#index) 
 ## Authors
 
 Roberto "bobwolf" Sassoli
