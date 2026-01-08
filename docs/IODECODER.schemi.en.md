@@ -8,7 +8,7 @@
 - [**Where to buy**](#where-to-buy)  
 - [**Authors**](#authors)  
 
-[BACK TO README.en](README.en.md)
+[📖 Manual english](./README.en.md) | [🏠 Project Home](../)  
 
 ---
 
@@ -54,8 +54,10 @@ For info: bobwolf.rst@gmail.com
 
 Roberto "bobwolf" Sassoli
 
-[BACK TO README.en](README.en.md)  
-[BACK TO README](../README.md)
+[🔝 back to index](#index) | [📖 Manual english](./README.en.md)  
+  
+[📖 Manual Manual](../README.md) | [🏠 Project Home](../)  
+
 
 
 Copyright (c) 2025 [bobwolf]
