@@ -16,8 +16,7 @@
 - [**License**](#license)  
     -   Disclaimer and terms of use  
 
-[BACK TO README](../README.md)
----
+[📖 Manual Manual](./README.md) | [🏠 Project Home](../index.html)
 
 <a id="description"></a>
 ## Description
@@ -321,5 +320,7 @@ The author is not responsible for damages resulting from the use of the program.
 
 Copyright (c) 2025 [bobwolf]
 
-[back to contents](#contents)  
-[BACK TO README](../README.md)
+---
+[🔝 back to contents](#contents) | [📖 Manual Manual](./README.md) | [🏠 Project Home](../index.html)  
+
+
