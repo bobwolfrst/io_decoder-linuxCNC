@@ -9,7 +9,8 @@
 - [**Dove acquistarlo**](#dove-acquistarlo)  
 - [**Autori**](#autori)  
 
-[BACK TO README.it](README.it.md)
+[📖 BACK TO README.it](README.it.md)  
+[📖 README](../README.md) | [🏠 Project Home](index.html) 
 
 ---
 
@@ -55,8 +56,10 @@ Per info bobwolf.rst@gmail.com
 
 Roberto "bobwolf" Sassoli
 
-[BACK TO README.it](README.it.md)  
-[BACK TO README](../README.md)
+[🔝 torna all'indice](#indice) | [📖 BACK TO README.it](README.it.md)  
+[📖 README](../README.md) | [🏠 Project Home](index.html) 
+
+
 
 
 Copyright (c) 2025 [bobwolf]
