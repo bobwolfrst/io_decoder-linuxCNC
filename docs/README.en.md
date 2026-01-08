@@ -1,30 +1,32 @@
 # io_decoder
-
+<a id="contents"></a>
 ## Contents
 
-- [**Description**](#Description)  
-- [**Main features**](#Main-features)  
-- [**Installation**](#Installation)   
-    -   [Requirements](#Requirements)  
-    -   Installation commands  
-- [**Usage**](#Usage)  
-    -   Configuration examples  
-    -   Available features
-    -   Keyboard
-- [**Dependencies**](#Dependencies)  
-- [**Authors**](#Authors)  
-- [**License**](#License)  
+- [**Description**](#description)  
+- [**Main features**](#main-features)  
+- [**Installation**](#installation)   
+    -   [Requirements](#requirements)  
+    -   [Installation commands](#installation-commands)  
+- [**Usage**](#usage)  <a id="usage"></a>
+    -   [Configuration examples](#configuration-examples)  
+    -   [Available features](#available-features)  
+    -   [Keyboard](#keyboard)  
+- [**Dependencies**](#dependencies)  
+- [**Authors**](#authors)  
+- [**License**](#license)  
     -   Disclaimer and terms of use  
 
 [BACK TO README](../README.md)
 ---
 
+<a id="description"></a>
 ## Description
 io_decoder is a HAL component for LinuxCNC. It allows controlling, via external hardware with a USB connection, the inputs and outputs required to manage an operator panel of a CNC machine.
 It is a real-time component but its USB communication portion is handled by a non-realtime thread.
 It is optimized to manage non-critical inputs and outputs such as buttons, switches and indicator lights for manual interaction with the control panel and distributed control boxes located on the machine.  
 
-[back to contents](#Contents)  
+[back to contents](#contents)  
+<a id="main-features"></a>
 ## Main features
 ### HAL component
 - **Digital inputs**: 8–128 freely configurable from a .hal file; this value must match the installed hardware.
@@ -76,21 +78,22 @@ It is optimized to manage non-critical inputs and outputs such as buttons, switc
   - ADC: 3 @10bit 5Vdc
   - The HAL<=>USB communication cadence is 20 ms (50Hz)
 
-[back to contents](#Contents)  
+[back to contents](#contents)  
+<a id="installation"></a>
 ## Installation
 ### Synopsis
 - **loadrt io_decoder** [input=*num*] [output=*num*] [usb_port_name=*"string"*] [firmware=*num*] [verbose=*num*] [keymap_file=*"string"*] [uinput_chmod_cmd=*"string"*]  
    - **input**: this value must match the installed hardware. The number must be a multiple of 8 (min 8 max 128) otherwise an error occurs at startup. Default value = 8
    - **output**: this value must match the installed hardware. The number must be a multiple of 8 (min 8 max 128) otherwise an error occurs at startup. Default value = 8
-   - **usb_port_name**: to give the port a custom fixed name; see section [**defining USB port**](#Installation-commands). Default value "/dev/io_decoder"
+   - **usb_port_name**: to give the port a custom fixed name; see section [**defining USB port**](#installation-commands). Default value "/dev/io_decoder"
    - **firmware**: parameter to configure the component according to the USB board features. It is printed on the USB board PCB. Default value = 101
    - **verbose**: to enable the level of error messages on the GUI. the number enables the indicated message type and those of lower value. default 1.  
      - 0 = none.
      - 1 = component. Sends a message in case of USB disconnection or restart of USB communication and reports keyboard-functionality messages if it is not activated for any reason.
      - 2 = minimal. Parsing error percentage messages.
      - 3 = all.
-   - **keymap_file**: text file to set the mappings [**input => keyboard simulation**](#Keyboard). Default value "io_decoder-keymap.cfg"
-   - **uinput_chmod_cmd**: string parameter to give write permissions on UINPUT for the [**simulated keyboard functionality**](#Keyboard). If you want to be sure not to give permissions the parameter must be "" (uinput_chmod_cmd="" with nothing inside the quotes). Default value "chmod 0666 /dev/uinput".  
+   - **keymap_file**: text file to set the mappings [**input => keyboard simulation**](#keyboard). Default value "io_decoder-keymap.cfg"
+   - **uinput_chmod_cmd**: string parameter to give write permissions on UINPUT for the [**simulated keyboard functionality**](#keyboard). If you want to be sure not to give permissions the parameter must be "" (uinput_chmod_cmd="" with nothing inside the quotes). Default value "chmod 0666 /dev/uinput".  
 
 ### Functions
 ```bash
@@ -102,7 +105,7 @@ addf io_decoder.update	servo-thread
 -  Input
 	- **io_decoder.in.*MM*-*N*** (bit out): pin to read the state of digital inputs. *MM* = two-digit number indicating the expansion board position. *N* = one-digit number indicating the input on the expansion board. Each pin has a software debounce of 20 ms. Not created if the input has keyboard functionality. default 0.    
     - **io_decoder.in.*MM*-*N*.toggle** (bit out): this pin toggles its value from 0 to 1 and from 1 to 0 on the rising edge of its digital input. Not created if the input has keyboard functionality. default 0.  
-	- **io_decoder.in.*MM*-*N-keyboard*** (bit out): pin used to send signals to the simulated keyboard. Created if the input has keyboard functionality; it can still be used as a HAL pin and has the same characteristics as the ordinary pin. [**to configure pins**](#Keyboard). default 0.   
+	- **io_decoder.in.*MM*-*N-keyboard*** (bit out): pin used to send signals to the simulated keyboard. Created if the input has keyboard functionality; it can still be used as a HAL pin and has the same characteristics as the ordinary pin. [**to configure pins**](#keyboard). default 0.   
  - Output
 	- **io_decoder.out.*MM*-*N*** (bit in): pin to set the state of digital outputs. *MM* = two-digit number indicating the expansion board position. *N* = one-digit number indicating the output on the expansion board. default 0.     
    - **io_decoder.out.*MM*-*N*.blink-en** (bit in): enable that activates blinking of the output. If the corresponding HAL output pin is 0 the output is off regardless of enable state. If the HAL output is 1 and enable is 0, the output is steadily on. If HAL output is 1 and enable is 1, the output blinks at the configured frequency. default 0.  
@@ -149,7 +152,8 @@ addf io_decoder.update	servo-thread
     - **io_decoder.diag.base-thread-jitter** (S32 out): Base-thread jitter value over the last minute. 
     - **io_decoder.diag.usb-thread-jitter** (S32 out): Jitter value of the usb-thread created internally in the component over the last minute. This value should be as low as possible, considering the thread is called with a 1 ms cadence. Very high values indicate the PC/system is not performant and induces excessive delays in realtime.
     - **io_decoder.diag.usb-communication-jitter** (S32 out): Jitter value of the execution times of the USB retransmission alone over the last minute. This value should be as low as possible, given that the whole process of receiving and transmitting on USB takes about 8 ms at most.  
-	
+
+<a id="requirements"></a>
 ### Requirements
 - **Hardware**
   - [io_decoder USB board pinout](IODECODER.schemi.en.md)
@@ -158,7 +162,7 @@ addf io_decoder.update	servo-thread
   - LinuxCNC 2.8 and later
   - the component was developed on a system created from a released image of LinuxCNC 2.8, but it might also work with earlier versions.
 
-
+<a id="installation-commands"></a>
 ### Installation commands
 - compile the component:  
   In a terminal open the folder where the component .c file is saved and type:   
@@ -211,16 +215,18 @@ addf io_decoder.update	servo-thread
     With these settings the default value declared at component initialization is satisfied.
     In any case everything is freely configurable.  
 
-[back to contents](#Contents)  
+[back to contents](#contents)  
 ## Usage
 Designed to build/manage an operator panel for CNC machines.
 For using this system to control motors and various machine sensors, and because of the nature of LinuxCNC, USB communication is not reliable and is highly discouraged for this purpose. Even though this component's system has been tested in various ways, for safety the emergency stop button should be connected directly to the physical pins provided by the LinuxCNC hardware.  
 In case of software disconnection of the USB or slowdowns by the operating system due to old or underperforming PCs that produce high thread jitter values, the system is stable and reacts to various situations, keeping the component always active.  
   
+<a id="configuration-examples"></a>
 ### Configuration example
 ```bash
    loadrt io_decoder output=24 input=24 usb_port_name="/dev/io_decoder" verbose=3 firmware=101 keymap_file="io_decoder-keymap.cfg" uinput_chmod_cmd="chmod 0666 /dev/uinput"
 ```  
+<a id="available-features"></a>
 ### Available features
 - The UP and DOWN pins of the encoder and the ADC allow, via HAL components like UPDOWN or MULTISWITCH, selecting values such as axis selection or increment (feed advance), with an incremental rotary encoder or an analog joystick.  
 - In addition to HAL pins, the component generates error messages visible on the LinuxCNC GUI, if enabled during component initialization in the machine .hal file, in case of:  
@@ -230,6 +236,7 @@ In case of software disconnection of the USB or slowdowns by the operating syste
   - USB communication restoration (not an error but reported for convenience, on basic configurations like mine)
 - If the USB connection is lost the values HAL receives from the USB board are frozen and HAL input pins are forced to 0; at the same time the physical outputs on the USB board are disabled.  
 
+<a id="keyboard"></a>
 ### Keyboard
 Functionality that allows using physical inputs to send simulated keyboard commands that can be used to print on screen or send commands as if typed on the system keyboard.  
 If the file [**"io_decoder-keymap.cfg"**](IOdecoder-keymap.cfg.md) (or the one specified by **keymap_file**) is present in the machine configuration folder, the functionality is enabled. If it is not present or is empty or contains only comments, the functionality is not enabled.  
@@ -279,15 +286,18 @@ I recommend ordering configuration lines with progressive numbers to have an ove
   **If the file referenced by the keymap_file parameter does not exist, is empty or does not contain valid pins, and therefore the simulated keyboard functionality is not used, UINPUT is not initialized and no permissions are set for this functionality.**
   **Default permissions are temporary for the period during which the component is running.**  
 
-[back to contents](#Contents)  
+[back to contents](#contents)  
+<a id="dependencies"></a>
 ## Dependencies
 Developed on LinuxCNC 2.8 and there should be no additional dependencies.
 
-[back to contents](#Contents)  
+[back to contents](#contents)  
+<a id="authors"></a>
 ## Authors
 Roberto "bobwolf" Sassoli and his virtual twin.
 
-[back to contents](#Contents)  
+[back to contents](#contents)  
+<a id="license"></a>
 ## License
 
 This software is distributed under the GNU General Public License, version 2 (GPLv2).  
@@ -311,5 +321,5 @@ The author is not responsible for damages resulting from the use of the program.
 
 Copyright (c) 2025 [bobwolf]
 
-[back to contents](#Contents)  
+[back to contents](#contents)  
 [BACK TO README](../README.md)
