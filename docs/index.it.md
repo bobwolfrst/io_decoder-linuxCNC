@@ -5,17 +5,17 @@ title: io_decoder - Interfaccia pannello operatore USB per LinuxCNC
 
 # io_decoder
 [🇬🇧 Switch to English version](index.html)
-### La soluzione definitiva per l'I/O su LinuxCNC: Stabile, Veloce, Plug&Play.
+### La soluzione per l'I/O su LinuxCNC: Stabile, Veloce, Plug&Play.
 
 
 
-**io_decoder** non è il solito driver generico. È un ecosistema hardware e software nato per risolvere i problemi comuni delle interfacce USB economiche, offrendo prestazioni di livello industriale per la tua macchina CNC. 
+**io_decoder** non è il solito driver generico. È un ecosistema hardware e software nato per risolvere i problemi comuni delle interfacce USB usate su linuxCNC, offrendo prestazioni di livello per la tua macchina CNC. Il progetto è nato per dare la possibilità di poter realizzare un ampio, flessibile e strutturato pannello di controllo per linuxCNC senza perdere preziosi pin che servono per i movimenti in realtime della macchina. 
 
 ---
 
 ## 🎯 Perché io_decoder?
 
-Se usi LinuxCNC, conosci i problemi delle schede standard. Ecco come **io_decoder** cambia le regole del gioco:
+Ecco come **io_decoder** cambia le regole del gioco:
 
 ### 1. Zero conflitti di porta (Custom USB ID)
 Basta impazzire con le porte `/dev/ttyACM0` che cambiano nome al riavvio. La nostra scheda viene riconosciuta univocamente dal sistema. La configuri una volta, funziona per sempre.
@@ -27,6 +27,9 @@ Abbiamo eliminato il bootloader di Arduino per due motivi critici:
 
 ### 3. Driver HAL Nativo
 Il driver è scritto in C per integrarsi perfettamente nel Real-Time di LinuxCNC, garantendo una latenza minima e una stabilità che i driver generici non possono offrire.
+
+### 4. Sistema semplice ma robusto
+Sviluppato per essere il più semplice da installare ed usare. Stabile e testato sia dal lato della gestione software dell'USB sia nel lato elettronico.
 
 ---
 
@@ -48,7 +51,7 @@ Il driver è scritto in C per integrarsi perfettamente nel Real-Time di LinuxCNC
 
 ## 📦 Ottieni l'Hardware
 
-Il software HAL è aperto alla comunità, ma per le massime prestazioni consigliamo l'utilizzo della nostra scheda dedicata **io_decoder**.
+Il software HAL è aperto alla comunità, e per usarlo è necessaria la nostra scheda dedicata **io_decoder base** e le schede **io_decoder expansion_8**.
 
 * **Stato del progetto:** In pre-produzione.
 * **Documentazione tecnica:** Disponibile nel paragrafo Installazione-Requisiti del [README.it](./README.it.md) .
@@ -58,3 +61,5 @@ Il software HAL è aperto alla comunità, ma per le massime prestazioni consigli
 
 
 > **Nota per gli sviluppatori:** > Se vuoi contribuire al driver HAL, clona la repository e consulta la sezione dedicata agli sviluppatori.
+>
+> [📖 Manuale Italiano](./README.it.md)

@@ -1,60 +1,65 @@
 ---
 layout: default
-title: io_decoder - Interfaccia pannello operatore USB per LinuxCNC
+title: io_decoder - USB Operator Panel Interface for LinuxCNC
 ---
 
 # io_decoder
 [🇮🇹 Passa alla versione Italiana](index.it.html)
-### La soluzione definitiva per l'I/O su LinuxCNC: Stabile, Veloce, Plug&Play.
+
+### The I/O solution for LinuxCNC: Stable, Fast, Plug & Play.
 
 
 
-**io_decoder** non è il solito driver generico. È un ecosistema hardware e software nato per risolvere i problemi comuni delle interfacce USB economiche, offrendo prestazioni di livello industriale per la tua macchina CNC. 
-
----
-
-## 🎯 Perché io_decoder?
-
-Se usi LinuxCNC, conosci i problemi delle schede standard. Ecco come **io_decoder** cambia le regole del gioco:
-
-### 1. Zero conflitti di porta (Custom USB ID)
-Basta impazzire con le porte `/dev/ttyACM0` che cambiano nome al riavvio. La nostra scheda viene riconosciuta univocamente dal sistema. La configuri una volta, funziona per sempre.
-
-### 2. Firmware "Bare-Metal" (Senza Bootloader)
-Abbiamo eliminato il bootloader di Arduino per due motivi critici:
-* **Sicurezza:** Nessun movimento casuale dei pin all'accensione (tipico del bootloader).
-* **Velocità:** La scheda è operativa in pochi millisecondi.
-
-### 3. Driver HAL Nativo
-Il driver è scritto in C per integrarsi perfettamente nel Real-Time di LinuxCNC, garantendo una latenza minima e una stabilità che i driver generici non possono offrire.
+**io_decoder** is not just another generic driver. It is a hardware and software ecosystem specifically designed to overcome the common limitations of USB interfaces on LinuxCNC, delivering high-level performance for your machine. This project was born to provide a flexible, large-scale, and structured control panel for LinuxCNC without wasting precious real-time pins required for machine motion.
 
 ---
 
-## 🛠 Caratteristiche Tecniche
+## 🎯 Why io_decoder?
 
-| Funzionalità | Descrizione |
+Here is how **io_decoder** changes the game:
+
+### 1. Zero Port Conflicts (Custom USB ID)
+Stop struggling with `/dev/ttyACM0` ports that change names upon reboot. Our board is uniquely recognized by the system. Configure it once, and it works forever.
+
+### 2. "Bare-Metal" Firmware (No Bootloader)
+We have removed the Arduino bootloader for two critical reasons:
+* **Safety:** No random pin state changes during startup (typical of bootloaders).
+* **Speed:** The board is operational within a few milliseconds.
+
+### 3. Native HAL Driver
+The driver is written in C to integrate perfectly into the LinuxCNC Real-Time environment, ensuring minimal latency and a level of stability that generic drivers simply cannot offer.
+
+### 4. Simple yet Robust System
+Developed to be as easy to install and use as possible. Stable and tested both on the USB software management side and the electronic hardware side.
+
+---
+
+## 🛠 Technical Specifications
+
+| Feature | Description |
 | :--- | :--- |
-| **Compatibilità** | LinuxCNC 2.8+ (HAL component) |
-| **Connessione** | USB High-Speed con ID personalizzato |
-| **Ingressi digitali** | da 8 a 128 con funzionalità aggiuntive. |
-| **Ingressi encoder** | 4 con funzionalità aggiuntive. |
-| **Ingressi ADC** | 3 con funzionalità aggiuntive. |
-| **Uscite digitali** | da 8 a 128 con funzionalità aggiuntive.   |
-| **Uscite DAC** | 2 con funzionalità aggiuntive. |
+| **Compatibility** | LinuxCNC 2.8+ (HAL component) |
+| **Connection** | High-Speed USB with custom ID |
+| **Digital Inputs** | From 8 to 128 with additional functionalities |
+| **Encoder Inputs** | 4 with additional functionalities |
+| **ADC Inputs** | 3 with additional functionalities |
+| **Digital Outputs** | From 8 to 128 with additional functionalities |
+| **DAC Outputs** | 2 with additional functionalities |
 
-* **Documentazione tecnica ed installazione:** Disponibile nel [README.en](./README.en.md)..
-
----
-
-## 📦 Ottieni l'Hardware
-
-Il software HAL è aperto alla comunità, ma per le massime prestazioni consigliamo l'utilizzo della nostra scheda dedicata **io_decoder-v4**.
-
-* **Stato del progetto:** In pre-produzione.
-* **Documentazione tecnica:** Disponibile nel paragrafo Installazione-Requisiti  [README.en](./README.en.md) .
-* **Contatti:** Per acquisti, prototipi o supporto all'integrazione, scrivi a: `bobwolf.rst@gmail.com
+* **Technical Documentation & Installation:** Available in the [README.en](./README.en.md).
 
 ---
 
+## 📦 Get the Hardware
 
-> **Nota per gli sviluppatori:** > Se vuoi contribuire al driver HAL, clona la repository e consulta la sezione dedicata agli sviluppatori.
+While the HAL software is open to the community, it requires our dedicated **io_decoder base** board and **io_decoder expansion_8** boards to function.
+
+* **Project Status:** In pre-production.
+* **Technical Specs:** Available in the Installation-Requirements section of the [README.en](./README.en.md).
+* **Contact:** For purchases, prototypes, or integration support, write to: `bobwolf.rst@gmail.com`
+
+---
+
+> **Note for Developers:** > If you wish to contribute to the HAL driver, clone the repository and consult the developer section.
+
+[📖 English Manual](./README.en.md)
