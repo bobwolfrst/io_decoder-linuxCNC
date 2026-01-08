@@ -2,9 +2,9 @@
 
 ## Indice
 
-- [**Descrizione**](#Descrizione)  
-- [**Caratteristiche principali**](#Caratteristiche-principali)  
-- [**Installazione**](#Installazione)   
+- [**Descrizione**](#descrizione)  
+- [**Caratteristiche principali**](#caratteristiche-principali)  
+- [**Installazione**](#installazione)   
     -   [Requisiti](#Requisiti)  
     -   Comandi di installazione  
 - [**Utilizzo**](#Utilizzo)  
