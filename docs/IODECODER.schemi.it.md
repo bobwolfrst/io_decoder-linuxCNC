@@ -10,7 +10,7 @@
 - [**Autori**](#autori)  
 
 [📖 BACK TO README.it](README.it.md)  
-[📖 README](../README.md) | [🏠 Project Home](index.html) 
+[📖 README](../README.md) | [🏠 Project Home](index.it.html) 
 
 ---
 
@@ -57,7 +57,7 @@ Per info bobwolf.rst@gmail.com
 Roberto "bobwolf" Sassoli
 
 [🔝 torna all'indice](#indice) | [📖 BACK TO README.it](README.it.md)  
-[📖 README](../README.md) | [🏠 Project Home](index.html) 
+[📖 README](../README.md) | [🏠 Project Home](index.it.html) 
 
 
 
