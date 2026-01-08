@@ -5,15 +5,15 @@
 - [**Descrizione**](#descrizione)  
 - [**Caratteristiche principali**](#caratteristiche-principali)  
 - [**Installazione**](#installazione)   
-    -   [Requisiti](#Requisiti)  
-    -   Comandi di installazione  
-- [**Utilizzo**](#Utilizzo)  
-    -   Esempi di configurazione  
-    -   Funzionalità disponibili
-    -   Keyboard
-- [**Dipendenze**](#Dipendenze)  
-- [**Autori**](#Autori)  
-- [**Licenza**](#Licenza)  
+    -   [Requisiti](#requisiti)  
+    -   [Comandi di installazione](#comandi-di-installazione)  
+- [**Utilizzo**](#utilizzo)  
+    -   [Esempio di configurazione](#esempio-di-configurazione)  
+    -   [Funzionalità disponibili](#funzionalità-disponibili)  
+    -   [Keyboard](#keyboard)  
+- [**Dipendenze**](#dipendenze)  
+- [**Autori**](#autori)  
+- [**Licenza**](#licenza)  
     -   Disclaimer e condizioni d’uso  
 
 [BACK TO README](../README.md)
@@ -79,6 +79,7 @@ Gestisce in maniera ottimale input ed output non critici come pulsanti, interrut
   - La cadenza di comunicazione HAL<=>USB è di 20ms (50Hz)
 
 [torna all'indice](#Indice)  
+<a id="installazione"></a>
 ## Installazione
 ### Sinossi
 - **loadrt io_decoder** [input=*num*] [output=*num*] [usb_port_name=*"string"*] [firmware=*num*] [verbose=*num*] [keymap_file=*"string"*] [uinput_chmod_cmd=*"string"*]  
@@ -151,8 +152,9 @@ addf io_decoder.update	servo-thread
     - **io_decoder.diag.base-thread-jitter** (S32 out): Valore del jitter del base-thread nell'ultimo minuto. 
     - **io_decoder.diag.usb-thread-jitter** (S32 out): Valore del jitter dell'usb-thread, creato internamente al componente, nell'ultimo minuto. Questo valore dovrebbe essere il più inferiore possibile, tenendo conto che il thread è richiamato con cadenza di 1ms. Valori molto alti indicano che il PC/sistema non è performante ed induce ritardi eccessivi nel realtime.
     - **io_decoder.diag.usb-communication-jitter** (S32 out): Valore del jitter dei tempi di esecuzione della sola ricetrasmissione USB nell'ultimo minuto. Questo valore dovrebbe essere il più basso possibile, tenendo conto che tutto il processo di ricezione e trasmissione sulla USB impiega circa 8ms al massimo.  
-	
-### Requisiti
+
+<a id="requisiti"></a>
+### Requisiti  
 - **Hardware**
   - [Pinout scheda io_decoder USB](IODECODER.schemi.it.md)
 
@@ -160,7 +162,7 @@ addf io_decoder.update	servo-thread
   - LinuxCNC 2.8 e successivi
   - il componente è stato realizzato su un sistema creato su un'immagine rilasciata di LinuxCNC 2.8, ma potrebbe funzionare anche con versioni precedenti.
 
-
+<a id="comandi-di-installazione"></a>
 ### Comandi di installazione
 - compilare il componente:  
   Con il terminale aprire la cartella dove è salvato il file .c del componente e digitare:   
@@ -213,16 +215,20 @@ addf io_decoder.update	servo-thread
     Con queste impostazioni il valore di default dichiarato in fase di inizializzazione del componente è soddisfatto.
     Comunque il tutto è liberamente configurabile.  
 
-[torna all'indice](#Indice)  
+[torna all'indice](#Indice)
+<a id="utilizzo"></a>
 ## Utilizzo
 Ideato per realizzare/gestire un pannello operatore di macchine CNC.
 Per l'utilizzo di questo sistema nel controllo dei motori e sensori vari del macchinario, e per la natura del sistema Linuxcnc, la comunicazione USB non è affidabile ed è altamente sconsigliata per questo scopo. Anche se il sistema di questo componente è stato testato in vari modi, per sicurezza, il pulsante di emergenza dovrebbe essere collegato direttamente ai pin fisici previsti dall'hardware di Linuxcnc.  
 In caso di disconnessione software dell'USB o di rallentamenti da parte del sistema operativo, per colpa di PC datati o non performanti che producono valori alti di jitter dei thread, il sistema è stabile e reagisce alle varie situazioni, rendendo il componente sempre attivo.  
-  
+
+<a id="esempio-di-configurazione"></a>
 ### Esempio di configurazione
 ```bash
    loadrt io_decoder output=24 input=24 usb_port_name="/dev/io_decoder" verbose=3 firmware=101 keymap_file="io_decoder-keymap.cfg" uinput_chmod_cmd="chmod 0666 /dev/uinput"
 ```  
+
+<a id="funzionalità-disponibili"></a>
 ### Funzionalità disponibili
 - I pin UP e DOWN dell'encoder e dell'ADC permettono attraverso componenti HAL tipo UPDOWN o MULTISWITCH di selezionare dei valori, tipo selezione asse o            avanzamento, con un encoder rotativo incrementale o un joystick analogico.  
 - Oltre i pin di HAL il componente genera dei messaggi di errore visibili sulla GUI di Linuxcnc, se abilitati in fase di inizializzazione del componente nel file    .hal della macchina, in caso di:  
@@ -232,6 +238,7 @@ In caso di disconnessione software dell'USB o di rallentamenti da parte del sist
   - ripristino della comunicazione USB (non è un errore ma funziona, per praticità, su configurazioni base come la mia)
 - Se viene persa la connessione USB i valori che hal riceve dalla scheda USB sono congelati e pin di hal degli input sono forzati a 0; allo stesso tempo le uscite   fisiche sulla scheda USB sono disattivate.  
 
+<a id="keyboard"></a>
 ### Keyboard
 Funzionalità che permette di usare gli input fisici per inviare dei comandi di tastiera simulata che possono essere usati per stampare a video od inviare comandi come se fossero digitati sulla tastiera di sistema.  
 Se il file [**"io_decoder-keymap.cfg"**](IOdecoder-keymap.cfg.md) (o quello che è specificato da **keymap_file**) è presente nella cartella della configurazione della macchina, la funzionalità è abilitata. Se non è presente oppure è vuoto o contiene solo commenti, la funzionalità non viene abilitata.  
@@ -281,14 +288,17 @@ Consiglio di mettere le righe di configurazione con i numeri progressivi, per av
   **Se il file che viene richiamato dal parametro keymap_file non esiste, è vuoto oppure non ha pin validi, e quindi non viene usata la funzionalità di tastiera simulata, non viene inizializzato UINPUT e quindi non vengono impostati i permessi dell'utente per questa funzionalità.**
   **I permessi di default sono temporanei per il periodo in cui il componente è funzionante.**  
 
+<a id="dipendenze"></a>
 [torna all'indice](#Indice)  
 ## Dipendenze
 Realizzato su LinuxCNC 2.8 e non ci dovrebbe essere dipendenze aggiuntive.
 
+<a id="autori"></a>
 [torna all'indice](#Indice)  
 ## Autori
 Roberto "bobwolf" Sassoli ed il suo gemello virtuale.
 
+<a id="licenza"></a>
 [torna all'indice](#Indice)  
 ## Licenza
 
