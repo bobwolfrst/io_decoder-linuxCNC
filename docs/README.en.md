@@ -16,7 +16,7 @@
 - [**License**](#license)  
     -   Disclaimer and terms of use  
 
-[📖 Manual Manual](../README.md) | [🏠 Project Home](index.html)
+[📖 Manual Manual](../README.md) | [🏠 Project Home](../)
 
 <a id="description"></a>
 ## Description
