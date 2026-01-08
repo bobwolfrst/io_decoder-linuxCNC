@@ -8,7 +8,8 @@
 - [**Where to buy**](#where-to-buy)  
 - [**Authors**](#authors)  
 
-[📖 Manual english](./README.en.md) | [🏠 Project Home](../)  
+[📖 Manual english](./README.en.md)  
+[📖 README](../README.md) | [🏠 Project Home](index.html)  
 
 ---
 
@@ -56,7 +57,7 @@ Roberto "bobwolf" Sassoli
 
 [🔝 back to index](#index) | [📖 Manual english](./README.en.md)  
   
-[📖 Manual Manual](../README.md) | [🏠 Project Home](../)  
+[📖 Manual Manual](../README.md) | [🏠 Project Home](index.en.html)  
 
 
 
