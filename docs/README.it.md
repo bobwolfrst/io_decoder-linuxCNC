@@ -1,5 +1,5 @@
 # io_decoder
-
+<a id="indice"></a>
 ## Indice
 
 - [**Descrizione**](#descrizione)  
@@ -26,7 +26,7 @@ io_decoder è un componente di HAL per Linuxcnc. Permette di controllare, attrav
 Gestisce in maniera ottimale input ed output non critici come pulsanti, interruttori e spie di segnalazione per l'interazione manuale del pannello di controllo e quadretti di gestione dislocati sulla macchina.  
 
 <a id="caratteristiche-principali"></a>
-[torna all'indice](#Indice)  
+[torna all'indice](#indice)  
 ## Caratteristiche principali
 ### Componente HAL
 - **Input digitali**: 8-128 liberamente configurabili da file .hal; questo valore deve essere coerente con l'hardware installato.
@@ -78,22 +78,22 @@ Gestisce in maniera ottimale input ed output non critici come pulsanti, interrut
   - ADC: 3 @10bit 5Vdc
   - La cadenza di comunicazione HAL<=>USB è di 20ms (50Hz)
 
-[torna all'indice](#Indice)  
+[torna all'indice](#indice)  
 <a id="installazione"></a>
 ## Installazione
 ### Sinossi
 - **loadrt io_decoder** [input=*num*] [output=*num*] [usb_port_name=*"string"*] [firmware=*num*] [verbose=*num*] [keymap_file=*"string"*] [uinput_chmod_cmd=*"string"*]  
    - **input**: questo valore deve essere coerente con l'hardware installato. Il numero deve essere un multiplo di 8 (min 8 max 128) altrimenti da errore all'avvio. Valore di default= 8
    - **output**: questo valore deve essere coerente con l'hardware installato. Il numero deve essere un multiplo di 8 (min 8 max 128) altrimenti da errore all'avvio. Valore di default= 8
-   - **usb_port_name**: per poter nominare la porta a piacere e renderla fissa; vedere sezione [**definire porta USB**](#Comandi-di-installazione) . Valore di default "/dev/io_decoder"
+   - **usb_port_name**: per poter nominare la porta a piacere e renderla fissa; vedere sezione [**definire porta USB**](#comandi-di-installazione) . Valore di default "/dev/io_decoder"
    - **firmware**: parametro per configurare il componente con le varie funzionalità della scheda USB. E' indicato sul pcb della scheda USB. Valore di default= 101
    - **verbose**: per abilitare il livello dei messaggi di errore sulla GUI. il numero attiva il tipo di messaggio indicato e quelli di valore inferiore. default 1.  
      - 0=nessuno.
      - 1=componente. Invia messaggio in caso di disconnessione o di riavvio della comunicazione USB e segnala i messaggi della funzionalità keyboard se non è attivata per qualsiasi motivo.
      - 2=minimi. Messaggi di percentuale di errore parsing.
      - 3=tutti.
-   - **keymap_file**: file di testo per impostare le corrispondenze [**input => simulazione tastiera**](#Keyboard). Valore di default "io_decoder-keymap.cfg"
-   - **uinput_chmod_cmd**: parametro stringa per dare i permessi di scrittura su UINPUT per la [**funzionalità di tastiera simulata**](#Keyboard). Se si vuole essere sicuri di non dare i permessi il parametro deve essere "" (uinput_chmod_cmd="" senza niente all'interno delle virgolette) . Valore di default "chmod 0666 /dev/uinput" .  
+   - **keymap_file**: file di testo per impostare le corrispondenze [**input => simulazione tastiera**](#keyboard). Valore di default "io_decoder-keymap.cfg"
+   - **uinput_chmod_cmd**: parametro stringa per dare i permessi di scrittura su UINPUT per la [**funzionalità di tastiera simulata**](#keyboard). Se si vuole essere sicuri di non dare i permessi il parametro deve essere "" (uinput_chmod_cmd="" senza niente all'interno delle virgolette) . Valore di default "chmod 0666 /dev/uinput" .  
 
 ### Funzioni
 ```bash
@@ -105,7 +105,7 @@ addf io_decoder.update	servo-thread
 -  Input
 	- **io_decoder.in.*MM*-*N*** (bit out): pin per leggere lo stato degli ingressi digitali. *MM*= numero a due cifre per indicare la posizione della scheda di espansione. *N*= numero ad una cifra per indicare l'ingresso sulla scheda di espansione. Su ogni pin è presente un antirimbalzo software di 20ms. Non viene creato nel caso in cui l'input abbia funzionalità tastiera. default 0.    
     - **io_decoder.in.*MM*-*N*.toggle** (bit out): questo pin varia il proprio valore da 0 ad 1 e da 1 a 0, sul fronte di salita del proprio ingresso digitale. Non viene creato nel caso in cui l'input abbia funzionalità tastiera. default 0.  
-	- **io_decoder.in.*MM*-*N-keyboard*** (bit out): pin che viene usato per inviare i segnali alla tastiera simulata. Viene creato nel caso in cui l'input abbia funzionalità tastiera, può essere usato ancora come pin di hal ed ha le medesime caratteristiche del pin ordinario. [**per configurare i pin**](#Keyboard). default 0.   
+	- **io_decoder.in.*MM*-*N-keyboard*** (bit out): pin che viene usato per inviare i segnali alla tastiera simulata. Viene creato nel caso in cui l'input abbia funzionalità tastiera, può essere usato ancora come pin di hal ed ha le medesime caratteristiche del pin ordinario. [**per configurare i pin**](#keyboard). default 0.   
  - Output
 	- **io_decoder.out.*MM*-*N*** (bit in): pin per settare lo stato delle uscite digitali. *MM*= numero a due cifre per indicare la posizione della scheda di espansione. *N*= numero ad una cifra per indicare l'uscita sulla scheda di espansione. default 0.     
    - **io_decoder.out.*MM*-*N*.blink-en** (bit in): enable che abilita il lampeggio dell'uscita. se il corrispondente pin hal di output è a 0 ed enable è in qualsiasi stato, l'uscita è spenta. se è ad 1 ed enable è a 0, l'uscita è accesa fissa. se è ad 1 ed enable è ad 1, l'uscita lampeggia con la frequenza impostata. default 0.  
@@ -215,7 +215,7 @@ addf io_decoder.update	servo-thread
     Con queste impostazioni il valore di default dichiarato in fase di inizializzazione del componente è soddisfatto.
     Comunque il tutto è liberamente configurabile.  
 
-[torna all'indice](#Indice)
+[torna all'indice](#indice)
 <a id="utilizzo"></a>
 ## Utilizzo
 Ideato per realizzare/gestire un pannello operatore di macchine CNC.
@@ -289,17 +289,17 @@ Consiglio di mettere le righe di configurazione con i numeri progressivi, per av
   **I permessi di default sono temporanei per il periodo in cui il componente è funzionante.**  
 
 <a id="dipendenze"></a>
-[torna all'indice](#Indice)  
+[torna all'indice](#indice)  
 ## Dipendenze
 Realizzato su LinuxCNC 2.8 e non ci dovrebbe essere dipendenze aggiuntive.
 
 <a id="autori"></a>
-[torna all'indice](#Indice)  
+[torna all'indice](#indice)  
 ## Autori
 Roberto "bobwolf" Sassoli ed il suo gemello virtuale.
 
 <a id="licenza"></a>
-[torna all'indice](#Indice)  
+[torna all'indice](#indice)  
 ## Licenza
 
 Questo software è distribuito sotto licenza GNU General Public License, versione 2 (GPLv2).  
@@ -323,6 +323,6 @@ L’autore non è responsabile per danni derivanti dall’uso del programma.
 
 Copyright (c) 2025 [bobwolf]
 
-[torna all'indice](#Indice)  
+[torna all'indice](#indice)  
 [BACK TO README](../README.md)
 
