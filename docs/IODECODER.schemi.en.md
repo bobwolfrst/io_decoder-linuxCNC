@@ -1,4 +1,5 @@
-# IO_DECODER
+# IO_DECODER BASE
+# IO_DECODER EXPANSION_8
 <a id="index"></a>
 ## Index
 
@@ -22,7 +23,7 @@ The system consists of a main board that carries the microcontroller with the US
 [back to index](#index) 
 ## Pinout
 
-### io_decoder board
+### io_decoder base board
 #### Features dependent on the USB board hardware and firmware
   - **Firmware 101**
     - Quadrature encoders: 4 @5Vdc
@@ -30,11 +31,11 @@ The system consists of a main board that carries the microcontroller with the US
     - ADC: 3 @10bit 5Vdc  
 ![schemi_io_decoder_1_master](git_USB_pannello_IO_4.png)  
 
-### io_decoder board used as input
+### io_decoder expansion_8 board used as input
   - **Digital inputs**: 8-128 (16 expansions) freely configurable with 8-pin expansion boards. Only dry contacts between the common pin and the digital input are accepted as valid inputs.  
 ![schemi_io_decoder_input_side](git_input_pannello_espansione_4.png)  
 
-### io_decoder board used as output
+### io_decoder expansion_8 board used as output
   - **Digital outputs**: 8-128 (16 expansions) freely configurable with 8-pin expansion boards. Each output can drive a load of 50mA@30Vdc with a maximum of 300mA per expansion board.  
 ![schemi_io_decoder_output_side](git_output_pannello_espansione_4.png)  
 

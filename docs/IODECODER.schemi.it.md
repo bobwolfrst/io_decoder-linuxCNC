@@ -1,4 +1,5 @@
-# IO_DECODER
+# IO_DECODER BASE  
+# IO_DECODER EXPANSION_8
 <a id="indice"></a>
 ## Indice
 
@@ -23,7 +24,7 @@ Il sistema si compone di una scheda principale che ha a bordo il microprocessore
 [torna all'indice](#indice) 
 ## Pinout
 
-### Scheda io_decoder
+### Scheda io_decoder base
 #### Caratteristiche dipendenti da hadware e firmware della scheda USB
   - **Firmware 101**
     - Encoder in quadratura: 4 @5Vdc
@@ -31,11 +32,11 @@ Il sistema si compone di una scheda principale che ha a bordo il microprocessore
     - ADC: 3 @10bit 5Vdc  
 ![schemi_io_decoder_1_master](git_USB_pannello_IO_4.png)  
 
-### Scheda io_decoder usata in input
+### Scheda io_decoder expansion_8 usata in input
   - **Input digitali**: 8-128 (16 espansioni) liberamente configurabili con schede di espansione da 8 pin ognuna. Viene accettato come ingresso solamente contatti puliti tra il pin comune e l'ingresso digitale.  
 ![schemi_io_decoder_input_side](git_input_pannello_espansione_4.png)  
 
-### Scheda io_decoder usata in output
+### Scheda io_decoder expansion_8 usata in output
   - **Output digitali**: 8-128 (16 espansioni) liberamente configurabili con schede di espansione da 8 pin ognuna. Ogni uscita può pilotare un carico da 50mA@30Vdc con un massimo di 300mA per scheda di espansione.  
 ![schemi_io_decoder_output_side](git_output_pannello_espansione_4.png)  
 
