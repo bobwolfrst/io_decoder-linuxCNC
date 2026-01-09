@@ -2,19 +2,26 @@
 <a id="indice"></a>
 ## Indice
 
-- [**Descrizione**](#descrizione)  
-- [**Caratteristiche principali**](#caratteristiche-principali)  
-- [**Installazione**](#installazione)   
-    -   [Requisiti](#requisiti)  
-    -   [Comandi di installazione](#comandi-di-installazione)  
-- [**Utilizzo**](#utilizzo)  
-    -   [Esempio di configurazione](#esempio-di-configurazione)  
-    -   [Funzionalità disponibili](#funzionalità-disponibili)  
-    -   [Keyboard](#keyboard)  
-- [**Dipendenze**](#dipendenze)  
-- [**Autori**](#autori)  
-- [**Licenza**](#licenza)  
-    -   Disclaimer e condizioni d’uso  
+- [io\_decoder](#io_decoder)
+  - [Indice](#indice)
+  - [Descrizione](#descrizione)
+  - [Caratteristiche principali](#caratteristiche-principali)
+    - [Componente HAL](#componente-hal)
+    - [Hardware USB](#hardware-usb)
+      - [Caratteristiche dipendenti da hardware e firmware della scheda USB](#caratteristiche-dipendenti-da-hardware-e-firmware-della-scheda-usb)
+  - [Installazione](#installazione)
+    - [Sinossi](#sinossi)
+    - [Funzioni](#funzioni)
+    - [Pin](#pin)
+    - [Requisiti](#requisiti)
+    - [Comandi di installazione](#comandi-di-installazione)
+  - [Utilizzo](#utilizzo)
+    - [Esempio di configurazione](#esempio-di-configurazione)
+    - [Funzionalità disponibili](#funzionalità-disponibili)
+    - [Keyboard](#keyboard)
+  - [Dipendenze](#dipendenze)
+  - [Autori](#autori)
+  - [Licenza](#licenza)
 
 [📖 README](../README.md) | [🏠 Project Home](index.it.html) 
 
@@ -122,7 +129,7 @@ addf io_decoder.update	servo-thread
 	- **io_decoder.adc.*N*** (float out): valore acquisito, filtrato e convertito. default 0.  
 	- **io_decoder.adc.*N*.raw** (S32 out): valore acquisito senza conversioni. default 0.  
 	- **io_decoder.adc.*N*.invert** (bit in): per l'inversione del valore acquisito. default 0.  
-	- **io_decoder.adc.*N*.scale** (bit in):per scalare il valore acquisito. default 0.  
+	- **io_decoder.adc.*N*.scale** (float in):per scalare il valore acquisito. default 0.  
   - sezione joystick
     - **io_decoder.adc.*N*.joy.center** (float in):per centrare il joystick. valore -1/+1. default 0.
     - **io_decoder.adc.*N*.joy.deadband** (float in):per il punto centrale con uscita disattivata. valore 0/+1. default 0.

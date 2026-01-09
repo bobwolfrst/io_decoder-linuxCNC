@@ -128,7 +128,7 @@ addf io_decoder.update	servo-thread
 	- **io_decoder.adc.*N*** (float out): acquired, filtered and converted value. default 0.  
 	- **io_decoder.adc.*N*.raw** (S32 out): acquired value without conversions. default 0.  
 	- **io_decoder.adc.*N*.invert** (bit in): to invert the acquired value. default 0.  
-	- **io_decoder.adc.*N*.scale** (bit in): to scale the acquired value. default 0.  
+	- **io_decoder.adc.*N*.scale** (float in): to scale the acquired value. default 0.  
   - joystick section
     - **io_decoder.adc.*N*.joy.center** (float in): to center the joystick. value -1/+1. default 0.
     - **io_decoder.adc.*N*.joy.deadband** (float in): for the center point with output disabled. value 0/+1. default 0.
