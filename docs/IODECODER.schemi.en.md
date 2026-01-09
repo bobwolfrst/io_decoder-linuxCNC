@@ -58,7 +58,7 @@ Roberto "bobwolf" Sassoli
 
 [🔝 back to index](#index) | [📖 Manual english](./README.en.md)  
   
-[📖 Manual Manual](../README.md) | [🏠 Project Home](index.html)  
+[📖 README](../README.md) | [🏠 Project Home](index.html)  
 
 
 

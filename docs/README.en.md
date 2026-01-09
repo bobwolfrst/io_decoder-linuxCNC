@@ -2,21 +2,28 @@
 <a id="contents"></a>
 ## Contents
 
-- [**Description**](#description)  
-- [**Main features**](#main-features)  
-- [**Installation**](#installation)   
-    -   [Requirements](#requirements)  
-    -   [Installation commands](#installation-commands)  
-- [**Usage**](#usage)  <a id="usage"></a>
-    -   [Configuration examples](#configuration-examples)  
-    -   [Available features](#available-features)  
-    -   [Keyboard](#keyboard)  
-- [**Dependencies**](#dependencies)  
-- [**Authors**](#authors)  
-- [**License**](#license)  
-    -   Disclaimer and terms of use  
+- [io\_decoder](#io_decoder)
+  - [Contents](#contents)
+  - [Description](#description)
+  - [Main features](#main-features)
+    - [HAL component](#hal-component)
+    - [USB Hardware](#usb-hardware)
+      - [Features dependent on USB board hardware and firmware](#features-dependent-on-usb-board-hardware-and-firmware)
+  - [Installation](#installation)
+    - [Synopsis](#synopsis)
+    - [Functions](#functions)
+    - [Pins](#pins)
+    - [Requirements](#requirements)
+    - [Installation commands](#installation-commands)
+  - [Usage](#usage)
+    - [Configuration example](#configuration-example)
+    - [Available features](#available-features)
+    - [Keyboard](#keyboard)
+  - [Dependencies](#dependencies)
+  - [Authors](#authors)
+  - [License](#license)
 
-[📖 Manual Manual](../README.md) | [🏠 Project Home](index.html)
+[📖 README](../README.md) | [🏠 Project Home](index.html)
 
 <a id="description"></a>
 ## Description
@@ -321,6 +328,6 @@ The author is not responsible for damages resulting from the use of the program.
 Copyright (c) 2025 [bobwolf]
 
 ---
-[🔝 back to contents](#contents) | [📖 Manual Manual](../README.md) | [🏠 Project Home](index.html)  
+[🔝 back to contents](#contents) | [📖 README](../README.md) | [🏠 Project Home](index.html)  
 
 

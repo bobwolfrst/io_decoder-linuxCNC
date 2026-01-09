@@ -14,7 +14,7 @@ title: io_decoder - Interfaccia pannello operatore USB per LinuxCNC
 ---
 
 ## 🎯 Perché io_decoder?
-
+<img src="mini_assieme_usb_IODECODER_5.png" align="right" width="280" style="margin-left: 20px; border-radius: 8px; border: 1px solid #ddd;">
 Ecco come **io_decoder** cambia le regole del gioco:
 
 ### 1. Zero conflitti di porta (Custom USB ID)
