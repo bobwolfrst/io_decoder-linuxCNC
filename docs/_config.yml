@@ -1,3 +1,7 @@
 title: io_decoder Project
 description: Professional HAL driver for LinuxCNC
-theme: jekyll-theme-cayman
+remote_theme: pages-themes/cayman@v0.2.0
+
+# Questo dice a Jekyll di gestire correttamente la sottocartella del repo
+baseurl: "/io_decoder-linuxCNC"
+url: "https://bobwolfrst.github.io"
