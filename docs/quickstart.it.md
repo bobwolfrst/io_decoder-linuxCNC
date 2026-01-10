@@ -40,10 +40,12 @@ title: Guida Rapida - io_decoder
 </style>
 
 <div class="nav-container">
-  <a href="./" class="nav-btn">🏠 Home</a>
+  <a href="./index.it" class="nav-btn">🏠 Home</a>
   <a href="./README.it" class="nav-btn">📖 Manuale</a>
   <a href="https://github.com/bobwolfrst/io_decoder-linuxCNC" class="nav-btn">💻 GitHub</a>
-  <a href="./quickstart.en" class="nav-btn lang-btn">🇬🇧 English</a>
+  <a href="./index" class="nav-btn lang-btn">
+    <img src="https://flagcdn.com/w20/gb.png" width="20" alt="UK Flag"> English
+  </a>
 </div>
 
 # ⚡ Guida Rapida (Quick Start)

@@ -45,7 +45,9 @@ title: io_decoder - Interfaccia pannello operatore USB per LinuxCNC
   <a href="./quickstart.it" class="nav-btn">⚡ Quick Start</a>
   <a href="./README.it" class="nav-btn">📖 Manuale</a>
   <a href="https://github.com/bobwolfrst/io_decoder-linuxCNC" class="nav-btn">💻 GitHub</a>
-  <a href="./index" class="nav-btn lang-btn">🇬🇧 Switch to English</a>
+  <a href="./index" class="nav-btn lang-btn">
+    <img src="https://flagcdn.com/w20/gb.png" width="20" alt="UK Flag"> English
+  </a>
 </div>
 # io_decoder
 

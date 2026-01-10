@@ -40,10 +40,12 @@ title: Quick Start - io_decoder
 </style>
 
 <div class="nav-container">
-  <a href="./" class="nav-btn">🏠 Home</a>
+  <a href="./index" class="nav-btn">🏠 Home</a>
   <a href="./README" class="nav-btn">📖 Manual</a>
   <a href="https://github.com/bobwolfrst/io_decoder-linuxCNC" class="nav-btn">💻 GitHub</a>
-  <a href="./quickstart.it" class="nav-btn lang-btn">🇮🇹 Versione Italiana</a>
+  <a href="./index.it" class="nav-btn lang-btn">
+    <img src="https://flagcdn.com/w20/it.png" width="20" alt="Italy Flag"> Italiano
+  </a>
 </div>
 
 # ⚡ Quick Start Guide
