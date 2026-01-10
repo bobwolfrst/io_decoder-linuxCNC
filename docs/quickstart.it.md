@@ -62,30 +62,32 @@ Benvenuto nella guida rapida di **io_decoder**. Segui questi passaggi per config
 ---
 
 ### 2. Installazione del Driver
+
 Apri il terminale nella cartella del progetto e compila il modulo HAL.
 
-**[INSERISCI QUI IL BLOCCO BASH: sudo make install]**
-
-*Questo comando compila il driver C e configura le regole udev per l'accesso USB.*
+Crea una regola udev per fissare il collegamento con un nome univoco 
 
 ---
 
 ### 3. Configurazione HAL
 Aggiungi queste righe al tuo file di configurazione .hal per integrare la scheda:
 
-**[INSERISCI QUI IL BLOCCO HAL PER CARICARE IL DRIVER E I PIN]**
+```bash
+   loadrt io_decoder output=24 input=24
+   addf io_decoder.update	servo-thread
+```
 
 ---
 
 ### 4. Test e Diagnostica
-Verifica il funzionamento aprendo il terminale e lanciando lo strumento di monitoraggio:
+Verifica il funzionamento lanciando lo strumento di monitoraggio 'halshow' di linuxCNC:
 
-**[INSERISCI QUI IL COMANDO: halshow]**
-
-Nella sezione Pins, cerca io_decoder.0 per vedere i segnali in tempo reale.
+Nella sezione Pins, cerca io_decoder.in.00-0 per vedere i segnali in tempo reale se per esempio hai messo un pulsante collegato al morsetto 0 della scheda 00.
 
 ---
 
+Nel [manuale](./README.it) è spiegato a fondo tutte le configurazioni e possibilità di questo sistema hardware/software per linuxCNC.
+
 ## 🔗 Risorse Utili
-* 🏠 [Torna alla Home Page](./)
+* 🏠 [Torna alla Home Page](./index.it)
 * 📖 [Consulta il Manuale Tecnico Completo](./README.it)

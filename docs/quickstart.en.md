@@ -41,7 +41,7 @@ title: Quick Start - io_decoder
 
 <div class="nav-container">
   <a href="./index" class="nav-btn">🏠 Home</a>
-  <a href="./README" class="nav-btn">📖 Manual</a>
+  <a href="./README.en" class="nav-btn">📖 Manual</a>
   <a href="https://github.com/bobwolfrst/io_decoder-linuxCNC" class="nav-btn">💻 GitHub</a>
   <a href="./index.it" class="nav-btn lang-btn">
     <img src="https://flagcdn.com/w20/it.png" width="20" alt="Italy Flag"> Italiano
@@ -55,38 +55,39 @@ Welcome to the **io_decoder** quick start guide. Follow these steps to get your 
 ---
 
 ### 1. System Requirements
-* **OS:** Linux with Real-Time kernel (RT-Preempt).
+* **OS:** Linux with Real-Time kernel.
 * **LinuxCNC:** Version 2.8 or higher.
-* **Hardware:** One free USB port (bus-powered).
+* **Hardware:** One free USB port.
 
 ---
 
 ### 2. Driver Installation
-Open your terminal in the project folder and compile the HAL module.
+Open the terminal in the project folder and compile the HAL module.
 
-**[INSERT BASH BLOCK HERE: sudo make install]**
-
-*This command compiles the C driver and sets up udev rules for USB access.*
+Create a udev rule to set a unique persistent symlink for the device.
 
 ---
 
 ### 3. HAL Configuration
-Add these lines to your .hal configuration file to integrate the board:
+Add the following lines to your .hal configuration file to integrate the board:
 
-**[INSERT HAL BLOCK HERE FOR LOADING DRIVER AND PINS]**
+```bash
+   loadrt io_decoder output=24 input=24
+   addf io_decoder.update	servo-thread
+```
 
 ---
 
 ### 4. Testing and Diagnostics
-Verify everything is working by opening the terminal and launching the monitoring tool:
+Check that everything is working by launching the LinuxCNC 'halshow' tool:
 
-**[INSERT COMMAND HERE: halshow]**
-
-In the Pins section, look for `io_decoder.0` to see real-time signals as you press physical buttons.
+In the Pins section, look for `io_decoder.in.00-0` to see real-time signals (e.g., if you have a button connected to terminal 0 of board 00).
 
 ---
 
-## 🔗 Useful Links
-* 🏠 [Back to Home Page](./)
-* 📖 [Check the Full Technical Manual](./README)
-* 🛠️ [MPG and Joystick Configuration Examples](./README#examples)
+The [full manual](./README.en) explains in depth all the configurations and possibilities of this hardware/software system for LinuxCNC.
+
+## 🔗 Useful Resources
+* 🏠 [Back to Home Page](./index)
+* 📖 [Read the Full Technical Manual](./README.en)
+
