@@ -3,8 +3,52 @@ layout: default
 title: io_decoder - Interfaccia pannello operatore USB per LinuxCNC
 ---
 
+<style>
+  .nav-container {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(5px);
+    border-bottom: 2px solid #1e6bb8;
+    padding: 12px 0;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Per vederlo bene anche su cellulare */
+    gap: 12px;
+  }
+  .nav-btn {
+    text-decoration: none !important;
+    padding: 8px 18px;
+    border-radius: 25px;
+    font-size: 0.95em;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 1.5px solid #1e6bb8;
+    color: #1e6bb8 !important;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .nav-btn:hover {
+    background-color: #1e6bb8;
+    color: white !important;
+    transform: translateY(-2px); /* Effetto al passaggio del mouse */
+  }
+  .lang-btn {
+    background-color: #f8f9fa;
+  }
+</style>
+
+<div class="nav-container">
+  <a href="./quickstart.it" class="nav-btn">⚡ Quick Start</a>
+  <a href="./README.it" class="nav-btn">📖 Manuale</a>
+  <a href="https://github.com/bobwolfrst/io_decoder-linuxCNC" class="nav-btn">💻 GitHub</a>
+  <a href="./index" class="nav-btn lang-btn">🇬🇧 Switch to English</a>
+</div>
 # io_decoder
-[🇬🇧 Switch to English version](index.html)
+
 ### La soluzione per l'I/O su LinuxCNC: Stabile, Veloce, Plug&Play.
 
 
