@@ -83,7 +83,9 @@ Gestisce in maniera ottimale input ed output non critici come pulsanti, interrut
   - Encoder in quadratura: 4 @5Vdc
   - DAC: 2 @8bit 5Vdc
   - ADC: 3 @10bit 5Vdc
-  - La cadenza di comunicazione HAL<=>USB è di 20ms (50Hz)
+  - La cadenza di comunicazione HAL<=>USB è di 20ms (50Hz)  
+  
+[Pinout scheda io_decoder USB](IODECODER.schemi.it.md)
 
 [torna all'indice](#indice)  
 <a id="installazione"></a>
@@ -328,7 +330,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
 Questo software viene fornito “così com’è”, senza alcuna garanzia.  
 L’autore non è responsabile per danni derivanti dall’uso del programma.  
 
-Copyright (c) 2025 [bobwolf]
+Copyright (c) 2026 [bobwolf]
 
 [🔝 torna all'indice](#indice) | [📖 README](../README.md) | [🏠 Project Home](index.it.html) 
 

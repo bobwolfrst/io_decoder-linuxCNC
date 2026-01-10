@@ -11,4 +11,13 @@ io_decoder è un componente di HAL per Linuxcnc. Permette di controllare, attrav
 * [descrizione completa del progetto in italiano](docs/README.it.md)  
 
 
-Copyright (c) 2025 [bobwolf]
+Copyright (c) 2026 [bobwolf]
+
+<hr style="margin-top: 50px; border: 0; border-top: 1px solid #eee;">
+<footer style="padding: 20px 0; text-align: center; color: #666; font-size: 0.9em;">
+  <p><strong>io_decoder</strong> - Driver Open Source per LinuxCNC</p>
+  <p>
+    <a href="mailto:io.decoder.rst%40gmail.com" style="color: #1e6bb8; text-decoration: none;">✉️ Contact</a> | 
+  </p>
+  <p style="font-size: 0.8em;">© 2026 - Creato da bobwolfrst. Rilasciato sotto licenza GPL.</p>
+</footer>

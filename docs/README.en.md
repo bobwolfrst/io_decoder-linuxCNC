@@ -82,7 +82,9 @@ It is optimized to manage non-critical inputs and outputs such as buttons, switc
   - Quadrature encoders: 4 @5Vdc
   - DAC: 2 @8bit 5Vdc
   - ADC: 3 @10bit 5Vdc
-  - The HAL<=>USB communication cadence is 20 ms (50Hz)
+  - The HAL<=>USB communication cadence is 20 ms (50Hz)  
+  
+[io_decoder USB board pinout](IODECODER.schemi.en.md)
 
 [back to contents](#contents)  
 <a id="installation"></a>
@@ -325,7 +327,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
 This software is provided "as is", without any warranty.  
 The author is not responsible for damages resulting from the use of the program.  
 
-Copyright (c) 2025 [bobwolf]
+Copyright (c) 2026 [bobwolf]
 
 ---
 [🔝 back to contents](#contents) | [📖 README](../README.md) | [🏠 Project Home](index.html)  
