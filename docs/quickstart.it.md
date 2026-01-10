@@ -36,14 +36,26 @@ title: Guida Rapida - io_decoder
     color: white !important;
     transform: translateY(-2px);
   }
-  .lang-btn { background-color: #f8f9fa; }
+  /* Stile specifico per il tasto contatto */
+  .contact-btn {
+    border-color: #28a745;
+    color: #28a745 !important;
+  }
+  .contact-btn:hover {
+    background-color: #28a745;
+    color: white !important;
+  }
+  .lang-btn {
+    background-color: #f8f9fa;
+  }
 </style>
 
 <div class="nav-container">
   <a href="./index.it" class="nav-btn">🏠 Home</a>
   <a href="./README.it" class="nav-btn">📖 Manuale</a>
   <a href="https://github.com/bobwolfrst/io_decoder-linuxCNC" class="nav-btn">💻 GitHub</a>
-  <a href="./index" class="nav-btn lang-btn">
+  <a href="mailto:io.decoder.rst%40gmail.com" class="nav-btn contact-btn">✉️ Contatto</a>
+  <a href="./quickstart.en" class="nav-btn lang-btn">
     <img src="https://flagcdn.com/w20/gb.png" width="20" alt="UK Flag"> English
   </a>
 </div>
@@ -91,3 +103,13 @@ Nel [manuale](./README.it) è spiegato a fondo tutte le configurazioni e possibi
 ## 🔗 Risorse Utili
 * 🏠 [Torna alla Home Page](./index.it)
 * 📖 [Consulta il Manuale Tecnico Completo](./README.it)
+
+<hr style="margin-top: 50px; border: 0; border-top: 1px solid #eee;">
+<footer style="padding: 20px 0; text-align: center; color: #666; font-size: 0.9em;">
+  <p><strong>io_decoder</strong> - Driver Open Source per LinuxCNC</p>
+  <p>
+    <a href="mailto:io.decoder.rst%40gmail.com" style="color: #1e6bb8; text-decoration: none;">✉️ Contatto</a> | 
+    <a href="https://github.com/bobwolfrst/io_decoder-linuxCNC" style="color: #1e6bb8; text-decoration: none;">💻 GitHub Repository</a>
+  </p>
+  <p style="font-size: 0.8em;">© 2024 - Creato da bobwolfrst. Rilasciato sotto licenza GPL.</p>
+</footer>

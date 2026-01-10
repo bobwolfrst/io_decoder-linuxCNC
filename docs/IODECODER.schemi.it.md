@@ -49,7 +49,7 @@ Il sistema si compone di una scheda principale che ha a bordo il microprocessore
 <a id="dove-acquistarlo"></a>
 [torna all'indice](#indice) 
 ## Dove acquistarlo
-Per info bobwolf.rst@gmail.com
+Per prototipi o supporto all'integrazione, utilizza il pulsante [✉️ Contatto]
 
 <a id="autori"></a>
 [torna all'indice](#indice) 
@@ -60,8 +60,15 @@ Roberto "bobwolf" Sassoli
 [🔝 torna all'indice](#indice) | [📖 BACK TO README.it](README.it.md)  
 [📖 README](../README.md) | [🏠 Project Home](index.it.html) 
 
-
-
-
 Copyright (c) 2025 [bobwolf]
 
+>
+> <hr style="margin-top: 50px; border: 0; border-top: 1px solid #eee;">
+<footer style="padding: 20px 0; text-align: center; color: #666; font-size: 0.9em;">
+  <p><strong>io_decoder</strong> - Driver Open Source per LinuxCNC</p>
+  <p>
+    <a href="mailto:io.decoder.rst%40gmail.com" style="color: #1e6bb8; text-decoration: none;">✉️ Contatto</a> | 
+    <a href="https://github.com/bobwolfrst/io_decoder-linuxCNC" style="color: #1e6bb8; text-decoration: none;">💻 GitHub Repository</a>
+  </p>
+  <p style="font-size: 0.8em;">© 2024 - Creato da bobwolfrst. Rilasciato sotto licenza GPL.</p>
+</footer>

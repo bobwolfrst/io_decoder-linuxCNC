@@ -48,7 +48,7 @@ The system consists of a main board that carries the microcontroller with the US
 <a id="where-to-buy"></a>
 [back to index](#index) 
 ## Where to buy
-For info: bobwolf.rst@gmail.com
+For prototypes, or integration support, please use the [✉️ Contact]
 
 <a id="authors"></a>
 [back to index](#index) 
@@ -60,6 +60,14 @@ Roberto "bobwolf" Sassoli
   
 [📖 README](../README.md) | [🏠 Project Home](index.html)  
 
-
-
 Copyright (c) 2025 [bobwolf]
+
+<hr style="margin-top: 50px; border: 0; border-top: 1px solid #eee;">
+<footer style="padding: 20px 0; text-align: center; color: #666; font-size: 0.9em;">
+  <p><strong>io_decoder</strong> - Driver Open Source per LinuxCNC</p>
+  <p>
+    <a href="mailto:io.decoder.rst%40gmail.com" style="color: #1e6bb8; text-decoration: none;">✉️ Contact</a> | 
+    <a href="https://github.com/bobwolfrst/io_decoder-linuxCNC" style="color: #1e6bb8; text-decoration: none;">💻 GitHub Repository</a>
+  </p>
+  <p style="font-size: 0.8em;">© 2024 - Creato da bobwolfrst. Rilasciato sotto licenza GPL.</p>
+</footer>

@@ -15,7 +15,7 @@ title: io_decoder - Interfaccia pannello operatore USB per LinuxCNC
     margin-bottom: 25px;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* Per vederlo bene anche su cellulare */
+    flex-wrap: wrap; 
     gap: 12px;
   }
   .nav-btn {
@@ -34,7 +34,16 @@ title: io_decoder - Interfaccia pannello operatore USB per LinuxCNC
   .nav-btn:hover {
     background-color: #1e6bb8;
     color: white !important;
-    transform: translateY(-2px); /* Effetto al passaggio del mouse */
+    transform: translateY(-2px);
+  }
+  /* Stile specifico per il tasto contatto */
+  .contact-btn {
+    border-color: #28a745;
+    color: #28a745 !important;
+  }
+  .contact-btn:hover {
+    background-color: #28a745;
+    color: white !important;
   }
   .lang-btn {
     background-color: #f8f9fa;
@@ -45,6 +54,7 @@ title: io_decoder - Interfaccia pannello operatore USB per LinuxCNC
   <a href="./quickstart.it" class="nav-btn">⚡ Quick Start</a>
   <a href="./README.it" class="nav-btn">📖 Manuale</a>
   <a href="https://github.com/bobwolfrst/io_decoder-linuxCNC" class="nav-btn">💻 GitHub</a>
+  <a href="mailto:io.decoder.rst%40gmail.com" class="nav-btn contact-btn">✉️ Contatto</a>
   <a href="./index" class="nav-btn lang-btn">
     <img src="https://flagcdn.com/w20/gb.png" width="20" alt="UK Flag"> English
   </a>
@@ -101,7 +111,7 @@ Il software HAL è aperto alla comunità, e per usarlo è necessaria la nostra s
 
 * **Stato del progetto:** In sviluppo.
 * **Documentazione tecnica:** Disponibile nel paragrafo Installazione-Requisiti del [README.it](./README.it.md) .
-* **Contatti:** Per acquisti, prototipi o supporto all'integrazione, scrivi a: `bobwolf.rst@gmail.com
+* **Contatti:** Per prototipi o supporto all'integrazione, utilizza il pulsante [✉️ Contatto]
 
 ---
 
@@ -109,3 +119,13 @@ Il software HAL è aperto alla comunità, e per usarlo è necessaria la nostra s
 > **Nota per gli sviluppatori:** > Se vuoi contribuire al driver HAL, clona la repository e consulta la sezione dedicata agli sviluppatori.
 >
 > [📖 Manuale Italiano](./README.it.md)
+>
+> <hr style="margin-top: 50px; border: 0; border-top: 1px solid #eee;">
+<footer style="padding: 20px 0; text-align: center; color: #666; font-size: 0.9em;">
+  <p><strong>io_decoder</strong> - Driver Open Source per LinuxCNC</p>
+  <p>
+    <a href="mailto:io.decoder.rst%40gmail.com" style="color: #1e6bb8; text-decoration: none;">✉️ contatto</a> | 
+    <a href="https://github.com/bobwolfrst/io_decoder-linuxCNC" style="color: #1e6bb8; text-decoration: none;">💻 GitHub Repository</a>
+  </p>
+  <p style="font-size: 0.8em;">© 2024 - Creato da bobwolfrst. Rilasciato sotto licenza GPL.</p>
+</footer>

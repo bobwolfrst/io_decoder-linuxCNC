@@ -15,7 +15,7 @@ title: io_decoder - USB Operator Panel Interface for LinuxCNC
     margin-bottom: 25px;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* Per vederlo bene anche su cellulare */
+    flex-wrap: wrap; 
     gap: 12px;
   }
   .nav-btn {
@@ -34,7 +34,16 @@ title: io_decoder - USB Operator Panel Interface for LinuxCNC
   .nav-btn:hover {
     background-color: #1e6bb8;
     color: white !important;
-    transform: translateY(-2px); /* Effetto al passaggio del mouse */
+    transform: translateY(-2px);
+  }
+  /* Specific style for contact button */
+  .contact-btn {
+    border-color: #28a745;
+    color: #28a745 !important;
+  }
+  .contact-btn:hover {
+    background-color: #28a745;
+    color: white !important;
   }
   .lang-btn {
     background-color: #f8f9fa;
@@ -43,8 +52,9 @@ title: io_decoder - USB Operator Panel Interface for LinuxCNC
 
 <div class="nav-container">
   <a href="./quickstart.en" class="nav-btn">⚡ Quick Start</a>
-  <a href="./README.en" class="nav-btn">📖 Manuale</a>
+  <a href="./README.en" class="nav-btn">📖 Manual</a>
   <a href="https://github.com/bobwolfrst/io_decoder-linuxCNC" class="nav-btn">💻 GitHub</a>
+  <a href="mailto:io.decoder.rst%40gmail.com" class="nav-btn contact-btn">✉️ Contact</a>
   <a href="./index.it" class="nav-btn lang-btn">
     <img src="https://flagcdn.com/w20/it.png" width="20" alt="Italy Flag"> Italiano
   </a>
@@ -101,10 +111,20 @@ While the HAL software is open to the community, it requires our dedicated **io_
 
 * **Project Status:** In development.
 * **Technical Specs:** Available in the Installation-Requirements section of the [README.en](./README.en.md).
-* **Contact:** For purchases, prototypes, or integration support, write to: `bobwolf.rst@gmail.com`
+* **Contact:** For prototypes, or integration support, please use the [✉️ Contact]
 
 ---
 
 > **Note for Developers:** > If you wish to contribute to the HAL driver, clone the repository and consult the developer section.
 
 [📖 English Manual](./README.en.md)
+
+<hr style="margin-top: 50px; border: 0; border-top: 1px solid #eee;">
+<footer style="padding: 20px 0; text-align: center; color: #666; font-size: 0.9em;">
+  <p><strong>io_decoder</strong> - Driver Open Source per LinuxCNC</p>
+  <p>
+    <a href="mailto:io.decoder.rst%40gmail.com" style="color: #1e6bb8; text-decoration: none;">✉️ Contact</a> | 
+    <a href="https://github.com/bobwolfrst/io_decoder-linuxCNC" style="color: #1e6bb8; text-decoration: none;">💻 GitHub Repository</a>
+  </p>
+  <p style="font-size: 0.8em;">© 2024 - Creato da bobwolfrst. Rilasciato sotto licenza GPL.</p>
+</footer>

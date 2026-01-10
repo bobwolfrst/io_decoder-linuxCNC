@@ -36,6 +36,15 @@ title: Quick Start - io_decoder
     color: white !important;
     transform: translateY(-2px);
   }
+  /* Specific style for contact button */
+  .contact-btn {
+    border-color: #28a745;
+    color: #28a745 !important;
+  }
+  .contact-btn:hover {
+    background-color: #28a745;
+    color: white !important;
+  }
   .lang-btn { background-color: #f8f9fa; }
 </style>
 
@@ -43,7 +52,8 @@ title: Quick Start - io_decoder
   <a href="./index" class="nav-btn">🏠 Home</a>
   <a href="./README.en" class="nav-btn">📖 Manual</a>
   <a href="https://github.com/bobwolfrst/io_decoder-linuxCNC" class="nav-btn">💻 GitHub</a>
-  <a href="./index.it" class="nav-btn lang-btn">
+  <a href="mailto:io.decoder.rst%40gmail.com" class="nav-btn contact-btn">✉️ Contact</a>
+  <a href="./quickstart.it" class="nav-btn lang-btn">
     <img src="https://flagcdn.com/w20/it.png" width="20" alt="Italy Flag"> Italiano
   </a>
 </div>
@@ -90,4 +100,14 @@ The [full manual](./README.en) explains in depth all the configurations and poss
 ## 🔗 Useful Resources
 * 🏠 [Back to Home Page](./index)
 * 📖 [Read the Full Technical Manual](./README.en)
+
+<hr style="margin-top: 50px; border: 0; border-top: 1px solid #eee;">
+<footer style="padding: 20px 0; text-align: center; color: #666; font-size: 0.9em;">
+  <p><strong>io_decoder</strong> - Driver Open Source per LinuxCNC</p>
+  <p>
+    <a href="mailto:io.decoder.rst%40gmail.com" style="color: #1e6bb8; text-decoration: none;">✉️ Contact</a> | 
+    <a href="https://github.com/bobwolfrst/io_decoder-linuxCNC" style="color: #1e6bb8; text-decoration: none;">💻 GitHub Repository</a>
+  </p>
+  <p style="font-size: 0.8em;">© 2024 - Creato da bobwolfrst. Rilasciato sotto licenza GPL.</p>
+</footer>
 
