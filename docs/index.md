@@ -54,7 +54,7 @@ Developed to be as easy to install and use as possible. Stable and tested both o
 
 While the HAL software is open to the community, it requires our dedicated **io_decoder base** board and **io_decoder expansion_8** boards to function.
 
-* **Project Status:** In pre-production.
+* **Project Status:** In development.
 * **Technical Specs:** Available in the Installation-Requirements section of the [README.en](./README.en.md).
 * **Contact:** For purchases, prototypes, or integration support, write to: `bobwolf.rst@gmail.com`
 

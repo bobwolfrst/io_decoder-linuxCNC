@@ -53,7 +53,7 @@ Sviluppato per essere il più semplice da installare ed usare. Stabile e testato
 
 Il software HAL è aperto alla comunità, e per usarlo è necessaria la nostra scheda dedicata **io_decoder base** e le schede **io_decoder expansion_8**.
 
-* **Stato del progetto:** In pre-produzione.
+* **Stato del progetto:** In sviluppo.
 * **Documentazione tecnica:** Disponibile nel paragrafo Installazione-Requisiti del [README.it](./README.it.md) .
 * **Contatti:** Per acquisti, prototipi o supporto all'integrazione, scrivi a: `bobwolf.rst@gmail.com
 
