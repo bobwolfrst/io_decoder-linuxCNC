@@ -85,11 +85,11 @@ Developed to be as easy to install and use as possible. Stable and tested both o
 | :--- | :--- |
 | **Compatibility** | LinuxCNC 2.8+ (HAL component) |
 | **Connection** | High-Speed USB with custom ID |
-| **Digital Inputs** | From 8 to 128 with additional functionalities |
-| **Encoder Inputs** | 4 with additional functionalities |
-| **ADC Inputs** | 3 with additional functionalities |
-| **Digital Outputs** | From 8 to 128 with additional functionalities |
-| **DAC Outputs** | 2 with additional functionalities |
+| **Digital Inputs** | from 8 to 128 with emulated keyboard and toggle functions |
+| **Encoder Inputs** | 4 with up/down and invert functions |
+| **ADC Inputs** | 3 with joystick, invert, and scale functions |
+| **Digital Outputs** | from 8 to 128 with blink functionality |
+| **DAC Outputs** | 2 with invert and scale functions |
 
 * **Technical Documentation & Installation:** Available in the [README.en](./README.en.md).
 
