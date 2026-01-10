@@ -10,7 +10,7 @@
 - [**Authors**](#authors)  
 
 [📖 Manual english](./README.en.md)  
-[📖 README](../README.md) | [🏠 Project Home](index.html)  
+[📖 README](../README.md) | [🏠 Project Home](./index)  
 
 ---
 
@@ -58,7 +58,7 @@ Roberto "bobwolf" Sassoli
 
 [🔝 back to index](#index) | [📖 Manual english](./README.en.md)  
   
-[📖 README](../README.md) | [🏠 Project Home](index.html)  
+[📖 README](../README.md) | [🏠 Project Home](./index)  
 
 Copyright (c) 2026 [bobwolf]
 
