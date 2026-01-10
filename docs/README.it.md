@@ -88,7 +88,7 @@ Gestisce in maniera ottimale input ed output non critici come pulsanti, interrut
   - La cadenza di comunicazione HAL<=>USB è di 20ms (50Hz)  
   
 #### Dimensioni e collegamenti
-[Pinout scheda io_decoder USB](IODECODER.schemi.it.md)
+- [**Pinout scheda io_decoder USB**](IODECODER.schemi.it.md)
 
 [torna all'indice](#indice)  
 <a id="installazione"></a>
@@ -116,8 +116,8 @@ addf io_decoder.update	servo-thread
 ### Pin
 - **IO digitali**
 -  Input
-	- **io_decoder.in.*MM*-*N*** (bit out): pin per leggere lo stato degli ingressi digitali. *MM*= numero a due cifre per indicare la posizione della scheda di espansione. *N*= numero ad una cifra per indicare l'ingresso sulla scheda di espansione. Su ogni pin è presente un antirimbalzo software di 20ms. Non viene creato nel caso in cui l'input abbia funzionalità tastiera. default 0.    
-    - **io_decoder.in.*MM*-*N*.toggle** (bit out): questo pin varia il proprio valore da 0 ad 1 e da 1 a 0, sul fronte di salita del proprio ingresso digitale. Non viene creato nel caso in cui l'input abbia funzionalità tastiera. default 0.  
+	- **io_decoder.in.*MM*-*N*** (bit out): pin per leggere lo stato degli ingressi digitali. *MM*= numero a due cifre per indicare la posizione della scheda di espansione. *N*= numero ad una cifra per indicare l'ingresso sulla scheda di espansione. Su ogni pin è presente un antirimbalzo software di 20ms. Il pin non viene creato nel caso in cui l'input abbia funzionalità keyboard. default 0.    
+    - **io_decoder.in.*MM*-*N*.toggle** (bit out): questo pin varia il proprio valore da 0 ad 1 e da 1 a 0, sul fronte di salita del proprio ingresso digitale. Il pin non viene creato nel caso in cui l'input abbia funzionalità keyboard. default 0.  
 	- **io_decoder.in.*MM*-*N-keyboard*** (bit out): pin che viene usato per inviare i segnali alla tastiera simulata. Viene creato nel caso in cui l'input abbia funzionalità tastiera, può essere usato ancora come pin di hal ed ha le medesime caratteristiche del pin ordinario. [**per configurare i pin**](#keyboard). default 0.   
  - Output
 	- **io_decoder.out.*MM*-*N*** (bit in): pin per settare lo stato delle uscite digitali. *MM*= numero a due cifre per indicare la posizione della scheda di espansione. *N*= numero ad una cifra per indicare l'uscita sulla scheda di espansione. default 0.     

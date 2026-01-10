@@ -90,7 +90,7 @@ It is optimized to manage non-critical inputs and outputs such as buttons, switc
   - The HAL<=>USB communication cadence is 20 ms (50Hz)  
   
 #### Dimensions and Wiring
-[io_decoder USB board pinout](IODECODER.schemi.en.md)
+- [**io_decoder USB board pinout**](IODECODER.schemi.en.md)
 
 [back to contents](#contents)  
 <a id="installation"></a>
@@ -118,8 +118,8 @@ addf io_decoder.update	servo-thread
 ### Pins
 - **Digital IO**
 -  Input
-	- **io_decoder.in.*MM*-*N*** (bit out): pin to read the state of digital inputs. *MM* = two-digit number indicating the expansion board position. *N* = one-digit number indicating the input on the expansion board. Each pin has a software debounce of 20 ms. Not created if the input has keyboard functionality. default 0.    
-    - **io_decoder.in.*MM*-*N*.toggle** (bit out): this pin toggles its value from 0 to 1 and from 1 to 0 on the rising edge of its digital input. Not created if the input has keyboard functionality. default 0.  
+	- **io_decoder.in.*MM*-*N*** (bit out): pin to read the state of digital inputs. *MM* = two-digit number indicating the expansion board position. *N* = one-digit number indicating the input on the expansion board. Each pin has a software debounce of 20 ms. The pin is not created if the input is configured for keyboard functionality. default 0.    
+    - **io_decoder.in.*MM*-*N*.toggle** (bit out): this pin toggles its value from 0 to 1 and from 1 to 0 on the rising edge of its digital input. The pin is not created if the input is configured for keyboard functionality. default 0.  
 	- **io_decoder.in.*MM*-*N-keyboard*** (bit out): pin used to send signals to the simulated keyboard. Created if the input has keyboard functionality; it can still be used as a HAL pin and has the same characteristics as the ordinary pin. [**to configure pins**](#keyboard). default 0.   
  - Output
 	- **io_decoder.out.*MM*-*N*** (bit in): pin to set the state of digital outputs. *MM* = two-digit number indicating the expansion board position. *N* = one-digit number indicating the output on the expansion board. default 0.     
