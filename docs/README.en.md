@@ -8,7 +8,9 @@
   - [Main features](#main-features)
     - [HAL component](#hal-component)
     - [USB Hardware](#usb-hardware)
+      - [expansion\_8](#expansion_8)
       - [Features dependent on USB board hardware and firmware](#features-dependent-on-usb-board-hardware-and-firmware)
+      - [Dimensions and Wiring](#dimensions-and-wiring)
   - [Installation](#installation)
     - [Synopsis](#synopsis)
     - [Functions](#functions)
@@ -24,7 +26,7 @@
   - [License](#license)
 
 [📖 README](../README.md) | [🏠 Project Home](index.html)
-
+  
 <a id="description"></a>
 ## Description
 io_decoder is a HAL component for LinuxCNC. It allows controlling, via external hardware with a USB connection, the inputs and outputs required to manage an operator panel of a CNC machine.
@@ -72,8 +74,11 @@ It is optimized to manage non-critical inputs and outputs such as buttons, switc
   - output for the servo-thread jitter value
   - output for the internal usb-thread jitter value
   - output for the USB transmission jitter value   
-
+  
+<a id="usb-hardware"></a>
 ### USB Hardware
+  
+#### expansion_8  
 - **Digital inputs**: 8–128 freely configurable with expansion boards of 8 pins each. Only clean contacts between the common pin and the digital input are accepted as valid inputs.  
 - **Digital outputs**: 8–128 freely configurable with expansion boards of 8 pins each. Each output can drive a load of 50mA@30Vdc with a maximum of 300mA per expansion board.
 
@@ -84,10 +89,12 @@ It is optimized to manage non-critical inputs and outputs such as buttons, switc
   - ADC: 3 @10bit 5Vdc
   - The HAL<=>USB communication cadence is 20 ms (50Hz)  
   
+#### Dimensions and Wiring
 [io_decoder USB board pinout](IODECODER.schemi.en.md)
 
 [back to contents](#contents)  
 <a id="installation"></a>
+  
 ## Installation
 ### Synopsis
 - **loadrt io_decoder** [input=*num*] [output=*num*] [usb_port_name=*"string"*] [firmware=*num*] [verbose=*num*] [keymap_file=*"string"*] [uinput_chmod_cmd=*"string"*]  
@@ -162,6 +169,7 @@ addf io_decoder.update	servo-thread
     - **io_decoder.diag.usb-communication-jitter** (S32 out): Jitter value of the execution times of the USB retransmission alone over the last minute. This value should be as low as possible, given that the whole process of receiving and transmitting on USB takes about 8 ms at most.  
 
 <a id="requirements"></a>
+
 ### Requirements
 - **Hardware**
   - [io_decoder USB board pinout](IODECODER.schemi.en.md)
@@ -171,6 +179,7 @@ addf io_decoder.update	servo-thread
   - the component was developed on a system created from a released image of LinuxCNC 2.8, but it might also work with earlier versions.
 
 <a id="installation-commands"></a>
+
 ### Installation commands
 - compile the component:  
   In a terminal open the folder where the component .c file is saved and type:   
@@ -224,17 +233,21 @@ addf io_decoder.update	servo-thread
     In any case everything is freely configurable.  
 
 [back to contents](#contents)  
+<a id="usage"></a>
+  
 ## Usage
 Designed to build/manage an operator panel for CNC machines.
 For using this system to control motors and various machine sensors, and because of the nature of LinuxCNC, USB communication is not reliable and is highly discouraged for this purpose. Even though this component's system has been tested in various ways, for safety the emergency stop button should be connected directly to the physical pins provided by the LinuxCNC hardware.  
 In case of software disconnection of the USB or slowdowns by the operating system due to old or underperforming PCs that produce high thread jitter values, the system is stable and reacts to various situations, keeping the component always active.  
   
 <a id="configuration-examples"></a>
+
 ### Configuration example
 ```bash
    loadrt io_decoder output=24 input=24 usb_port_name="/dev/io_decoder" verbose=3 firmware=101 keymap_file="io_decoder-keymap.cfg" uinput_chmod_cmd="chmod 0666 /dev/uinput"
 ```  
 <a id="available-features"></a>
+
 ### Available features
 - The UP and DOWN pins of the encoder and the ADC allow, via HAL components like UPDOWN or MULTISWITCH, selecting values such as axis selection or increment (feed advance), with an incremental rotary encoder or an analog joystick.  
 - In addition to HAL pins, the component generates error messages visible on the LinuxCNC GUI, if enabled during component initialization in the machine .hal file, in case of:  
@@ -245,6 +258,7 @@ In case of software disconnection of the USB or slowdowns by the operating syste
 - If the USB connection is lost the values HAL receives from the USB board are frozen and HAL input pins are forced to 0; at the same time the physical outputs on the USB board are disabled.  
 
 <a id="keyboard"></a>
+
 ### Keyboard
 Functionality that allows using physical inputs to send simulated keyboard commands that can be used to print on screen or send commands as if typed on the system keyboard.  
 If the file [**"io_decoder-keymap.cfg"**](IOdecoder-keymap.cfg.md) (or the one specified by **keymap_file**) is present in the machine configuration folder, the functionality is enabled. If it is not present or is empty or contains only comments, the functionality is not enabled.  
@@ -296,16 +310,19 @@ I recommend ordering configuration lines with progressive numbers to have an ove
 
 [back to contents](#contents)  
 <a id="dependencies"></a>
+  
 ## Dependencies
 Developed on LinuxCNC 2.8 and there should be no additional dependencies.
 
 [back to contents](#contents)  
 <a id="authors"></a>
+  
 ## Authors
 Roberto "bobwolf" Sassoli and his virtual twin.
 
 [back to contents](#contents)  
 <a id="license"></a>
+  
 ## License
 
 This software is distributed under the GNU General Public License, version 2 (GPLv2).  
