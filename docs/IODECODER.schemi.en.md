@@ -1,12 +1,13 @@
 # IO_DECODER BASE
 # IO_DECODER EXPANSION_8
 <a id="index"></a>
+
 ## Index
 
 - [**Features**](#features)  
 - [**Pinout**](#pinout)  
 - [**Usage**](#usage)  
-- [**Where to buy**](#where-to-buy)  
+- [**Hardware**](#hardware)  
 - [**Authors**](#authors)  
 
 [📖 Manual english](./README.en.md)  
@@ -15,12 +16,14 @@
 ---
 
 <a id="features"></a>
+
 ## Features
 
 The system consists of a main board that carries the microcontroller with the USB connection and the peripherals provided by the installed firmware. It also provides the buses for connecting input and output expansion boards. These expansion boards are the same for both input and output and can be freely swapped between the two buses. The main board PCB indicates the bus connector for the INPUT side and the OUTPUT side. The [**Pinout**](#pinout) and [**Usage**](#usage) sections contain diagrams illustrating the installation and electrical connection methods. 
 
 <a id="pinout"></a>
 [back to index](#index) 
+
 ## Pinout
 
 ### io_decoder base board
@@ -41,17 +44,20 @@ The system consists of a main board that carries the microcontroller with the US
 
 <a id="usage"></a>
 [back to index](#index) 
+
 ## Usage
 
 ![schemi_io_decoder_panoramica](git_assieme_usb_4.png)
 
-<a id="where-to-buy"></a>
+<a id="hardware"></a>
 [back to index](#index) 
-## Where to buy
+
+## Hardware
 For prototypes, or integration support, please use the [✉️ Contact]
 
 <a id="authors"></a>
 [back to index](#index) 
+
 ## Authors
 
 Roberto "bobwolf" Sassoli

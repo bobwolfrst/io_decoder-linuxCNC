@@ -1,13 +1,13 @@
 # IO_DECODER BASE  
 # IO_DECODER EXPANSION_8
 <a id="indice"></a>
-## Indice
 
+## Indice
 
 - [**Caratteristiche**](#caratteristiche)  
 - [**Pinout**](#pinout)  
 - [**Utilizzo**](#utilizzo)  
-- [**Dove acquistarlo**](#dove-acquistarlo)  
+- [**Hardware**](#hardware)  
 - [**Autori**](#autori)  
 
 [📖 BACK TO README.it](README.it.md)  
@@ -16,12 +16,14 @@
 ---
 
 <a id="caratteristiche"></a>
+
 ## Caratteristiche
 
 Il sistema si compone di una scheda principale che ha a bordo il microprocessore con il collegamento USB e le periferiche previste dal firmware inserito. Inoltre ha i bus di collegamento alle espansioni di input ed output. Queste schede di espansione sono le medesime sia per l'input che l'output e sono liberamente scambiabili fra i due bus. Sul pcb della scheda principale è indicato il connettore del bus lato INPUT e lato OUTPUT. Nelle sezioni [**Pinout**](#pinout) ed [**Utilizzo**](#utilizzo) ci sono i diagrammi che illustrano l'installazione e la modalità di collegamento elettrico. 
 
 <a id="pinout"></a>
 [torna all'indice](#indice) 
+
 ## Pinout
 
 ### Scheda io_decoder base
@@ -42,17 +44,20 @@ Il sistema si compone di una scheda principale che ha a bordo il microprocessore
 
 <a id="utilizzo"></a>
 [torna all'indice](#indice) 
+
 ## Utilizzo
 
 ![schemi_io_decoder_panoramica](git_assieme_usb_4.png)
 
-<a id="dove-acquistarlo"></a>
+<a id="hardware"></a>
 [torna all'indice](#indice) 
-## Dove acquistarlo
+
+## Hardware
 Per prototipi o supporto all'integrazione, utilizza il pulsante [✉️ Contatto]
 
 <a id="autori"></a>
 [torna all'indice](#indice) 
+
 ## Autori
 
 Roberto "bobwolf" Sassoli
