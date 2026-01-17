@@ -36,6 +36,14 @@ title: io_decoder - Interfaccia pannello operatore USB per LinuxCNC
     color: white !important;
     transform: translateY(-2px);
   }
+    .youtube-btn {
+    border-color: #ff0000;
+    color: #ff0000 !important;
+  }
+  .youtube-btn:hover {
+    background-color: #ff0000;
+    color: white !important;
+  }
   /* Stile specifico per il tasto contatto */
   .contact-btn {
     border-color: #28a745;
@@ -51,6 +59,7 @@ title: io_decoder - Interfaccia pannello operatore USB per LinuxCNC
 </style>
 
 <div class="nav-container">
+  <a href="https://www.youtube.com/playlist?list=PL9D_TSVxg-gDFtA9_k6njBeVTL0IYY7Ct" target="_blank" class="nav-btn youtube-btn">▶ Video Test YouTube</a>
   <a href="./quickstart.it" class="nav-btn">⚡ Quick Start</a>
   <a href="./README.it" class="nav-btn">📖 Manuale</a>
   <a href="https://github.com/bobwolfrst/io_decoder-linuxCNC" class="nav-btn">💻 GitHub</a>

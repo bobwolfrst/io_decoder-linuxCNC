@@ -2,13 +2,19 @@
 <img src="docs/mini_assieme_usb_IODECODER_5.png" align="right" width="150" style="margin-left: 20px; border-radius: 8px; border: 1px solid #ddd;">
 ## Description
 io_decoder is a HAL component for Linuxcnc. It allows control, through a USB connection, of the inputs and outputs needed to manage a CNC machine operator panel.  
-
+  
+**Watch the system in action:**  
+[![YouTube Playlist](https://img.shields.io/badge/YouTube-Watch%20Test%20Videos-red?style=for-the-badge&logo=youtube)](https://www.youtube.com/playlist?list=PL9D_TSVxg-gDFtA9_k6njBeVTL0IYY7Ct)
+  
 * [📖 Full description of the project in English](docs/README.en.md)
 * [🏠 Project Home in English](docs/index) 
 
 ## Descrizione
-io_decoder è un componente di HAL per Linuxcnc. Permette di controllare, attraverso una connessione USB, gli input e gli output che servono per gestire un pannello operatore di macchina CNC.  
- 
+io_decoder è un componente di HAL per Linuxcnc. Permette di controllare, attraverso una connessione USB, gli input e gli output che servono per gestire un pannello operatore di macchina CNC. 
+  
+**Guarda il sistema in funzione:**  
+[![Playlist YouTube](https://img.shields.io/badge/YouTube-Guarda%20i%20Video%20Test-red?style=for-the-badge&logo=youtube)](https://www.youtube.com/playlist?list=PL9D_TSVxg-gDFtA9_k6njBeVTL0IYY7Ct)
+  
 * [📖 Descrizione completa del progetto in italiano](docs/README.it.md)  
 * [🏠 Project Home in Italiano](docs/index.it) 
 

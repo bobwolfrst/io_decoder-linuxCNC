@@ -36,6 +36,15 @@ title: io_decoder - USB Operator Panel Interface for LinuxCNC
     color: white !important;
     transform: translateY(-2px);
   }
+  /* YouTube Button Style */
+  .youtube-btn {
+    border-color: #ff0000;
+    color: #ff0000 !important;
+  }
+  .youtube-btn:hover {
+    background-color: #ff0000;
+    color: white !important;
+  }
   /* Specific style for contact button */
   .contact-btn {
     border-color: #28a745;
@@ -51,6 +60,7 @@ title: io_decoder - USB Operator Panel Interface for LinuxCNC
 </style>
 
 <div class="nav-container">
+  <a href="https://www.youtube.com/playlist?list=PL9D_TSVxg-gDFtA9_k6njBeVTL0IYY7Ct" target="_blank" class="nav-btn youtube-btn">▶ YouTube Tests</a>
   <a href="./quickstart.en" class="nav-btn">⚡ Quick Start</a>
   <a href="./README.en" class="nav-btn">📖 Manual</a>
   <a href="https://github.com/bobwolfrst/io_decoder-linuxCNC" class="nav-btn">💻 GitHub</a>
@@ -58,7 +68,7 @@ title: io_decoder - USB Operator Panel Interface for LinuxCNC
   <a href="./index.it" class="nav-btn lang-btn">
     <img src="https://flagcdn.com/w20/it.png" width="20" alt="Italy Flag"> Italiano
   </a>
-</div>
+</div> 
 # io_decoder
 
 ### The I/O solution for LinuxCNC: Stable, Fast, Plug & Play.
