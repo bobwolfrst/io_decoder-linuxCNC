@@ -951,8 +951,17 @@ void usb_thread_function(void *arg) {
 							// Pacchetto handshake ricevuto e valido!
 							// Analizza il payload ricevuto da Arduino
 							if (parsed_len == 10) { // Arduino dovrebbe inviare 10 byte di payload (9 per config + 1 per firmware)
-								io->arduino_byte_npic_output = output / 8;	//variabile calcolata
-								io->arduino_byte_npic_input = input / 8;	//variabile calcolata
+								switch (firmware) {
+									case 255:
+										// Imposta i valori specifici per il firmware 255
+										io->arduino_byte_npic_output = 1;	//variabile calcolata
+										io->arduino_byte_npic_input = 1;	//variabile calcolata
+										break;
+
+									default:
+										io->arduino_byte_npic_output = output / 8;	//variabile calcolata
+										io->arduino_byte_npic_input = input / 8;	//variabile calcolata
+								}	
 								io->arduino_n_encoder = handshake_payload_rx[0];	//payload
 								io->arduino_bit_encoder = handshake_payload_rx[1];	//payload
 								io->arduino_byte_encoder = (io->arduino_bit_encoder + 7) / 8;	//variabile calcolata
@@ -1438,13 +1447,23 @@ uint8_t npic_in_routine(hal_io_decoder_t *io, uint8_t* buffer, uint8_t length) {
     uint8_t currentByte = 0;
     uint8_t current_bit = 0;
     uint8_t bitIndex;
+    uint8_t bitIndex_appo;
     uint8_t bitValue;
     
 	if (io->in_npic_refresh == 1) {	//questo serve per dare una specie di antirimbalzo. solo al secondo giro il pin hal viene
 		io->in_npic_refresh = 0; 	//validato se è uguale al giro precedente. il pin viene aggiornato dopo un loop usb (20ms)
+		switch (firmware) {
+			case 255:
+				// Imposta i valori specifici per il firmware 255
+				bitIndex_appo = 4;
+				break;
+
+			default:
+				bitIndex_appo = 8;
+		}
 		for (i = 0; i < io->arduino_byte_npic_input; i++) {
 			currentByte = buffer[i];
-			for (bitIndex = 0; bitIndex < 8; bitIndex++) {
+			for (bitIndex = 0; bitIndex < bitIndex_appo; bitIndex++) {
 				bitValue = (currentByte >> bitIndex) & 0x01;
 				if (bitValue == in_bit_d[current_bit]) {					
 					*(io->in_bit[current_bit]) = bitValue;
@@ -1478,6 +1497,7 @@ void npic_out_routine(hal_io_decoder_t *io, uint8_t* dato, uint8_t length) {
     uint8_t currentByte = 0;
     uint8_t current_bit = 0;
     uint8_t bitIndex;
+    uint8_t bitIndex_appo;
     uint8_t bitValue;
     long current_time_ns;
     long freq_conversion;
@@ -1494,12 +1514,21 @@ void npic_out_routine(hal_io_decoder_t *io, uint8_t* dato, uint8_t length) {
 			// per non far fallire i calcoli successivi
 			current_time_ns = current_time_ns & (~0x80000000); // Maschera per il 32° bit
         }
+        switch (firmware) {
+			case 255:
+				// Imposta i valori specifici per il firmware 255
+				bitIndex_appo = 4;
+				break;
+
+			default:
+				bitIndex_appo = 8;
+		}
 		for (i = 0; i < io->arduino_byte_npic_output; i++) {
 			if (current_time_ns < io->out_blink_time_ns[current_bit]) {
 				io->out_blink_time_ns[current_bit] = current_time_ns;
 			}
 			currentByte = 0;
-			for (bitIndex = 0; bitIndex < 8; bitIndex++) {
+			for (bitIndex = 0; bitIndex < bitIndex_appo; bitIndex++) {
 				bitValue = *(io->out_bit[current_bit]);
 
 				if (io->out_bit_blink_en[current_bit] && *(io->out_bit_blink_en[current_bit]) == 1) {	
@@ -2459,23 +2488,34 @@ int rtapi_app_main(void)
     inchan = MAX_INPUT;
     outchan = MAX_OUTPUT;
 
-    somma_canali=input+output;
-    if(somma_canali > maxchan) {
-        rtapi_print_msg(RTAPI_MSG_ERR,"sum of input + output must be max %d \n",maxchan);
-        return -EINVAL;
+    switch (firmware) {
+        case 255:
+            // Imposta i valori specifici per il firmware 255 della versione demo/evaluation
+            input = 4;
+            output = 4;
+            break;
+
+        default:
+                somma_canali=input+output;
+				if(somma_canali > maxchan) {
+					rtapi_print_msg(RTAPI_MSG_ERR,"sum of input + output must be max %d \n",maxchan);
+					return -EINVAL;
+				}
+
+				if (input % 8 != 0 || input < minchan || input > inchan) {
+					rtapi_print_msg(RTAPI_MSG_ERR, "input is %d and must be a multiple of 8, between %d and %d.\n",
+								input, minchan, inchan);
+					return -EINVAL;
+				}
+
+				if (output % 8 != 0 || output < minchan || output > outchan) {
+					rtapi_print_msg(RTAPI_MSG_ERR, "output is %d and must be a multiple of 8, between %d and %d.\n",
+								output, minchan, outchan);
+					return -EINVAL;
+				}
     }
 
-    if (input % 8 != 0 || input < minchan || input > inchan) {
-        rtapi_print_msg(RTAPI_MSG_ERR, "input is %d and must be a multiple of 8, between %d and %d.\n",
-                    input, minchan, inchan);
-        return -EINVAL;
-    }
 
-    if (output % 8 != 0 || output < minchan || output > outchan) {
-        rtapi_print_msg(RTAPI_MSG_ERR, "output is %d and must be a multiple of 8, between %d and %d.\n",
-                    output, minchan, outchan);
-        return -EINVAL;
-    }
     
     if((verbose > VERBOSE_ALL)||(verbose < VERBOSE_NULL)) {
         rtapi_print_msg(RTAPI_MSG_ERR,"value allowed %d to %d. inserted %d \n",VERBOSE_NULL, VERBOSE_ALL, verbose);
@@ -2548,6 +2588,16 @@ int rtapi_app_main(void)
             io_decoder_array[n].firmware_firmware = 102; // Esempio: nuovo membro nella struct
             io_decoder_array[n].firmware_n_encoder = 2;     //poi 4 
             io_decoder_array[n].firmware_n_dac = 2;
+            io_decoder_array[n].firmware_n_adc = 1;
+            io_decoder_array[n].firmware_in_bit_expansion = 8;
+            io_decoder_array[n].firmware_out_bit_expansion = 8;
+            break;
+            
+        case 255:
+            // Imposta i valori specifici per il firmware 101
+            io_decoder_array[n].firmware_firmware = 255; // Esempio: nuovo membro nella struct
+            io_decoder_array[n].firmware_n_encoder = 1;     //poi 4 
+            io_decoder_array[n].firmware_n_dac = 1;
             io_decoder_array[n].firmware_n_adc = 1;
             io_decoder_array[n].firmware_in_bit_expansion = 8;
             io_decoder_array[n].firmware_out_bit_expansion = 8;
