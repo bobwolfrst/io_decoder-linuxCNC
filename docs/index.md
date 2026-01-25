@@ -1,6 +1,7 @@
 ---
 layout: default
 title: io_decoder - USB Operator Panel Interface for LinuxCNC
+permalink: /
 ---
 
 <style>
