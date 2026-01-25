@@ -46,11 +46,21 @@ title: Quick Start - io_decoder
     color: white !important;
   }
   .lang-btn { background-color: #f8f9fa; }
+  .download-btn {
+    background-color: #e67e22 !important; /* Arancione */
+    font-weight: bold;
+    border: 2px solid #d35400;
+  }
+  .download-btn:hover {
+      background-color: #d35400 !important;
+      transform: scale(1.05);
+  }
 </style>
 
 <div class="nav-container">
   <a href="{{ site.baseurl }}/index" class="nav-btn">🏠 Home</a>
   <a href="{{ site.baseurl }}/README.en" class="nav-btn">📖 Manual</a>
+  <a href="https://github.com/bobwolfrst/io_decoder-linuxCNC/releases/latest/download/io_decoder_eval-v1.zip" class="nav-btn download-btn">📥 Download v1.0-eval</a>
   <a href="https://github.com/bobwolfrst/io_decoder-linuxCNC" class="nav-btn">💻 GitHub</a>
   <a href="mailto:io.decoder.rst%40gmail.com" class="nav-btn contact-btn">✉️ Contact</a>
   <a href="{{ site.baseurl }}/demo_mode.it" class="nav-btn lang-btn">
@@ -88,8 +98,6 @@ Move the `io_decoder-keymap.cfg` file into your CNC machine's configuration fold
   
 #### Installation Commands on Linux
 - **Compiling the component:** Open the terminal in the folder where the component's `.c` file is saved and type:
-  ```bash
-  sudo halcompile --install io_decoder.c
   ```bash
   sudo halcompile --install io_decoder.c
   ```

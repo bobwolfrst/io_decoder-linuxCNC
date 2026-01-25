@@ -48,11 +48,21 @@ title: demo/eval mode - io_decoder
   .lang-btn {
     background-color: #f8f9fa;
   }
+  .download-btn {
+    background-color: #e67e22 !important; /* Arancione */
+    font-weight: bold;
+    border: 2px solid #d35400;
+  }
+  .download-btn:hover {
+      background-color: #d35400 !important;
+      transform: scale(1.05);
+  }
 </style>
 
 <div class="nav-container">
   <a href="{{ site.baseurl }}/index.it" class="nav-btn">🏠 Home</a>
   <a href="{{ site.baseurl }}/README.it" class="nav-btn">📖 Manuale</a>
+  <a href="https://github.com/bobwolfrst/io_decoder-linuxCNC/releases/latest/download/io_decoder_eval-v1.zip" class="nav-btn download-btn">📥 Download v1.0-eval</a>
   <a href="https://github.com/bobwolfrst/io_decoder-linuxCNC" class="nav-btn">💻 GitHub</a>
   <a href="mailto:io.decoder.rst%40gmail.com" class="nav-btn contact-btn">✉️ Contatto</a>
   <a href="{{ site.baseurl }}/demo_mode.en" class="nav-btn lang-btn">
