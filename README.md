@@ -7,7 +7,7 @@ io_decoder is a HAL component for Linuxcnc. It allows control, through a USB con
 [![YouTube Playlist](https://img.shields.io/badge/YouTube-Watch%20Test%20Videos-red?style=for-the-badge&logo=youtube)](https://www.youtube.com/playlist?list=PL9D_TSVxg-gDFtA9_k6njBeVTL0IYY7Ct)
   
 * [📖 Full description of the project in English](docs/README.en.md)
-* [🏠 Project Home in English](https://bobwolfrst.github.io/io_decoder-linuxCNC/docs/index)  
+* [🏠 Project Home in English](https://bobwolfrst.github.io/io_decoder-linuxCNC/docs/index.html)  
 * [🚀 Demo/Eval mode in English](https://bobwolfrst.github.io/io_decoder-linuxCNC/docs/demo_mode.en)  
 
 ## Descrizione
