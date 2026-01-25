@@ -23,7 +23,9 @@
   - [Autori](#autori)
   - [Licenza](#licenza)
 
-[📖 README](../README.md) | [🏠 Project Home](index.it.html) 
+[📖 README](../README.md) | [🏠 Project Home](index.it.html)  
+[🚀 Demo/Eval mode in Italiano](./demo_mode.it)  
+  
   
 <a id="descrizione"></a>
 ## Descrizione
@@ -83,9 +85,17 @@ Gestisce in maniera ottimale input ed output non critici come pulsanti, interrut
 #### Caratteristiche dipendenti da hardware e firmware della scheda USB
 - **Firmware 101**
   - Encoder in quadratura: 4 @5Vdc
-  - DAC: 2 @8bit 5Vdc
+  - DAC (PWM): 2 @8bit 5Vdc
   - ADC: 3 @10bit 5Vdc
   - La cadenza di comunicazione HAL<=>USB è di 20ms (50Hz)  
+
+- **Firmware 255**
+  - versione speciale di valutazione per arduino UNO R3
+  - 4 input digitali
+  - 4 output digitali
+  - Encoder in quadratura: 1 @5Vdc
+  - DAC (PWM): 1 @8bit 5Vdc
+  - ADC: 1 @10bit 5Vdc
   
 #### Dimensioni e collegamenti
 - [**Pinout scheda io_decoder USB**](IODECODER.schemi.it.md)
@@ -112,7 +122,7 @@ Gestisce in maniera ottimale input ed output non critici come pulsanti, interrut
 ```bash
 addf io_decoder.update	servo-thread
 ```  
-
+<a id="pin"></a>
 ### Pin
 - **IO digitali**
 -  Input
@@ -345,7 +355,9 @@ L’autore non è responsabile per danni derivanti dall’uso del programma.
 
 Copyright (c) 2026 [bobwolf]
 
-[🔝 torna all'indice](#indice) | [📖 README](../README.md) | [🏠 Project Home](index.it.html) 
+[🔝 torna all'indice](#indice) | [📖 README](../README.md) | [🏠 Project Home](index.it.html)  
+[🚀 Demo/Eval mode in Italiano](./demo_mode.it)  
+  
 
 >
 > <hr style="margin-top: 50px; border: 0; border-top: 1px solid #eee;">

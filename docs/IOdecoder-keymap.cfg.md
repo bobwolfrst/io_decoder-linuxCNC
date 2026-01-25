@@ -1,16 +1,18 @@
-*#* Mappings for IO_decoder (format: in.MM-N <Keysym_string>)  
-*#* Mappature per IO_decoder (formato: in.MM-N <Keysym_string>)  
+*#* Mappings for IO_decoder (format: in.MM-N <Keysym_string> #comment)  
+*#* Mappature per IO_decoder (formato: in.MM-N <Keysym_string> #commento) 
   
-in.01-0 s22 #U  
-in.01-1 22 	#u  
-in.01-2 c45 #ctrl + x  
-in.02-1 50 	#ctrl  
-in.02-6 42 	#left shift  
-in.03-1 g39 #@  
-in.03-2 a33 #alt + f  
+#in.01-0 s22 #U  
+#in.01-1 22 	#u  
+#in.01-2 c45 #ctrl + x  
+#in.02-1 50 	#ctrl  
+#in.02-6 42 	#left shift  
+#in.03-1 g39 #@  
+#in.03-2 a33 #alt + f  
   
 *#* ... and so on, up to INPUT_N  
 *#* ... e così via, fino a INPUT_N  
+*#* ... remove # to activate  
+*#* ... rimuovi # per attivare  
 
 >
 > <hr style="margin-top: 50px; border: 0; border-top: 1px solid #eee;">

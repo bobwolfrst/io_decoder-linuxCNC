@@ -1,6 +1,6 @@
 ---
 layout: default
-title: io_decoder - Interfaccia pannello operatore USB per LinuxCNC
+title: io_decoder - Interfaccia pannello operatore USB per LinuxCNC 
 ---
 
 <style>
@@ -56,11 +56,20 @@ title: io_decoder - Interfaccia pannello operatore USB per LinuxCNC
   .lang-btn {
     background-color: #f8f9fa;
   }
+  .demo-btn {
+    border-color: #f39c12;
+    color: #f39c12 !important;
+  }
+  .demo-btn:hover {
+    background-color: #f39c12;
+    color: white !important;
+  }
 </style>
 
 <div class="nav-container">
   <a href="https://www.youtube.com/playlist?list=PL9D_TSVxg-gDFtA9_k6njBeVTL0IYY7Ct" target="_blank" class="nav-btn youtube-btn">▶ Video Test YouTube</a>
   <a href="./quickstart.it" class="nav-btn">⚡ Quick Start</a>
+  <a href="./demo_mode.it" class="nav-btn demo-btn">🚀 Demo Mode</a>
   <a href="./README.it" class="nav-btn">📖 Manuale</a>
   <a href="https://github.com/bobwolfrst/io_decoder-linuxCNC" class="nav-btn">💻 GitHub</a>
   <a href="mailto:io.decoder.rst%40gmail.com" class="nav-btn contact-btn">✉️ Contatto</a>
@@ -126,10 +135,11 @@ Il software HAL è aperto alla comunità, e per usarlo è necessaria la nostra s
 
 
 > **Nota per gli sviluppatori:** > Se vuoi contribuire al driver HAL, clona la repository e consulta la sezione dedicata agli sviluppatori.
->
-> [📖 Manuale Italiano](./README.it.md)
->
-> <hr style="margin-top: 50px; border: 0; border-top: 1px solid #eee;">
+  
+[📖 Manuale Italiano](./README.it.md)  
+[🚀 Demo/Eval mode in Italiano](docs/demo_mode.it)  
+
+<hr style="margin-top: 50px; border: 0; border-top: 1px solid #eee;">
 <footer style="padding: 20px 0; text-align: center; color: #666; font-size: 0.9em;">
   <p><strong>io_decoder</strong> - Driver Open Source per LinuxCNC</p>
   <p>

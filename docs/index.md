@@ -57,11 +57,20 @@ title: io_decoder - USB Operator Panel Interface for LinuxCNC
   .lang-btn {
     background-color: #f8f9fa;
   }
+  .demo-btn {
+    border-color: #f39c12;
+    color: #f39c12 !important;
+  }
+  .demo-btn:hover {
+    background-color: #f39c12;
+    color: white !important;
+  }
 </style>
 
 <div class="nav-container">
   <a href="https://www.youtube.com/playlist?list=PL9D_TSVxg-gDFtA9_k6njBeVTL0IYY7Ct" target="_blank" class="nav-btn youtube-btn">▶ YouTube Tests</a>
   <a href="./quickstart.en" class="nav-btn">⚡ Quick Start</a>
+  <a href="./demo_mode.en" class="nav-btn demo-btn">🚀 Demo Mode</a>
   <a href="./README.en" class="nav-btn">📖 Manual</a>
   <a href="https://github.com/bobwolfrst/io_decoder-linuxCNC" class="nav-btn">💻 GitHub</a>
   <a href="mailto:io.decoder.rst%40gmail.com" class="nav-btn contact-btn">✉️ Contact</a>
@@ -69,7 +78,7 @@ title: io_decoder - USB Operator Panel Interface for LinuxCNC
     <img src="https://flagcdn.com/w20/it.png" width="20" alt="Italy Flag"> Italiano
   </a>
 </div> 
-# io_decoder
+# io_decoder 
 
 ### The I/O solution for LinuxCNC: Stable, Fast, Plug & Play.
 
@@ -127,7 +136,8 @@ While the HAL software is open to the community, it requires our dedicated **io_
 
 > **Note for Developers:** > If you wish to contribute to the HAL driver, clone the repository and consult the developer section.
 
-[📖 English Manual](./README.en.md)
+[📖 English Manual](./README.en.md)  
+[🚀 Demo/Eval mode in English](./demo_mode.en)  
 
 <hr style="margin-top: 50px; border: 0; border-top: 1px solid #eee;">
 <footer style="padding: 20px 0; text-align: center; color: #666; font-size: 0.9em;">

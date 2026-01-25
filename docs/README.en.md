@@ -25,7 +25,8 @@
   - [Authors](#authors)
   - [License](#license)
 
-[📖 README](../README.md) | [🏠 Project Home](index.html)
+[📖 README](../README.md) | [🏠 Project Home](index.html)  
+[🚀 Demo/Eval mode in English](./demo_mode.en)  
   
 <a id="description"></a>
 ## Description
@@ -89,6 +90,14 @@ It is optimized to manage non-critical inputs and outputs such as buttons, switc
   - ADC: 3 @10bit 5Vdc
   - The HAL<=>USB communication cadence is 20 ms (50Hz)  
   
+- **Firmware 255**
+  - This is a special evaluation build designed to test io_decoder features using a standard Arduino UNO R3.
+  - 4 digital input
+  - 4 digital output
+  - Quadrature encoders: 1 @5Vdc
+  - DAC (PWM): 1 @8bit 5Vdc
+  - ADC: 1 @10bit 5Vdc  
+
 #### Dimensions and Wiring
 - [**io_decoder USB board pinout**](IODECODER.schemi.en.md)
 
@@ -348,6 +357,7 @@ Copyright (c) 2026 [bobwolf]
 
 ---
 [🔝 back to contents](#contents) | [📖 README](../README.md) | [🏠 Project Home](index.html)  
+[🚀 Demo/Eval mode in English](./demo_mode.en)  
 
 >
 > <hr style="margin-top: 50px; border: 0; border-top: 1px solid #eee;">
