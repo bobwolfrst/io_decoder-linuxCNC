@@ -201,7 +201,7 @@ However, everything is fully configurable.
    loadrt io_decoder firmware=255
    addf io_decoder.update	servo-thread
   ```  
-  #### Synopsis  
+  #### Synopsis
    - **loadrt io_decoder** [input=*num*] [output=*num*] [usb_port_name=*"string"*] [firmware=*num*] [verbose=*num*] [keymap_file=*"string"*] [uinput_chmod_cmd=*"string"*]  
    - **input**: In this version, the number of inputs is fixed at 4. If this parameter is provided, the value will be forced to 4.  
    - **output**: In this version, the number of outputs is fixed at 4. If this parameter is provided, the value will be forced to 4.  
