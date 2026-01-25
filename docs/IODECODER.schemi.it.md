@@ -11,7 +11,7 @@
 - [**Autori**](#autori)  
 
 [📖 BACK TO README.it](README.it.md)  
-[📖 README](../README.md) | [🏠 Project Home](./index.it) 
+[📖 README](../README.md) | [🏠 Project Home]({{ site.baseurl }}/index.it) 
 
 ---
 
@@ -63,7 +63,7 @@ Per prototipi o supporto all'integrazione, utilizza il pulsante [✉️ Contatto
 Roberto "bobwolf" Sassoli
 
 [🔝 torna all'indice](#indice) | [📖 BACK TO README.it](README.it.md)  
-[📖 README](../README.md) | [🏠 Project Home](./index.it) 
+[📖 README](../README.md) | [🏠 Project Home]({{ site.baseurl }}/index.it) 
 
 Copyright (c) 2026 [bobwolf]
 

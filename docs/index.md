@@ -70,12 +70,12 @@ permalink: /
 
 <div class="nav-container">
   <a href="https://www.youtube.com/playlist?list=PL9D_TSVxg-gDFtA9_k6njBeVTL0IYY7Ct" target="_blank" class="nav-btn youtube-btn">▶ YouTube Tests</a>
-  <a href="./quickstart.en" class="nav-btn">⚡ Quick Start</a>
-  <a href="./demo_mode.en" class="nav-btn demo-btn">🚀 Demo Mode</a>
-  <a href="./README.en" class="nav-btn">📖 Manual</a>
+  <a href="{{ site.baseurl }}/quickstart.en" class="nav-btn">⚡ Quick Start</a>
+  <a href="{{ site.baseurl }}/demo_mode.en" class="nav-btn demo-btn">🚀 Demo Mode</a>
+  <a href="{{ site.baseurl }}/README.en" class="nav-btn">📖 Manual</a>
   <a href="https://github.com/bobwolfrst/io_decoder-linuxCNC" class="nav-btn">💻 GitHub</a>
   <a href="mailto:io.decoder.rst%40gmail.com" class="nav-btn contact-btn">✉️ Contact</a>
-  <a href="./index.it" class="nav-btn lang-btn">
+  <a href="{{ site.baseurl }}/index.it" class="nav-btn lang-btn">
     <img src="https://flagcdn.com/w20/it.png" width="20" alt="Italy Flag"> Italiano
   </a>
 </div> 
@@ -121,7 +121,7 @@ Developed to be as easy to install and use as possible. Stable and tested both o
 | **Digital Outputs** | from 8 to 128 with blink functionality |
 | **DAC Outputs** | 2 with invert and scale functions |
 
-* **Technical Documentation & Installation:** Available in the [README.en](./README.en.md).
+* **Technical Documentation & Installation:** Available in the [README.en]({{ site.baseurl }}/README.en.md).
 
 ---
 
@@ -130,15 +130,15 @@ Developed to be as easy to install and use as possible. Stable and tested both o
 While the HAL software is open to the community, it requires our dedicated **io_decoder base** board and **io_decoder expansion_8** boards to function.
 
 * **Project Status:** In development.
-* **Technical Specs:** Available in the Installation-Requirements section of the [README.en](./README.en.md).
+* **Technical Specs:** Available in the Installation-Requirements section of the [README.en]({{ site.baseurl }}/README.en.md).
 * **Contact:** For prototypes, or integration support, please use the [✉️ Contact]
 
 ---
 
 > **Note for Developers:** > If you wish to contribute to the HAL driver, clone the repository and consult the developer section.
 
-[📖 English Manual](./README.en.md)  
-[🚀 Demo/Eval mode in English](./demo_mode.en)  
+[📖 English Manual]({{ site.baseurl }}/README.en.md)  
+[🚀 Demo/Eval mode in English]({{ site.baseurl }}/demo_mode.en)  
 
 <hr style="margin-top: 50px; border: 0; border-top: 1px solid #eee;">
 <footer style="padding: 20px 0; text-align: center; color: #666; font-size: 0.9em;">

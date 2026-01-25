@@ -26,7 +26,7 @@
   - [License](#license)
 
 [📖 README](../README.md) | [🏠 Project Home](index.html)  
-[🚀 Demo/Eval mode in English](./demo_mode.en)  
+[🚀 Demo/Eval mode in English]({{ site.baseurl }}/demo_mode.en)  
   
 <a id="description"></a>
 ## Description
@@ -357,7 +357,7 @@ Copyright (c) 2026 [bobwolf]
 
 ---
 [🔝 back to contents](#contents) | [📖 README](../README.md) | [🏠 Project Home](index.html)  
-[🚀 Demo/Eval mode in English](./demo_mode.en)  
+[🚀 Demo/Eval mode in English]({{ site.baseurl }}/demo_mode.en)  
 
 >
 > <hr style="margin-top: 50px; border: 0; border-top: 1px solid #eee;">

@@ -24,7 +24,7 @@
   - [Licenza](#licenza)
 
 [📖 README](../README.md) | [🏠 Project Home](index.it.html)  
-[🚀 Demo/Eval mode in Italiano](./demo_mode.it)  
+[🚀 Demo/Eval mode in Italiano]({{ site.baseurl }}/demo_mode.it)  
   
   
 <a id="descrizione"></a>
@@ -356,7 +356,7 @@ L’autore non è responsabile per danni derivanti dall’uso del programma.
 Copyright (c) 2026 [bobwolf]
 
 [🔝 torna all'indice](#indice) | [📖 README](../README.md) | [🏠 Project Home](index.it.html)  
-[🚀 Demo/Eval mode in Italiano](./demo_mode.it)  
+[🚀 Demo/Eval mode in Italiano]({{ site.baseurl }}/demo_mode.it)  
   
 
 >
