@@ -70,10 +70,16 @@ title: demo/eval mode - io_decoder
   </a>
 </div>
 
+  
 # ⚡ Guida io_decoder_eval
 
-Benvenuto nella guida di **io_decoder demo/eval mode**. Segui questi passaggi per configurare la tua scheda in meno di 5 minuti.
+> [!IMPORTANT]
+> **Se riscontri l'errore `/dev/io_decoder: No such file or directory`:**
+> Significa che il sistema non ha ancora creato il collegamento per la tua scheda. Hai due opzioni:
+> 1. **Eseguire lo script per la regola udev** (metodo consigliato, vedi Punto 2).
+> 2. **Specificare manualmente la porta** nel tuo file `.hal` aggiungendo il parametro `usb_port_name="/dev/ttyACMx"` (dove x è il numero della porta, es. `/dev/ttyACM0`).
 
+Benvenuto nella guida alla **modalità demo/eval di io_decoder**. Segui questi passaggi per configurare la tua scheda in meno di 5 minuti.
 ---
 
 ### 1. Requisiti di Sistema

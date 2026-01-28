@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9B3YHGWKN3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-9B3YHGWKN3');
+    </script>
+
+    {% seo %}
+    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+  </head>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      {% if site.title %}
+        <h1><a href="{{ "/" | relative_url }}">{{ site.title }}</a></h1>
+      {% endif %}
+
+      {{ content }}
+
+      {% if site.github.is_project_page %}
+        <section class="footer border-top border-gray-light mt-5 pt-3 text-right text-gray">
+          <span class="footer-small">This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></span>
+        </section>
+      {% endif %}
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaYhx7nz91GDQHk9XnmU8Tlovl71Ppx9QNoY78A69E=" crossorigin="anonymous"></script>
+    <script>anchors.add();</script>
+  </body>
+</html>

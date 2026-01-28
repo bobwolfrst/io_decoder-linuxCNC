@@ -68,10 +68,16 @@ title: Quick Start - io_decoder
   </a>
 </div>
   
+  
 # ⚡ io_decoder_eval Guide
-  
+
+> [!IMPORTANT]
+> **If you encounter a `/dev/io_decoder: No such file or directory` error:** > This means the system hasn't linked your board yet. You must either:
+> 1. **Run the udev rule script** (recommended, see step 2 below).
+> 2. **Or manually specify the port** in your `.hal` file using `usb_port_name="/dev/ttyACMx"` (where x is your port number, e.g., `/dev/ttyACM0`).
+
 Welcome to the **io_decoder demo/eval mode** guide. Follow these steps to set up your board in less than 5 minutes.
-  
+
 ---
   
 ### 1. System Requirements
