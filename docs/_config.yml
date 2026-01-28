@@ -8,3 +8,9 @@ url: "https://bobwolfrst.github.io"
 
 repository: bobwolfrst/io_decoder-linuxCNC
 github_url: https://github.com/bobwolfrst/io_decoder-linuxCNC
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
