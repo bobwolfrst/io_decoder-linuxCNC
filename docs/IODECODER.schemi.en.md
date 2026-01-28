@@ -1,3 +1,6 @@
+---
+layout: default
+---
 # IO_DECODER BASE
 # IO_DECODER EXPANSION_8
 <a id="index"></a>

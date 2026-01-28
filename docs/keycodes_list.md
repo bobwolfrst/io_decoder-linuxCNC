@@ -1,3 +1,6 @@
+---
+layout: default
+---
 ***Base Keycodes List***  
 #define KEY_RESERVED		0  
 #define KEY_ESC			1  

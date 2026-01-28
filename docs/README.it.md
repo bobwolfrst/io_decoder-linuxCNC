@@ -1,3 +1,6 @@
+---
+layout: default
+---
 # io_decoder
 <a id="indice"></a>
 ## Indice

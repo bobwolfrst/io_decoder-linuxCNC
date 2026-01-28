@@ -1,3 +1,6 @@
+---
+layout: default
+---
 # io_decoder  
 <img src="docs/mini_assieme_usb_IODECODER_5.png" align="right" width="150" style="margin-left: 20px; border-radius: 8px; border: 1px solid #ddd;">
 ## Description

@@ -1,3 +1,6 @@
+---
+layout: default
+---
 *#* Mappings for IO_decoder (format: in.MM-N <Keysym_string> #comment)  
 *#* Mappature per IO_decoder (formato: in.MM-N <Keysym_string> #commento) 
   

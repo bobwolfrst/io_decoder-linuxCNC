@@ -1,3 +1,6 @@
+---
+layout: default
+---
 # io_decoder
 <a id="contents"></a>
 ## Contents
