@@ -131,7 +131,7 @@ Move the `io_decoder-keymap.cfg` file into your CNC machine's configuration fold
   
     Paste the following rule inside the file:
     ```bash
-    SUBSYSTEM=="tty", ATTRS{idVendor}=="2341", ATTRS{idProduct}=="0043", SYMLINK+="io_decoder", MODE="0666", ENV ID_MM_DEVICE_IGNORE}="1"  
+    SUBSYSTEM=="tty", ATTRS{idVendor}=="2341", ATTRS{idProduct}=="0043", SYMLINK+="io_decoder", MODE="0666", ENV{ID_MM_DEVICE_IGNORE}="1"  
     ```
   
    Press **Ctrl + O** to save (it will ask to confirm the filename; if it doesn't exist, it will be created—press **Enter**).  

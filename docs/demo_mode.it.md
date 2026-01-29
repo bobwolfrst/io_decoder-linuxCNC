@@ -132,7 +132,7 @@ sposta il file io_decoder-keymap.cfg nella cartella della configurazione della m
     Una volta eseguito, il terminale aprirà l'editor di testo nano. il numero 99 serve per dire al sistema di leggere     la regola per ultima, fra tutte quelle che ha. Il nome del file 99-io_decoder.rules è quello che ho scelto io; ma     questo può essere qualsiasi.  
     Incolla la seguente regola all'interno del file:  
     ```bash
-    SUBSYSTEM=="tty", ATTRS{idVendor}=="2341", ATTRS{idProduct}=="0043", SYMLINK+="io_decoder", MODE="0666", ENV ID_MM_DEVICE_IGNORE}="1"  
+    SUBSYSTEM=="tty", ATTRS{idVendor}=="2341", ATTRS{idProduct}=="0043", SYMLINK+="io_decoder", MODE="0666", ENV{ID_MM_DEVICE_IGNORE}="1"  
     ```
 
     Premi Ctrl + O per salvare (ti chiederà di confermare il nome del file e se non esiste questo verrà creato, premi     Invio).  
