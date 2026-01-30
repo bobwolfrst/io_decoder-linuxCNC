@@ -29,7 +29,7 @@ layout: default
   - [License](#license)
 
 [📖 README](../README.md) | [🏠 Project Home]({{ '/index/' | relative_url }})  
-[🚀 Demo/Eval mode in English]({{ '/demo_mode.en' | relative_url }))
+[🚀 Demo/Eval mode in English]({ '/demo_mode.en' | relative_url })
 
 <a id="description"></a>
 ## Description
