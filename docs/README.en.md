@@ -47,7 +47,7 @@ It is optimized to manage non-critical inputs and outputs such as buttons, switc
   - simulated keyboard functionality.
   - in case of USB disconnection, the HAL pin value is set to 0.  
 
-- **Digital outputs**: 8–128 freely configurable from a .hal file; this value must match the installed hardware. 
+- **Digital outputs**: 8 128 freely configurable from a .hal file; this value must match the installed hardware. 
   - Function to make outputs blink. Frequency and duty cycle can be set individually for each output.
   - in case of USB disconnection, the physical output is turned off by the Arduino watchdog.  
 
@@ -83,8 +83,8 @@ It is optimized to manage non-critical inputs and outputs such as buttons, switc
 ### USB Hardware
   
 #### expansion_8  
-- **Digital inputs**: 8–128 freely configurable with expansion boards of 8 pins each. Only clean contacts between the common pin and the digital input are accepted as valid inputs.  
-- **Digital outputs**: 8–128 freely configurable with expansion boards of 8 pins each. Each output can drive a load of 50mA@30Vdc with a maximum of 300mA per expansion board.
+- **Digital inputs**: 8 128 freely configurable with expansion boards of 8 pins each. Only clean contacts between the common pin and the digital input are accepted as valid inputs.  
+- **Digital outputs**: 8 128 freely configurable with expansion boards of 8 pins each. Each output can drive a load of 50mA@30Vdc with a maximum of 300mA per expansion board.
 
 #### Features dependent on USB board hardware and firmware
 - **Firmware 101**
