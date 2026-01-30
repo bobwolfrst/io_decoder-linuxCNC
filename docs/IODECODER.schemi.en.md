@@ -13,8 +13,8 @@ layout: default
 - [**Hardware**](#hardware)  
 - [**Authors**](#authors)  
 
-[📖 Manual english]({{ site.baseurl }}/README.en.md)  
-[📖 README](../README.md) | [🏠 Project Home]({{ site.baseurl }}/index)  
+[📖 Manual english]({{ '/README.en' | relative_url }})  
+[📖 README](../README.md) | [🏠 Project Home]({{ '/index' | relative_url }})  
 
 ---
 
@@ -65,9 +65,9 @@ For prototypes, or integration support, please use the [✉️ Contact]
 
 Roberto "bobwolf" Sassoli
 
-[🔝 back to index](#index) | [📖 Manual english]({{ site.baseurl }}/README.en.md)  
+[🔝 back to index](#index) | [📖 Manual english]({{ '/README.en' | relative_url }})  
   
-[📖 README](../README.md) | [🏠 Project Home]({{ site.baseurl }}/index)  
+[📖 README](../README.md) | [🏠 Project Home]({{ '/index' | relative_url }})  
 
 Copyright (c) 2026 [bobwolf]
 

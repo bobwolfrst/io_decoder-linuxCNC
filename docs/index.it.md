@@ -68,12 +68,12 @@ title: io_decoder - Interfaccia pannello operatore USB per LinuxCNC
 
 <div class="nav-container">
   <a href="https://www.youtube.com/playlist?list=PL9D_TSVxg-gDFtA9_k6njBeVTL0IYY7Ct" target="_blank" class="nav-btn youtube-btn">▶ Video Test YouTube</a>
-  <a href="{{ site.baseurl }}/quickstart.it" class="nav-btn">⚡ Quick Start</a>
-  <a href="{{ site.baseurl }}/demo_mode.it" class="nav-btn demo-btn">🚀 Demo Mode</a>
-  <a href="{{ site.baseurl }}/README.it" class="nav-btn">📖 Manuale</a>
+  <a href="{{ '/quickstart.it' | relative_url }}" class="nav-btn">⚡ Quick Start</a>
+  <a href="{{ '/demo_mode.it' | relative_url }}" class="nav-btn demo-btn">🚀 Demo Mode</a>
+  <a href="{{ '/README.it' | relative_url }}" class="nav-btn">📖 Manuale</a>
   <a href="https://github.com/bobwolfrst/io_decoder-linuxCNC" class="nav-btn">💻 GitHub</a>
   <a href="mailto:io.decoder.rst%40gmail.com" class="nav-btn contact-btn">✉️ Contatto</a>
-  <a href="{{ site.baseurl }}/index" class="nav-btn lang-btn">
+  <a href="{{ '/index' | relative_url }}" class="nav-btn lang-btn">
     <img src="https://flagcdn.com/w20/gb.png" width="20" alt="UK Flag"> English
   </a>
 </div>
@@ -119,7 +119,7 @@ Sviluppato per essere il più semplice da installare ed usare. Stabile e testato
 | **Uscite digitali** | da 8 a 128 con funzionalità blink.   |
 | **Uscite DAC** | 2 con funzionalità invert e scale. |
 
-* **Documentazione tecnica ed installazione:** Disponibile nel [README.it]({{ site.baseurl }}/README.it.md)..
+* **Documentazione tecnica ed installazione:** Disponibile nel [README.it]({{ '/README.it' | relative_url }}).
 
 ---
 
@@ -128,7 +128,7 @@ Sviluppato per essere il più semplice da installare ed usare. Stabile e testato
 Il software HAL è aperto alla comunità, e per usarlo è necessaria la nostra scheda dedicata **io_decoder base** e le schede **io_decoder expansion_8**.
 
 * **Stato del progetto:** In sviluppo.
-* **Documentazione tecnica:** Disponibile nel paragrafo Installazione-Requisiti del [README.it]({{ site.baseurl }}/README.it.md) .
+* **Documentazione tecnica:** Disponibile nel paragrafo Installazione-Requisiti del [README.it]({{ '/README.it' | relative_url }}) .
 * **Contatti:** Per prototipi o supporto all'integrazione, utilizza il pulsante [✉️ Contatto]
 
 ---
@@ -136,7 +136,9 @@ Il software HAL è aperto alla comunità, e per usarlo è necessaria la nostra s
 
 > **Nota per gli sviluppatori:** > Se vuoi contribuire al driver HAL, clona la repository e consulta la sezione dedicata agli sviluppatori.
   
-[📖 Manuale Italiano]({{ site.baseurl }}/README.it.md)  
+[📖 Manuale Italiano]({{ '/README.it' | relative_url }})
+This is the code block that represents the suggested code change:
+```markdown
 [🚀 Demo/Eval mode in Italiano](docs/demo_mode.it)  
 
 <hr style="margin-top: 50px; border: 0; border-top: 1px solid #eee;">

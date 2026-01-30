@@ -28,8 +28,8 @@ layout: default
   - [Authors](#authors)
   - [License](#license)
 
-[📖 README](../README.md) | [🏠 Project Home](index.html)  
-[🚀 Demo/Eval mode in English]({{ site.baseurl }}/demo_mode.en)  
+[📖 README](../README.md) | [🏠 Project Home]({{ '/index' | relative_url }})  
+[🚀 Demo/Eval mode in English]({{ '/demo_mode.en' | relative_url }})  
   
 <a id="description"></a>
 ## Description
@@ -102,7 +102,7 @@ It is optimized to manage non-critical inputs and outputs such as buttons, switc
   - ADC: 1 @10bit 5Vdc  
 
 #### Dimensions and Wiring
-- [**io_decoder USB board pinout**](IODECODER.schemi.en.md)
+- [**io_decoder USB board pinout**]({{ '/IODECODER.schemi.en' | relative_url }})
 
 [back to contents](#contents)  
 <a id="installation"></a>
@@ -313,7 +313,7 @@ I recommend ordering configuration lines with progressive numbers to have an ove
     - in.00-1 18 #e	       -> input 00-1 is associated with the code for e (lowercase e)
 
   **Keycodes**  
-  The [keyboard map](ISO_kb_(105)_QWERTY_UK_IT.png) and the [keycodes](keycodes_list.md) were obtained in various ways through online searches and tests; they are certainly not 100% accurate. The map helps to understand what value the key position on your keyboard sends to the system, which will then display the symbol according to the keyboard layout. The keyboard functionality sends the key position value, not the associated symbol.  
+  The [keyboard map]({{ '/ISO_kb_(105)_QWERTY_UK_IT.png' | relative_url }}) and the [keycodes]({{ '/keycodes_list' | relative_url }}) were derived from various sources and tests; they are certainly not 100% accurate. The map helps to understand what value the key position on your keyboard sends to the system, which will then display the symbol according to the keyboard layout. The keyboard functionality sends the key position value, not the associated symbol.  
 
   >## Attention!!!  
   >**This functionality, by default the parameter is uinput_chmod_cmd="chmod 0666 /dev/uinput", expects read and write permissions on UINPUT to be given to all users, with the chmod command called automatically by the component itself. If you want to set the system with your custom permissions you must configure permissions using prompt commands. If the parameter uinput_chmod_cmd is passed in the machine .hal configuration file with value uinput_chmod_cmd="" the component's chmod command is not executed and the system must already be configured with the correct permissions to use the keyboard functionality. With uinput_chmod_cmd you can provide a custom command to grant permissions suitable for your needs.**
@@ -359,16 +359,5 @@ The author is not responsible for damages resulting from the use of the program.
 Copyright (c) 2026 [bobwolf]
 
 ---
-[🔝 back to contents](#contents) | [📖 README](../README.md) | [🏠 Project Home](index.html)  
-[🚀 Demo/Eval mode in English]({{ site.baseurl }}/demo_mode.en)  
-
->
-> <hr style="margin-top: 50px; border: 0; border-top: 1px solid #eee;">
-<footer style="padding: 20px 0; text-align: center; color: #666; font-size: 0.9em;">
-  <p><strong>io_decoder</strong> - Driver Open Source per LinuxCNC</p>
-  <p>
-    <a href="mailto:io.decoder.rst%40gmail.com" style="color: #1e6bb8; text-decoration: none;">✉️ contatto</a> | 
-    <a href="https://github.com/bobwolfrst/io_decoder-linuxCNC" style="color: #1e6bb8; text-decoration: none;">💻 GitHub Repository</a>
-  </p>
-  <p style="font-size: 0.8em;">© 2026 - Creato da bobwolfrst. Rilasciato sotto licenza GPL.</p>
-</footer>
+[🔝 back to contents](#contents) | [📖 README](../README.md) | [🏠 Project Home]({{ '/index' | relative_url }})  
+[🚀 Demo/Eval mode in English]({{ '/demo_mode.en' | relative_url }})  
