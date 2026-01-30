@@ -1,7 +1,8 @@
 ---
 layout: default
+permalink: /index/
+---
 title: io_decoder - USB Operator Panel Interface for LinuxCNC
-permalink: /
 ---
 
 <style>
@@ -75,7 +76,7 @@ permalink: /
   <a href="{{ '/README.en' | relative_url }}" class="nav-btn">📖 Manual</a>
   <a href="https://github.com/bobwolfrst/io_decoder-linuxCNC" class="nav-btn">💻 GitHub</a>
   <a href="mailto:io.decoder.rst%40gmail.com" class="nav-btn contact-btn">✉️ Contact</a>
-  <a href="{{ '/index.it' | relative_url }}" class="nav-btn lang-btn">
+  <a href="{{ '/index.it/' | relative_url }}" class="nav-btn lang-btn">
     <img src="https://flagcdn.com/w20/it.png" width="20" alt="Italy Flag"> Italiano
   </a>
 </div> 

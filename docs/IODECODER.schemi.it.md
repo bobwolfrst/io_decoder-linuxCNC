@@ -14,7 +14,7 @@ layout: default
 - [**Autori**](#autori)  
 
 [📖 BACK TO README.it]({{ '/README.it' | relative_url }})  
-[📖 README](../README.md) | [🏠 Project Home]({{ '/index.it' | relative_url }}) 
+[📖 README](../README.md) | [🏠 Project Home]({{ '/index.it/' | relative_url }}) 
 
 ---
 
@@ -66,7 +66,7 @@ Per prototipi o supporto all'integrazione, utilizza il pulsante [✉️ Contatto
 Roberto "bobwolf" Sassoli
 
 [🔝 torna all'indice](#indice) | [📖 BACK TO README.it]({{ '/README.it' | relative_url }})  
-[📖 README](../README.md) | [🏠 Project Home]({{ '/index.it' | relative_url }}) 
+[📖 README](../README.md) | [🏠 Project Home]({{ '/index.it/' | relative_url }}) 
 
 Copyright (c) 2026 [bobwolf]
 

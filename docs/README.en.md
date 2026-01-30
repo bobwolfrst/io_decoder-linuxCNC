@@ -28,9 +28,9 @@ layout: default
   - [Authors](#authors)
   - [License](#license)
 
-[📖 README](../README.md) | [🏠 Project Home]({{ '/index' | relative_url }})  
-[🚀 Demo/Eval mode in English]({{ '/demo_mode.en' | relative_url }})  
-  
+[📖 README](../README.md) | [🏠 Project Home]({{ '/index/' | relative_url }})  
+[🚀 Demo/Eval mode in English]({{ '/demo_mode.en' | relative_url }))
+
 <a id="description"></a>
 ## Description
 io_decoder is a HAL component for LinuxCNC. It allows controlling, via external hardware with a USB connection, the inputs and outputs required to manage an operator panel of a CNC machine.
@@ -359,5 +359,5 @@ The author is not responsible for damages resulting from the use of the program.
 Copyright (c) 2026 [bobwolf]
 
 ---
-[🔝 back to contents](#contents) | [📖 README](../README.md) | [🏠 Project Home]({{ '/index' | relative_url }})  
-[🚀 Demo/Eval mode in English]({{ '/demo_mode.en' | relative_url }})  
+[🔝 back to contents](#contents) | [📖 README](../README.md) | [🏠 Project Home]({{ '/index/' | relative_url }})  
+[🚀 Demo/Eval mode in English]({{ '/demo_mode.en' | relative_url }])

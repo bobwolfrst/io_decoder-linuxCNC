@@ -60,7 +60,7 @@ title: demo/eval mode - io_decoder
 </style>
 
 <div class="nav-container">
-  <a href="{{ '/index.it' | relative_url }}" class="nav-btn">🏠 Home</a>
+  <a href="{{ '/index.it/' | relative_url }}" class="nav-btn">🏠 Home</a>
   <a href="{{ '/README.it' | relative_url }}" class="nav-btn">📖 Manuale</a>
   <a href="https://github.com/bobwolfrst/io_decoder-linuxCNC/releases/latest/download/io_decoder_eval-v1.zip" class="nav-btn download-btn">📥 Download v1.0-eval</a>
   <a href="https://github.com/bobwolfrst/io_decoder-linuxCNC" class="nav-btn">💻 GitHub</a>
@@ -276,7 +276,7 @@ io_decoder.adc.0 per leggere il valore letto dall'ADC.
 Nel [manuale completo]({{ '/README.it' | relative_url }}) spiega in dettaglio tutte le configurazioni e possibilità di questo sistema hardware/software per linuxCNC.
 
 ## 🔗 Risorse Utili
-* 🏠 [Torna alla Home Page]({{ '/index.it' | relative_url }})
+* 🏠 [Torna alla Home Page]({{ '/index.it/' | relative_url }})
 * 📖 [Consulta il Manuale Tecnico Completo]({{ '/README.it' | relative_url }})
 
 <hr style="margin-top: 50px; border: 0; border-top: 1px solid #eee;">

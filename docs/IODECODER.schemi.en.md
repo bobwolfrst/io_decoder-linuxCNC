@@ -14,7 +14,7 @@ layout: default
 - [**Authors**](#authors)  
 
 [📖 Manual english]({{ '/README.en' | relative_url }})  
-[📖 README](../README.md) | [🏠 Project Home]({{ '/index' | relative_url }})  
+[📖 README](../README.md) | [🏠 Project Home]({{ '/index/' | relative_url }})  
 
 ---
 
@@ -67,7 +67,7 @@ Roberto "bobwolf" Sassoli
 
 [🔝 back to index](#index) | [📖 Manual english]({{ '/README.en' | relative_url }})  
   
-[📖 README](../README.md) | [🏠 Project Home]({{ '/index' | relative_url }})  
+[📖 README](../README.md) | [🏠 Project Home]({{ '/index/' | relative_url }})  
 
 Copyright (c) 2026 [bobwolf]
 

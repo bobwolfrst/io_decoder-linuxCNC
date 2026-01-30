@@ -29,4 +29,4 @@ layout: default
 </footer>
 
 [📖 BACK TO README.it]({{ '/README.it' | relative_url }})  
-[📖 README](../README.md) | [🏠 Project Home]({{ '/index.it' | relative_url }})
+[📖 README](../README.md) | [🏠 Project Home]({{ '/index.it/' | relative_url }})

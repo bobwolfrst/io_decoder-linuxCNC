@@ -1,5 +1,6 @@
 ---
 layout: default
+permalink: /index.it/
 title: io_decoder - Interfaccia pannello operatore USB per LinuxCNC 
 ---
 
@@ -73,7 +74,7 @@ title: io_decoder - Interfaccia pannello operatore USB per LinuxCNC
   <a href="{{ '/README.it' | relative_url }}" class="nav-btn">📖 Manuale</a>
   <a href="https://github.com/bobwolfrst/io_decoder-linuxCNC" class="nav-btn">💻 GitHub</a>
   <a href="mailto:io.decoder.rst%40gmail.com" class="nav-btn contact-btn">✉️ Contatto</a>
-  <a href="{{ '/index' | relative_url }}" class="nav-btn lang-btn">
+  <a href="{{ '/index/' | relative_url }}" class="nav-btn lang-btn">
     <img src="https://flagcdn.com/w20/gb.png" width="20" alt="UK Flag"> English
   </a>
 </div>
@@ -137,8 +138,6 @@ Il software HAL è aperto alla comunità, e per usarlo è necessaria la nostra s
 > **Nota per gli sviluppatori:** > Se vuoi contribuire al driver HAL, clona la repository e consulta la sezione dedicata agli sviluppatori.
   
 [📖 Manuale Italiano]({{ '/README.it' | relative_url }})
-This is the code block that represents the suggested code change:
-```markdown
 [🚀 Demo/Eval mode in Italiano](docs/demo_mode.it)  
 
 <hr style="margin-top: 50px; border: 0; border-top: 1px solid #eee;">

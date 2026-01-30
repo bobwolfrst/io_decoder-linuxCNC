@@ -26,7 +26,7 @@ layout: default
   - [Autori](#autori)
   - [Licenza](#licenza)
 
-[📖 README](../README.md) | [🏠 Project Home]({{ '/index.it' | relative_url }})  
+[📖 README](../README.md) | [🏠 Project Home]({{ '/index.it/' | relative_url }})  
 [🚀 Demo/Eval mode in Italiano]({{ '/demo_mode.it' | relative_url }})  
   
   
@@ -358,7 +358,7 @@ L’autore non è responsabile per danni derivanti dall’uso del programma.
 
 Copyright (c) 2026 [bobwolf]
 
-[🔝 torna all'indice](#indice) | [📖 README](../README.md) | [🏠 Project Home]({{ '/index.it' | relative_url }})  
+[🔝 torna all'indice](#indice) | [📖 README](../README.md) | [🏠 Project Home]({{ '/index.it/' | relative_url }})  
 [🚀 Demo/Eval mode in Italiano]({{ '/demo_mode.it' | relative_url }})  
   
 

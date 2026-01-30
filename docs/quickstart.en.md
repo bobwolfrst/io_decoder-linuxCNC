@@ -49,7 +49,7 @@ title: Quick Start - io_decoder
 </style>
 
 <div class="nav-container">
-  <a href="{{ '/index' | relative_url }}" class="nav-btn">🏠 Home</a>
+  <a href="{{ '/index/' | relative_url }}" class="nav-btn">🏠 Home</a>
   <a href="{{ '/README.en' | relative_url }}" class="nav-btn">📖 Manual</a>
   <a href="https://github.com/bobwolfrst/io_decoder-linuxCNC" class="nav-btn">💻 GitHub</a>
   <a href="mailto:io.decoder.rst%40gmail.com" class="nav-btn contact-btn">✉️ Contact</a>
@@ -98,7 +98,7 @@ In the Pins section, look for `io_decoder.in.00-0` to see real-time signals (e.g
 The [full manual]({{ '/README.en' | relative_url }}) explains in depth all the configurations and possibilities of this hardware/software system for LinuxCNC.
 
 ## 🔗 Useful Resources
-* 🏠 [Back to Home Page]({{ '/index' | relative_url }})
+* 🏠 [Back to Home Page]({{ '/index/' | relative_url }})
 * 📖 [Read the Full Technical Manual]({{ '/README.en' | relative_url }})
 
 <hr style="margin-top: 50px; border: 0; border-top: 1px solid #eee;">
