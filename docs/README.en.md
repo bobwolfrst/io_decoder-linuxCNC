@@ -360,4 +360,4 @@ Copyright (c) 2026 [bobwolf]
 
 ---
 [🔝 back to contents](#contents) | [📖 README](../README.md) | [🏠 Project Home]({{ '/index/' | relative_url }})  
-[🚀 Demo/Eval mode in English]({{ '/demo_mode.en' | relative_url }])
+[🚀 Demo/Eval mode in English]({{ '/demo_mode.en' | relative_url }})
