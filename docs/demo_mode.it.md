@@ -61,7 +61,7 @@ title: demo/eval mode - io_decoder
 
 <div class="nav-container">
   <a href="https://bobwolfrst.github.io/io_decoder-linuxCNC/index.it" class="nav-btn">🏠 Home</a>
-  <a href="./docs/README.it.md" class="nav-btn">📖 Manuale</a>
+  <a href="./README.it.md" class="nav-btn">📖 Manuale</a>
   <a href="https://github.com/bobwolfrst/io_decoder-linuxCNC/releases/latest/download/io_decoder_eval-v1.zip" class="nav-btn download-btn">📥 Download v1.0-eval</a>
   <a href="https://github.com/bobwolfrst/io_decoder-linuxCNC" class="nav-btn">💻 GitHub</a>
   <a href="mailto:io.decoder.rst%40gmail.com" class="nav-btn contact-btn">✉️ Contatto</a>

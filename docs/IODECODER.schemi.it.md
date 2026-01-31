@@ -15,7 +15,7 @@ layout: default
 - [**Autori**](#autori)  
 
 [📖 BACK TO README.it](./README.it.md)  
-[📖 README](../README.md) | [🏠 Project Home](https://bobwolfrst.github.io/io_decoder-linuxCNC/index.it) 
+[📖 README](./README.md) | [🏠 Project Home](https://bobwolfrst.github.io/io_decoder-linuxCNC/index.it) 
 
 ---
 
@@ -67,7 +67,7 @@ Per prototipi o supporto all'integrazione, utilizza il pulsante [✉️ Contatto
 Roberto "bobwolf" Sassoli
 
 [🔝 torna all'indice](#indice) | [📖 BACK TO README.it](./README.it.md)  
-[📖 README](../README.md) | [🏠 Project Home](https://bobwolfrst.github.io/io_decoder-linuxCNC/index.it) 
+[📖 README](./README.md) | [🏠 Project Home](https://bobwolfrst.github.io/io_decoder-linuxCNC/index.it) 
 
 Copyright (c) 2026 [bobwolf]
 

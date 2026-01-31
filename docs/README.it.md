@@ -27,7 +27,7 @@ layout: default
   - [Autori](#autori)
   - [Licenza](#licenza)
 
-[📖 README](../README.md) | [🏠 Project Home](https://bobwolfrst.github.io/io_decoder-linuxCNC/index.it)  
+[📖 README](./README.md) | [🏠 Project Home](https://bobwolfrst.github.io/io_decoder-linuxCNC/index.it)  
 [🚀 Demo/Eval mode in Italiano](https://bobwolfrst.github.io/io_decoder-linuxCNC/demo_mode.it)  
   
   
@@ -359,7 +359,7 @@ L’autore non è responsabile per danni derivanti dall’uso del programma.
 
 Copyright (c) 2026 [bobwolf]
 
-[🔝 torna all'indice](#indice) | [📖 README](../README.md) | [🏠 Project Home](https://bobwolfrst.github.io/io_decoder-linuxCNC/index.it)  
+[🔝 torna all'indice](#indice) | [📖 README](./README.md) | [🏠 Project Home](https://bobwolfrst.github.io/io_decoder-linuxCNC/index.it)  
 [🚀 Demo/Eval mode in Italiano](https://bobwolfrst.github.io/io_decoder-linuxCNC/demo_mode.it)  
   
 

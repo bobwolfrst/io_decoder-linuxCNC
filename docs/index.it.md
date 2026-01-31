@@ -71,7 +71,7 @@ title: io_decoder - Interfaccia pannello operatore USB per LinuxCNC
   <a href="https://www.youtube.com/playlist?list=PL9D_TSVxg-gDFtA9_k6njBeVTL0IYY7Ct" target="_blank" class="nav-btn youtube-btn">▶ Video Test YouTube</a>
   <a href="https://bobwolfrst.github.io/io_decoder-linuxCNC/quickstart.it" class="nav-btn">⚡ Quick Start</a>
   <a href="https://bobwolfrst.github.io/io_decoder-linuxCNC/demo_mode.it" class="nav-btn demo-btn">🚀 Demo Mode</a>
-  <a href="./docs/README.it.md" class="nav-btn">📖 Manuale</a>
+  <a href="./README.it.md" class="nav-btn">📖 Manuale</a>
   <a href="https://github.com/bobwolfrst/io_decoder-linuxCNC" class="nav-btn">💻 GitHub</a>
   <a href="mailto:io.decoder.rst%40gmail.com" class="nav-btn contact-btn">✉️ Contatto</a>
   <a href="https://bobwolfrst.github.io/io_decoder-linuxCNC/index" class="nav-btn lang-btn">

@@ -30,4 +30,4 @@ layout: default
 </footer>
 
 [📖 BACK TO README.it](./README.it.md)  
-[📖 README](../README.md) | [🏠 Project Home](https://bobwolfrst.github.io/io_decoder-linuxCNC/index.it)
+[📖 README](./README.md) | [🏠 Project Home](https://bobwolfrst.github.io/io_decoder-linuxCNC/index.it)
