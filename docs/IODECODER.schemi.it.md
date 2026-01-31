@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+
 # IO_DECODER BASE  
 # IO_DECODER EXPANSION_8
 <a id="indice"></a>
@@ -13,7 +14,7 @@ layout: default
 - [**Hardware**](#hardware)  
 - [**Autori**](#autori)  
 
-[📖 BACK TO README.it](docs/README.it.md)  
+[📖 BACK TO README.it](./docs/README.it.md)  
 [📖 README](../README.md) | [🏠 Project Home](https://bobwolfrst.github.io/io_decoder-linuxCNC/docs/index.it) 
 
 ---
@@ -65,7 +66,7 @@ Per prototipi o supporto all'integrazione, utilizza il pulsante [✉️ Contatto
 
 Roberto "bobwolf" Sassoli
 
-[🔝 torna all'indice](#indice) | [📖 BACK TO README.it](docs/README.it.md)  
+[🔝 torna all'indice](#indice) | [📖 BACK TO README.it](./docs/README.it.md)  
 [📖 README](../README.md) | [🏠 Project Home](https://bobwolfrst.github.io/io_decoder-linuxCNC/docs/index.it) 
 
 Copyright (c) 2026 [bobwolf]

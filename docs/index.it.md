@@ -120,7 +120,7 @@ Sviluppato per essere il più semplice da installare ed usare. Stabile e testato
 | **Uscite digitali** | da 8 a 128 con funzionalità blink.   |
 | **Uscite DAC** | 2 con funzionalità invert e scale. |
 
-* **Documentazione tecnica ed installazione:** Disponibile nel [README.it](docs/README.it.md).
+* **Documentazione tecnica ed installazione:** Disponibile nel [README.it](./docs/README.it.md).
 
 ---
 
@@ -129,7 +129,7 @@ Sviluppato per essere il più semplice da installare ed usare. Stabile e testato
 Il software HAL è aperto alla comunità, e per usarlo è necessaria la nostra scheda dedicata **io_decoder base** e le schede **io_decoder expansion_8**.
 
 * **Stato del progetto:** In sviluppo.
-* **Documentazione tecnica:** Disponibile nel paragrafo Installazione-Requisiti del [README.it](docs/README.it.md) .
+* **Documentazione tecnica:** Disponibile nel paragrafo Installazione-Requisiti del [README.it](./docs/README.it.md) .
 * **Contatti:** Per prototipi o supporto all'integrazione, utilizza il pulsante [✉️ Contatto]
 
 ---
@@ -137,7 +137,7 @@ Il software HAL è aperto alla comunità, e per usarlo è necessaria la nostra s
 
 > **Nota per gli sviluppatori:** > Se vuoi contribuire al driver HAL, clona la repository e consulta la sezione dedicata agli sviluppatori.
   
-[📖 Manuale Italiano](docs/README.it.md)
+[📖 Manuale Italiano](./docs/README.it.md)
 [🚀 Demo/Eval mode in Italiano](https://bobwolfrst.github.io/io_decoder-linuxCNC/docs/demo_mode.it)  
 
 <hr style="margin-top: 50px; border: 0; border-top: 1px solid #eee;">

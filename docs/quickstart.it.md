@@ -98,11 +98,11 @@ Nella sezione Pins, cerca io_decoder.in.00-0 per vedere i segnali in tempo reale
 
 ---
 
-Nel [manuale](docs/README.it.md) è spiegato a fondo tutte le configurazioni e possibilità di questo sistema hardware/software per linuxCNC.
+Nel [manuale](./docs/README.it.md) è spiegato a fondo tutte le configurazioni e possibilità di questo sistema hardware/software per linuxCNC.
 
 ## 🔗 Risorse Utili
 * 🏠 [Torna alla Home Page](https://bobwolfrst.github.io/io_decoder-linuxCNC/docs/index.it)
-* 📖 [Consulta il Manuale Tecnico Completo](docs/README.it.md)
+* 📖 [Consulta il Manuale Tecnico Completo](./docs/README.it.md)
 
 <hr style="margin-top: 50px; border: 0; border-top: 1px solid #eee;">
 <footer style="padding: 20px 0; text-align: center; color: #666; font-size: 0.9em;">

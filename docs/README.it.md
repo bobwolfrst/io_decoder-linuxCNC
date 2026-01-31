@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+
 # io_decoder
 <a id="indice"></a>
 ## Indice
@@ -101,7 +102,7 @@ Gestisce in maniera ottimale input ed output non critici come pulsanti, interrut
   - ADC: 1 @10bit 5Vdc
   
 #### Dimensioni e collegamenti
-- [**Pinout scheda io_decoder USB**](docs/IODECODER.schemi.it.md)
+- [**Pinout scheda io_decoder USB**](./docs/IODECODER.schemi.it.md)
 
 [torna all'indice](#indice)  
 <a id="installazione"></a>
@@ -313,7 +314,7 @@ Consiglio di mettere le righe di configurazione con i numeri progressivi, per av
     - in.00-1 18 #e	       -> all'input 00-1 è associato il codice della e (e minuscola)
 
   **Keycodes**  
-  La [mappa della tastiera](docs/ISO_kb_(105)_QWERTY_UK_IT.png) ed i [keycodes](docs/keycodes_list.md) li ho ricavati in vari modi attraverso ricerche in rete e prove varie; sicuramente non è precisa al 100%. La mappa serve per capire che valore invia al sistema il tasto sulla tua tastiera che poi in base a come è configurata restituirà a video il simbolo associato. La funzionalità keyboard invia il valore della posizione del tasto sulla tastiera non il simbolo associato.  
+  La [mappa della tastiera](./docs/ISO_kb_(105)_QWERTY_UK_IT.png) ed i [keycodes](./docs/keycodes_list.md) li ho ricavati in vari modi attraverso ricerche in rete e prove varie; sicuramente non è precisa al 100%. La mappa serve per capire che valore invia al sistema il tasto sulla tua tastiera che poi in base a come è configurata restituirà a video il simbolo associato. La funzionalità keyboard invia il valore della posizione del tasto sulla tastiera non il simbolo associato.  
 
   >## Attenzione!!!  
   >**questa funzionalità, di default il parametro è uinput_chmod_cmd="chmod 0666 /dev/uinput", prevede che vengano dati dei permessi di lettura e scrittura su UINPUT a tutti gli utenti, con il comando chmod richiamato automaticamente dal componente stesso. Se vuoi settare il sistema con i tuoi permessi personalizzati devi lavorare con i comandi di prompt per fare la tua configurazione dei permessi. Con il parametro uinput_chmod_cmd passato nel file .hal di configurazione della macchina con valore uinput_chmod_cmd="" il comando chmod del componente non viene eseguito ed il sistema deve già essere configurato con i permessi corretti per usare la funzionalità tastiera. Con uinput_chmod_cmd può essere inserito il comando personalizzato per dare i permessi adeguati alle proprie esigenze.**

@@ -2,6 +2,7 @@
 layout: default
 permalink: /index/
 ---
+
 title: io_decoder - USB Operator Panel Interface for LinuxCNC
 ---
 
@@ -122,7 +123,7 @@ Developed to be as easy to install and use as possible. Stable and tested both o
 | **Digital Outputs** | from 8 to 128 with blink functionality |
 | **DAC Outputs** | 2 with invert and scale functions |
 
-* **Technical Documentation & Installation:** Available in the [README.en](docs/README.en.md).
+* **Technical Documentation & Installation:** Available in the [README.en](./docs/README.en.md).
 
 ---
 
@@ -131,14 +132,14 @@ Developed to be as easy to install and use as possible. Stable and tested both o
 While the HAL software is open to the community, it requires our dedicated **io_decoder base** board and **io_decoder expansion_8** boards to function.
 
 * **Project Status:** In development.
-* **Technical Specs:** Available in the Installation-Requirements section of the [README.en](docs/README.en.md).
+* **Technical Specs:** Available in the Installation-Requirements section of the [README.en](./docs/README.en.md).
 * **Contact:** For prototypes, or integration support, please use the [✉️ Contact]
 
 ---
 
 > **Note for Developers:** > If you wish to contribute to the HAL driver, clone the repository and consult the developer section.
 
-[📖 English Manual](docs/README.en.md)  
+[📖 English Manual](./docs/README.en.md)  
 [🚀 Demo/Eval mode in English](https://bobwolfrst.github.io/io_decoder-linuxCNC/docs/demo_mode.en)  
 
 <hr style="margin-top: 50px; border: 0; border-top: 1px solid #eee;">

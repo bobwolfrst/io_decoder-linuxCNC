@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+
 # io_decoder
 <a id="contents"></a>
 ## Contents
@@ -102,7 +103,7 @@ It is optimized to manage non-critical inputs and outputs such as buttons, switc
   - ADC: 1 @10bit 5Vdc  
 
 #### Dimensions and Wiring
-- [**io_decoder USB board pinout**](docs/IODECODER.schemi.en.md)
+- [**io_decoder USB board pinout**](./docs/IODECODER.schemi.en.md)
 
 [back to contents](#contents)  
 <a id="installation"></a>
@@ -313,7 +314,7 @@ I recommend ordering configuration lines with progressive numbers to have an ove
     - in.00-1 18 #e	       -> input 00-1 is associated with the code for e (lowercase e)
 
   **Keycodes**  
-  The [keyboard map](docs/ISO_kb_(105)_QWERTY_UK_IT.png) and the [keycodes](docs/keycodes_list.md) were derived from various sources and tests; they are certainly not 100% accurate. The map helps to understand what value the key position on your keyboard sends to the system, which will then display the symbol according to the keyboard layout. The keyboard functionality sends the key position value, not the associated symbol.  
+  The [keyboard map](./docs/ISO_kb_(105)_QWERTY_UK_IT.png) and the [keycodes](./docs/keycodes_list.md) were derived from various sources and tests; they are certainly not 100% accurate. The map helps to understand what value the key position on your keyboard sends to the system, which will then display the symbol according to the keyboard layout. The keyboard functionality sends the key position value, not the associated symbol.  
 
   >## Attention!!!  
   >**This functionality, by default the parameter is uinput_chmod_cmd="chmod 0666 /dev/uinput", expects read and write permissions on UINPUT to be given to all users, with the chmod command called automatically by the component itself. If you want to set the system with your custom permissions you must configure permissions using prompt commands. If the parameter uinput_chmod_cmd is passed in the machine .hal configuration file with value uinput_chmod_cmd="" the component's chmod command is not executed and the system must already be configured with the correct permissions to use the keyboard functionality. With uinput_chmod_cmd you can provide a custom command to grant permissions suitable for your needs.**
