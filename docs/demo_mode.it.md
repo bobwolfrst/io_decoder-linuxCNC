@@ -60,12 +60,12 @@ title: demo/eval mode - io_decoder
 </style>
 
 <div class="nav-container">
-  <a href="https://bobwolfrst.github.io/io_decoder-linuxCNC/docs/index.it" class="nav-btn">🏠 Home</a>
+  <a href="https://bobwolfrst.github.io/io_decoder-linuxCNC/index.it" class="nav-btn">🏠 Home</a>
   <a href="docs/README.it.md" class="nav-btn">📖 Manuale</a>
   <a href="https://github.com/bobwolfrst/io_decoder-linuxCNC/releases/latest/download/io_decoder_eval-v1.zip" class="nav-btn download-btn">📥 Download v1.0-eval</a>
   <a href="https://github.com/bobwolfrst/io_decoder-linuxCNC" class="nav-btn">💻 GitHub</a>
   <a href="mailto:io.decoder.rst%40gmail.com" class="nav-btn contact-btn">✉️ Contatto</a>
-  <a href="https://bobwolfrst.github.io/io_decoder-linuxCNC/docs/demo_mode.en" class="nav-btn lang-btn">
+  <a href="https://bobwolfrst.github.io/io_decoder-linuxCNC/demo_mode.en" class="nav-btn lang-btn">
     <img src="https://flagcdn.com/w20/gb.png" width="20" alt="UK Flag"> English
   </a>
 </div>
@@ -216,15 +216,15 @@ Aggiungi queste righe al tuo file di configurazione .hal per integrare la scheda
 - **loadrt io_decoder** [input=*num*] [output=*num*] [usb_port_name=*"string"*] [firmware=*num*] [verbose=*num*] [keymap_file=*"string"*] [uinput_chmod_cmd=*"string"*]  
    - **input**: questa versione ha il numero degli input fissato a 4. Se il parametro viene inserito il valore comunque viene settato a 4.  
    - **output**: questa versione ha il numero degli output fissato a 4. Se il parametro viene inserito il valore comunque viene settato a 4.  
-   - **usb_port_name**: per poter nominare la porta a piacere e renderla fissa; vedere sezione [**definire porta USB**](./docs/README.it.md#comandi-di-installazione) . Valore di default "/dev/io_decoder"
+   - **usb_port_name**: per poter nominare la porta a piacere e renderla fissa; vedere sezione [**definire porta USB**](./README.it.md#comandi-di-installazione) . Valore di default "/dev/io_decoder"
    - **firmware**: In questa versione deve essere firmware=255  
    - **verbose**: per abilitare il livello dei messaggi di errore sulla GUI. il numero attiva il tipo di messaggio indicato e quelli di valore inferiore. default 1.  
      - 0=nessuno.
      - 1=componente. Invia messaggio in caso di disconnessione o di riavvio della comunicazione USB e segnala i messaggi della funzionalità keyboard se non è attivata per qualsiasi motivo.
      - 2=minimi. Messaggi di percentuale di errore parsing.
      - 3=tutti.
-   - **keymap_file**: file di testo per impostare le corrispondenze [**input => simulazione tastiera**](./docs/README.it.md#keyboard) . Valore di default "io_decoder-keymap.cfg"
-   - **uinput_chmod_cmd**: parametro stringa per dare i permessi di scrittura su UINPUT per la [**funzionalità di tastiera simulata**](./docs/README.it.md#keyboard) . Se si vuole essere sicuri di non dare i permessi il parametro deve essere "" (uinput_chmod_cmd="" senza niente all'interno delle virgolette) . Valore di default "chmod 0666 /dev/uinput" .    
+   - **keymap_file**: file di testo per impostare le corrispondenze [**input => simulazione tastiera**](./README.it.md#keyboard) . Valore di default "io_decoder-keymap.cfg"
+   - **uinput_chmod_cmd**: parametro stringa per dare i permessi di scrittura su UINPUT per la [**funzionalità di tastiera simulata**](./README.it.md#keyboard) . Se si vuole essere sicuri di non dare i permessi il parametro deve essere "" (uinput_chmod_cmd="" senza niente all'interno delle virgolette) . Valore di default "chmod 0666 /dev/uinput" .    
 
 - **Firmware 255**
   - versione speciale di valutazione per arduino UNO R3
@@ -246,7 +246,7 @@ io_decoder.enc.0 per vedere il conteggio dell'encoder.
 io_decoder.dac.0 per settare il valore del DAC.  
 io_decoder.adc.0 per leggere il valore letto dall'ADC.
   
-[Lista completa dei pin di HAL disponibili](./docs/README.it.md#pin).  
+[Lista completa dei pin di HAL disponibili](./README.it.md#pin).  
   
 ### 5. Collegamenti elettrici per questa versione  
   
@@ -273,11 +273,11 @@ io_decoder.adc.0 per leggere il valore letto dall'ADC.
 
 ---
 
-Nel [manuale completo](./docs/README.it.md) spiega in dettaglio tutte le configurazioni e possibilità di questo sistema hardware/software per linuxCNC.
+Nel [manuale completo](./README.it.md) spiega in dettaglio tutte le configurazioni e possibilità di questo sistema hardware/software per linuxCNC.
 
 ## 🔗 Risorse Utili
-* 🏠 [Torna alla Home Page](https://bobwolfrst.github.io/io_decoder-linuxCNC/docs/index.it)
-* 📖 [Consulta il Manuale Tecnico Completo](./docs/README.it.md)
+* 🏠 [Torna alla Home Page](https://bobwolfrst.github.io/io_decoder-linuxCNC/index.it)
+* 📖 [Consulta il Manuale Tecnico Completo](./README.it.md)
 
 <hr style="margin-top: 50px; border: 0; border-top: 1px solid #eee;">
 <footer style="padding: 20px 0; text-align: center; color: #666; font-size: 0.9em;">

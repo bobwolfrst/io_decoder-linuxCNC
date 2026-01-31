@@ -63,7 +63,7 @@ title: Quick Start - io_decoder
   <a href="https://github.com/bobwolfrst/io_decoder-linuxCNC/releases/latest/download/io_decoder_eval-v1.zip" class="nav-btn download-btn">📥 Download v1.0-eval</a>
   <a href="https://github.com/bobwolfrst/io_decoder-linuxCNC" class="nav-btn">💻 GitHub</a>
   <a href="mailto:io.decoder.rst%40gmail.com" class="nav-btn contact-btn">✉️ Contact</a>
-  <a href="https://bobwolfrst.github.io/io_decoder-linuxCNC/docs/demo_mode.it" class="nav-btn lang-btn">
+  <a href="https://bobwolfrst.github.io/io_decoder-linuxCNC/demo_mode.it" class="nav-btn lang-btn">
     <img src="https://flagcdn.com/w20/it.png" width="20" alt="Italy Flag"> Italiano
   </a>
 </div>
@@ -219,15 +219,15 @@ However, everything is fully configurable.
    - **loadrt io_decoder** [input=*num*] [output=*num*] [usb_port_name=*"string"*] [firmware=*num*] [verbose=*num*] [keymap_file=*"string"*] [uinput_chmod_cmd=*"string"*]  
    - **input**: In this version, the number of inputs is fixed at 4. If this parameter is provided, the value will be forced to 4.  
    - **output**: In this version, the number of outputs is fixed at 4. If this parameter is provided, the value will be forced to 4.  
-   - **usb_port_name**: Allows you to name the port as desired for persistence; see the [**Define USB Port**](./docs/README.en.md#installation-commands) section. Default value: `"/dev/io_decoder"`.
+   - **usb_port_name**: Allows you to name the port as desired for persistence; see the [**Define USB Port**](./README.en.md#installation-commands) section. Default value: `"/dev/io_decoder"`.
    - **firmware**: For this version, it must be set to `firmware=255`.  
    - **verbose**: Enables the level of error messages displayed on the GUI. The selected number activates that message type and all lower-value levels. Default: `1`.  
      - `0` = None.
      - `1` = Component. Sends messages in case of disconnection or USB communication restart; reports keyboard functionality status.
      - `2` = Minimum. Displays parsing error percentage messages.
      - `3` = All.
-   - **keymap_file**: Text file to set the [**input => keyboard simulation**](./docs/README.en.md#keyboard) mappings. Default value: `"io_decoder-keymap.cfg"`.
-   - **uinput_chmod_cmd**: String parameter to grant write permissions on UINPUT for the [**simulated keyboard functionality**](./docs/README.en.md#keyboard)... 
+   - **keymap_file**: Text file to set the [**input => keyboard simulation**](./README.en.md#keyboard) mappings. Default value: `"io_decoder-keymap.cfg"`.
+   - **uinput_chmod_cmd**: String parameter to grant write permissions on UINPUT for the [**simulated keyboard functionality**](./README.en.md#keyboard)... 
    To ensure no permissions are granted, set the parameter to empty: `uinput_chmod_cmd=""`. Default value: `"chmod 0666 /dev/uinput"`.    
 
   #### Firmware 255 (Evaluation)
@@ -248,7 +248,7 @@ However, everything is fully configurable.
    - **io_decoder.dac.0**: To set the DAC value.
    - **io_decoder.adc.0**: To read the value from the ADC.
 
-   [Full list of available HAL pins](./docs/README.en.md).
+   [Full list of available HAL pins](./README.en.md).
 
 ### 5. Electrical Wiring for this Version
 
@@ -275,11 +275,11 @@ However, everything is fully configurable.
   
 ---
 
-The [full manual](./docs/README.en.md) explains in depth all the configurations and possibilities of this hardware/software system for LinuxCNC.
+The [full manual](./README.en.md) explains in depth all the configurations and possibilities of this hardware/software system for LinuxCNC.
 
 ## 🔗 Useful Resources
 * 🏠 [Back to Home Page](https://bobwolfrst.github.io/io_decoder-linuxCNC/index)
-* 📖 [Read the Full Technical Manual](./docs/README.en.md)
+* 📖 [Read the Full Technical Manual](./README.en.md)
 
 <hr style="margin-top: 50px; border: 0; border-top: 1px solid #eee;">
 <footer style="padding: 20px 0; text-align: center; color: #666; font-size: 0.9em;">

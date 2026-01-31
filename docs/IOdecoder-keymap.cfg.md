@@ -29,5 +29,5 @@ layout: default
   <p style="font-size: 0.8em;">© 2026 - Creato da bobwolfrst. Rilasciato sotto licenza GPL.</p>
 </footer>
 
-[📖 BACK TO README.it](./docs/README.it.md)  
-[📖 README](../README.md) | [🏠 Project Home](https://bobwolfrst.github.io/io_decoder-linuxCNC/docs/index.it)
+[📖 BACK TO README.it](./README.it.md)  
+[📖 README](../README.md) | [🏠 Project Home](https://bobwolfrst.github.io/io_decoder-linuxCNC/index.it)

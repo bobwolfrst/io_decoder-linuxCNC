@@ -69,8 +69,8 @@ title: io_decoder - Interfaccia pannello operatore USB per LinuxCNC
 
 <div class="nav-container">
   <a href="https://www.youtube.com/playlist?list=PL9D_TSVxg-gDFtA9_k6njBeVTL0IYY7Ct" target="_blank" class="nav-btn youtube-btn">▶ Video Test YouTube</a>
-  <a href="https://bobwolfrst.github.io/io_decoder-linuxCNC/docs/quickstart.it" class="nav-btn">⚡ Quick Start</a>
-  <a href="https://bobwolfrst.github.io/io_decoder-linuxCNC/docs/demo_mode.it" class="nav-btn demo-btn">🚀 Demo Mode</a>
+  <a href="https://bobwolfrst.github.io/io_decoder-linuxCNC/quickstart.it" class="nav-btn">⚡ Quick Start</a>
+  <a href="https://bobwolfrst.github.io/io_decoder-linuxCNC/demo_mode.it" class="nav-btn demo-btn">🚀 Demo Mode</a>
   <a href="docs/README.it.md" class="nav-btn">📖 Manuale</a>
   <a href="https://github.com/bobwolfrst/io_decoder-linuxCNC" class="nav-btn">💻 GitHub</a>
   <a href="mailto:io.decoder.rst%40gmail.com" class="nav-btn contact-btn">✉️ Contatto</a>
@@ -120,7 +120,7 @@ Sviluppato per essere il più semplice da installare ed usare. Stabile e testato
 | **Uscite digitali** | da 8 a 128 con funzionalità blink.   |
 | **Uscite DAC** | 2 con funzionalità invert e scale. |
 
-* **Documentazione tecnica ed installazione:** Disponibile nel [README.it](./docs/README.it.md).
+* **Documentazione tecnica ed installazione:** Disponibile nel [README.it](./README.it.md).
 
 ---
 
@@ -129,7 +129,7 @@ Sviluppato per essere il più semplice da installare ed usare. Stabile e testato
 Il software HAL è aperto alla comunità, e per usarlo è necessaria la nostra scheda dedicata **io_decoder base** e le schede **io_decoder expansion_8**.
 
 * **Stato del progetto:** In sviluppo.
-* **Documentazione tecnica:** Disponibile nel paragrafo Installazione-Requisiti del [README.it](./docs/README.it.md) .
+* **Documentazione tecnica:** Disponibile nel paragrafo Installazione-Requisiti del [README.it](./README.it.md) .
 * **Contatti:** Per prototipi o supporto all'integrazione, utilizza il pulsante [✉️ Contatto]
 
 ---
@@ -137,8 +137,8 @@ Il software HAL è aperto alla comunità, e per usarlo è necessaria la nostra s
 
 > **Nota per gli sviluppatori:** > Se vuoi contribuire al driver HAL, clona la repository e consulta la sezione dedicata agli sviluppatori.
   
-[📖 Manuale Italiano](./docs/README.it.md)
-[🚀 Demo/Eval mode in Italiano](https://bobwolfrst.github.io/io_decoder-linuxCNC/docs/demo_mode.it)  
+[📖 Manuale Italiano](./README.it.md)
+[🚀 Demo/Eval mode in Italiano](https://bobwolfrst.github.io/io_decoder-linuxCNC/demo_mode.it)  
 
 <hr style="margin-top: 50px; border: 0; border-top: 1px solid #eee;">
 <footer style="padding: 20px 0; text-align: center; color: #666; font-size: 0.9em;">

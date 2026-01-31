@@ -14,7 +14,7 @@ layout: default
 - [**Hardware**](#hardware)  
 - [**Authors**](#authors)  
 
-[📖 Manual english](./docs/README.en.md)  
+[📖 Manual english](./README.en.md)  
 [📖 README](../README.md) | [🏠 Project Home](https://bobwolfrst.github.io/io_decoder-linuxCNC/index)  
 
 ---
@@ -66,7 +66,7 @@ For prototypes, or integration support, please use the [✉️ Contact]
 
 Roberto "bobwolf" Sassoli
 
-[🔝 back to index](#index) | [📖 Manual english](./docs/README.en.md)  
+[🔝 back to index](#index) | [📖 Manual english](./README.en.md)  
   
 [📖 README](../README.md) | [🏠 Project Home](https://bobwolfrst.github.io/io_decoder-linuxCNC/index)  
 

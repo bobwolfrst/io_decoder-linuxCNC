@@ -72,12 +72,12 @@ title: io_decoder - USB Operator Panel Interface for LinuxCNC
 
 <div class="nav-container">
   <a href="https://www.youtube.com/playlist?list=PL9D_TSVxg-gDFtA9_k6njBeVTL0IYY7Ct" target="_blank" class="nav-btn youtube-btn">▶ YouTube Tests</a>
-  <a href="https://bobwolfrst.github.io/io_decoder-linuxCNC/docs/quickstart.en" class="nav-btn">⚡ Quick Start</a>
-  <a href="https://bobwolfrst.github.io/io_decoder-linuxCNC/docs/demo_mode.en" class="nav-btn demo-btn">🚀 Demo Mode</a>
+  <a href="https://bobwolfrst.github.io/io_decoder-linuxCNC/quickstart.en" class="nav-btn">⚡ Quick Start</a>
+  <a href="https://bobwolfrst.github.io/io_decoder-linuxCNC/demo_mode.en" class="nav-btn demo-btn">🚀 Demo Mode</a>
   <a href="docs/README.en.md" class="nav-btn">📖 Manual</a>
   <a href="https://github.com/bobwolfrst/io_decoder-linuxCNC" class="nav-btn">💻 GitHub</a>
   <a href="mailto:io.decoder.rst%40gmail.com" class="nav-btn contact-btn">✉️ Contact</a>
-  <a href="https://bobwolfrst.github.io/io_decoder-linuxCNC/docs/index.it" class="nav-btn lang-btn">
+  <a href="https://bobwolfrst.github.io/io_decoder-linuxCNC/index.it" class="nav-btn lang-btn">
     <img src="https://flagcdn.com/w20/it.png" width="20" alt="Italy Flag"> Italiano
   </a>
 </div> 
@@ -123,7 +123,7 @@ Developed to be as easy to install and use as possible. Stable and tested both o
 | **Digital Outputs** | from 8 to 128 with blink functionality |
 | **DAC Outputs** | 2 with invert and scale functions |
 
-* **Technical Documentation & Installation:** Available in the [README.en](./docs/README.en.md).
+* **Technical Documentation & Installation:** Available in the [README.en](./README.en.md).
 
 ---
 
@@ -132,15 +132,15 @@ Developed to be as easy to install and use as possible. Stable and tested both o
 While the HAL software is open to the community, it requires our dedicated **io_decoder base** board and **io_decoder expansion_8** boards to function.
 
 * **Project Status:** In development.
-* **Technical Specs:** Available in the Installation-Requirements section of the [README.en](./docs/README.en.md).
+* **Technical Specs:** Available in the Installation-Requirements section of the [README.en](./README.en.md).
 * **Contact:** For prototypes, or integration support, please use the [✉️ Contact]
 
 ---
 
 > **Note for Developers:** > If you wish to contribute to the HAL driver, clone the repository and consult the developer section.
 
-[📖 English Manual](./docs/README.en.md)  
-[🚀 Demo/Eval mode in English](https://bobwolfrst.github.io/io_decoder-linuxCNC/docs/demo_mode.en)  
+[📖 English Manual](./README.en.md)  
+[🚀 Demo/Eval mode in English](https://bobwolfrst.github.io/io_decoder-linuxCNC/demo_mode.en)  
 
 <hr style="margin-top: 50px; border: 0; border-top: 1px solid #eee;">
 <footer style="padding: 20px 0; text-align: center; color: #666; font-size: 0.9em;">
