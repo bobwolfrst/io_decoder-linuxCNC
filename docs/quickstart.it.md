@@ -51,11 +51,11 @@ title: Guida Rapida - io_decoder
 </style>
 
 <div class="nav-container">
-  <a href="{{ '/index.it/' | relative_url }}" class="nav-btn">🏠 Home</a>
-  <a href="{{ '/README.it' | relative_url }}" class="nav-btn">📖 Manuale</a>
+  <a href="https://bobwolfrst.github.io/io_decoder-linuxCNC/docs/index.it" class="nav-btn">🏠 Home</a>
+  <a href="docs/README.it.md" class="nav-btn">📖 Manuale</a>
   <a href="https://github.com/bobwolfrst/io_decoder-linuxCNC" class="nav-btn">💻 GitHub</a>
   <a href="mailto:io.decoder.rst%40gmail.com" class="nav-btn contact-btn">✉️ Contatto</a>
-  <a href="{{ '/quickstart.en' | relative_url }}" class="nav-btn lang-btn">
+  <a href="https://bobwolfrst.github.io/io_decoder-linuxCNC/docs/quickstart.en" class="nav-btn lang-btn">
     <img src="https://flagcdn.com/w20/gb.png" width="20" alt="UK Flag"> English
   </a>
 </div>
@@ -98,11 +98,11 @@ Nella sezione Pins, cerca io_decoder.in.00-0 per vedere i segnali in tempo reale
 
 ---
 
-Nel [manuale]({{ '/README.it' | relative_url }}) è spiegato a fondo tutte le configurazioni e possibilità di questo sistema hardware/software per linuxCNC.
+Nel [manuale](docs/README.it.md) è spiegato a fondo tutte le configurazioni e possibilità di questo sistema hardware/software per linuxCNC.
 
 ## 🔗 Risorse Utili
-* 🏠 [Torna alla Home Page]({{ '/index.it/' | relative_url }})
-* 📖 [Consulta il Manuale Tecnico Completo]({{ '/README.it' | relative_url }})
+* 🏠 [Torna alla Home Page](https://bobwolfrst.github.io/io_decoder-linuxCNC/docs/index.it)
+* 📖 [Consulta il Manuale Tecnico Completo](docs/README.it.md)
 
 <hr style="margin-top: 50px; border: 0; border-top: 1px solid #eee;">
 <footer style="padding: 20px 0; text-align: center; color: #666; font-size: 0.9em;">
