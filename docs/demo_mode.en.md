@@ -59,7 +59,7 @@ title: Quick Start - io_decoder
 
 <div class="nav-container">
   <a href="https://bobwolfrst.github.io/io_decoder-linuxCNC/index" class="nav-btn">🏠 Home</a>
-  <a href="docs/README.en.md" class="nav-btn">📖 Manual</a>
+  <a href="./README.en.md" class="nav-btn">📖 Manual</a>
   <a href="https://github.com/bobwolfrst/io_decoder-linuxCNC/releases/latest/download/io_decoder_eval-v1.zip" class="nav-btn download-btn">📥 Download v1.0-eval</a>
   <a href="https://github.com/bobwolfrst/io_decoder-linuxCNC" class="nav-btn">💻 GitHub</a>
   <a href="mailto:io.decoder.rst%40gmail.com" class="nav-btn contact-btn">✉️ Contact</a>
