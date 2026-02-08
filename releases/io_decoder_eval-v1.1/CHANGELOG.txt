@@ -1,0 +1,33 @@
+io_decoder-linuxCNC | Changelog
+Version: 1.1.0 Status: Stable Date: 2026-02-08
+
+Major Improvements
+Asynchronous Keyboard Threading: Moved the keyboard emulation logic (uinput) from the Real-Time HAL thread to a dedicated user-space thread.
+
+Why: This prevents any potential system latency or "blocking" in the keyboard handler from affecting the high-priority Real-Time CNC operations.
+
+Resource Protection: Improved thread safety when accessing shared memory between the HAL component and the keyboard emulator.
+
+Documentation & Code Quality
+English Translation: Fully translated all source code comments from Italian to English.
+
+Code Cleanup: Removed unused variables and optimized the main loop to reduce CPU overhead.
+
+Improved Error Handling: Added more descriptive terminal outputs if the USB device or uinput fails to initialize.
+
+Fixes
+Fixed a potential "zombie process" issue by ensuring clean thread termination upon hal_exit.
+
+Refined the uinput setup to be more compatible with recent Linux kernels used in LinuxCNC 2.9+.
+
+How to update
+Download the new io_decoder.c.
+
+Recompile and install using:
+
+Bash
+sudo halcompile --install io_decoder.c
+(Optional) Refresh your udev rules if you haven't already:
+
+Bash
+sudo udevadm control --reload-rules && sudo udevadm trigger
