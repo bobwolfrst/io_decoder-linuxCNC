@@ -60,7 +60,7 @@ title: Quick Start - io_decoder
 <div class="nav-container">
   <a href="https://bobwolfrst.github.io/io_decoder-linuxCNC/index" class="nav-btn">🏠 Home</a>
   <a href="./README.en.md" class="nav-btn">📖 Manual</a>
-  <a href="https://github.com/bobwolfrst/io_decoder-linuxCNC/releases/latest/download/io_decoder_eval-v1.zip" class="nav-btn download-btn">📥 Download v1.0-eval</a>
+<a href="https://github.com/bobwolfrst/io_decoder-linuxCNC/releases/latest/download/io_decoder_eval-v1.1.zip" class="nav-btn download-btn">📥 Download v1.1</a>
   <a href="https://github.com/bobwolfrst/io_decoder-linuxCNC" class="nav-btn">💻 GitHub</a>
   <a href="mailto:io.decoder.rst%40gmail.com" class="nav-btn contact-btn">✉️ Contact</a>
   <a href="https://bobwolfrst.github.io/io_decoder-linuxCNC/demo_mode.it" class="nav-btn lang-btn">
@@ -97,7 +97,7 @@ Welcome to the **io_decoder demo/eval mode** guide. Follow these steps to set up
   
 ### 2. Driver Installation
   
-Download and extract [io_decoder_eval-v1.zip](https://github.com/bobwolfrst/io_decoder-linuxCNC/releases/download/v1.0-eval/io_decoder_eval-v1.zip).
+Download and extract [io_decoder_eval-v1.1.zip](https://github.com/bobwolfrst/io_decoder-linuxCNC/releases/download/v1.0-eval/io_decoder_eval-v1.1.zip).
 
 Move the `io_decoder.c` component file and the `io_decoder_eval.hex` file to your preferred directory.  
 Move the `io_decoder-keymap.cfg` file into your CNC machine's configuration folder if you wish to use the keyboard emulation functionality.
