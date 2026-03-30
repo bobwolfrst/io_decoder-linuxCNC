@@ -93,6 +93,7 @@
 #include "rtapi.h"     // RTAPI realtime OS API
 #include "rtapi_app.h" // RTAPI realtime module decls
 #include "hal.h"       // HAL public API decls
+
 // #include "rtapi_print.h"
 // #include "rtapi_thread.h" // ADDED: For rtapi_id_t, rtapi_thread_new, etc.
 #include <float.h>
@@ -113,6 +114,7 @@
 #include <linux/uinput.h>
 #include <stdlib.h>   // For atoi, malloc, free, etc.
 #include <sys/stat.h> // For chmod()
+
 
 // IDE compatibility stubs: if IntelliSense non trova gli header RTAPI/LinuxCNC
 // definiamo macro vuote per evitare falsi errori nel parser dell'editor.
@@ -439,7 +441,7 @@ static void calc_io_decoder(void *arg, long period);
 static void key_simulation_loop(void *arg);
 
 /* ensure hal_free prototype is visible to avoid implicit declaration warning */
-extern void hal_free(void *ptr);
+//extern void hal_free(void *ptr);
 
 //***********************************************************************
 // Helper function to configure the serial port
@@ -2996,7 +2998,7 @@ int rtapi_app_main(void)
     case 101:
         // Set values specific to firmware 101
         io_decoder_array[n].firmware_firmware = 101; // Example: new struct member
-        io_decoder_array[n].firmware_n_encoder = 2;  // then 4
+        io_decoder_array[n].firmware_n_encoder = 4;  // then 4
         io_decoder_array[n].firmware_n_dac = 2;
         io_decoder_array[n].firmware_n_adc = 3;
         io_decoder_array[n].firmware_in_bit_expansion = 8;
@@ -3131,7 +3133,7 @@ void rtapi_app_exit(void)
             io_decoder_array[0].serial_fd = -1;
         }
 
-        hal_free(io_decoder_array);
+        //hal_free(io_decoder_array);
         io_decoder_array = NULL;
     }
 
