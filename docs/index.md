@@ -92,7 +92,7 @@ io_decoder - USB Operator Panel Interface for LinuxCNC
 ---
 
 ## 🎯 Why io_decoder?
-<img src="mini_usb_IODEC_5.png" align="right" width="280" style="margin-left: 20px; border-radius: 8px; border: 1px solid #ddd;">
+<img src="./mini_usb_IODEC_5.png" align="right" width="280" style="margin-left: 20px; border-radius: 8px; border: 1px solid #ddd;">
 Here is how **io_decoder** changes the game:
 
 ### 1. Zero Port Conflicts (Custom USB ID)
