@@ -121,7 +121,12 @@ It is optimized to manage non-critical inputs and outputs such as buttons, switc
      - 2 = minimal. Parsing error percentage messages.
      - 3 = all.
    - **keymap_file**: text file to set the mappings [**input => keyboard simulation**](#keyboard). Default value "io_decoder-keymap.cfg"
-   - **uinput_chmod_cmd**: string parameter to give write permissions on UINPUT for the [**simulated keyboard functionality**](#keyboard). If you want to be sure not to give permissions the parameter must be "" (uinput_chmod_cmd="" with nothing inside the quotes). Default value "chmod 0666 /dev/uinput".  
+   - **uinput_chmod_cmd**: Emergency command to attempt assigning permissions to /dev/uinput if the UDEV rule for the [**simulated keyboard functionality**](#keyboard) is missing. If you wish to ensure no permission changes are attempted, set this parameter to ""  
+   (uinput_chmod_cmd="" with nothing inside the quotes).  
+   Default value "chmod 0666 /dev/uinput" .  
+   **Recommendation**:  
+   If you have already correctly configured the UDEV rule (the recommended choice), you can leave the default or set uinput_chmod_cmd="". If the component is run by a user without sudo privileges, this command might fail; in this case, the UDEV rule configuration described in the [**Keyboard**](#keyboard) section becomes mandatory.
+
 
 ### Functions
 ```bash
@@ -273,10 +278,56 @@ In case of software disconnection of the USB or slowdowns by the operating syste
 <a id="keyboard"></a>
 
 ### Keyboard
+
+This feature allows using physical inputs to send simulated keyboard commands. These can be used to type text on the screen or send system shortcuts, behaving exactly as if they were typed on the system keyboard.
+
+**Enabling Keyboard Functionality (uinput)**  
+  To allow the component to simulate key presses without root (administrator) privileges, you must configure the permissions for the uinput module.
+
+  1. Verify the uinput module Ensure the module is loaded into the system by running:
+   ```Bash
+   sudo modprobe uinput
+   ```
+
+  2. Create the udev rule for permissions  
+  Just as with the USB port, we need to instruct the system to make the virtual keyboard accessible to the user.  
+  Create a new rule file:  
+```Bash
+sudo nano /etc/udev/rules.d/99-uinput.rules
+```
+
+  3. Paste the following line into the file:  
+```Bash
+KERNEL=="uinput", MODE="0666", GROUP="input"
+```
+  This rule assigns the device to the input group and grants read/write permissions (0666).  
+
+  Press Ctrl + O, Enter, and then Ctrl + X to save and exit.  
+
+  Apply the changes  
+
+  4. Reload the udev configuration to make the rule active immediately:
+```Bash
+sudo udevadm control --reload-rules
+sudo udevadm trigger
+```
+  5. Final Verification  
+Check that the permissions have been applied correctly:  
+```Bash
+ls -l /dev/uinput
+```
+You should see a result similar to this:
+
+crw-rw-rw- 1 root input 10, 223 ... /dev/uinput
+
+If you see the rw-rw-rw- string, the configuration is successful, and the component can now send keystrokes to LinuxCNC.
+
+SECURITY NOTE > As with the USB port, using MODE="0666" makes the virtual keyboard accessible to any user on the system. If you prefer a more restrictive configuration, ensure your user belongs to the input group and use MODE="0660".  
+  
+**Configure input=>keyboard mappings:**    
 Functionality that allows using physical inputs to send simulated keyboard commands that can be used to print on screen or send commands as if typed on the system keyboard.  
 If the file [**"io_decoder-keymap.cfg"**](IOdecoder-keymap.cfg.md) (or the one specified by **keymap_file**) is present in the machine configuration folder, the functionality is enabled. If it is not present or is empty or contains only comments, the functionality is not enabled.  
   
-**Configure input=>keyboard mappings:**  
 The functionality uses UINPUT to send commands, so each numeric code indicates the position on the keyboard; it is not an absolute number for each keyboard layout (US, UK, IT, FR, etc.) but a code indicating the position of the key on the keyboard installed in the system. If code 27 is sent and a US keyboard is installed the result on screen will be ] (right square bracket); on an IT keyboard it will be a + (plus).  
 You can also send a single or composite code to create combinations such as:  
  - shift+a = A 

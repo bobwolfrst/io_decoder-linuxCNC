@@ -115,7 +115,6 @@
 #include <stdlib.h>   // For atoi, malloc, free, etc.
 #include <sys/stat.h> // For chmod()
 
-
 // IDE compatibility stubs: if IntelliSense non trova gli header RTAPI/LinuxCNC
 // definiamo macro vuote per evitare falsi errori nel parser dell'editor.
 #ifndef MODULE_AUTHOR
@@ -441,7 +440,7 @@ static void calc_io_decoder(void *arg, long period);
 static void key_simulation_loop(void *arg);
 
 /* ensure hal_free prototype is visible to avoid implicit declaration warning */
-//extern void hal_free(void *ptr);
+// extern void hal_free(void *ptr);
 
 //***********************************************************************
 // Helper function to configure the serial port
@@ -2757,7 +2756,8 @@ static int init_uinput(hal_io_decoder_t *addr)
         // rtapi_print_msg(RTAPI_MSG_ERR, "io_decoder: Error opening /dev/uinput. Keyboard device disabled (Permissions?).\n");
         if (verbose >= VERBOSE_USB)
         {
-            rtapi_print_msg(RTAPI_MSG_ERR, "io_decoder: Error opening /dev/uinput (Code %d): %s\n", errno, strerror(errno));
+            // rtapi_print_msg(RTAPI_MSG_ERR, "io_decoder: Error opening /dev/uinput (Code %d): %s\n", errno, strerror(errno));
+            rtapi_print_msg(RTAPI_MSG_ERR, "io_decoder: Error opening /dev/uinput (Code %d): %s\nCheck permissions or create UDEV rules.\n", errno, strerror(errno));
         }
         addr->uinput_fd = -1;
         return -1; // Return critical error
@@ -3133,7 +3133,7 @@ void rtapi_app_exit(void)
             io_decoder_array[0].serial_fd = -1;
         }
 
-        //hal_free(io_decoder_array);
+        // hal_free(io_decoder_array);
         io_decoder_array = NULL;
     }
 

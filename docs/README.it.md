@@ -120,7 +120,11 @@ Gestisce in maniera ottimale input ed output non critici come pulsanti, interrut
      - 2=minimi. Messaggi di percentuale di errore parsing.
      - 3=tutti.
    - **keymap_file**: file di testo per impostare le corrispondenze [**input => simulazione tastiera**](#keyboard). Valore di default "io_decoder-keymap.cfg"
-   - **uinput_chmod_cmd**: parametro stringa per dare i permessi di scrittura su UINPUT per la [**funzionalità di tastiera simulata**](#keyboard). Se si vuole essere sicuri di non dare i permessi il parametro deve essere "" (uinput_chmod_cmd="" senza niente all'interno delle virgolette) . Valore di default "chmod 0666 /dev/uinput" .  
+   - **uinput_chmod_cmd**: Comando di emergenza per tentare di assegnare i permessi a /dev/uinput se la regola UDEV non è presente per la [**funzionalità di tastiera simulata**](#keyboard). Se si vuole essere sicuri di non dare i permessi il parametro deve essere ""  
+    (uinput_chmod_cmd="" senza niente all'interno delle virgolette) .  
+    Valore di default "chmod 0666 /dev/uinput" .  
+    **Consiglio**:  
+    Se hai già configurato correttamente la regola UDEV   (scelta raccomandata), puoi lasciare il default o impostare uinput_chmod_cmd="". Se il componente viene eseguito da un utente senza privilegi sudo, questo comando potrebbe fallire; in tal caso, la configurazione della regola UDEV descritta nella sezione [**Keyboard**](#keyboard) diventa obbligatoria.
 
 ### Funzioni
 ```bash
@@ -274,9 +278,55 @@ In caso di disconnessione software dell'USB o di rallentamenti da parte del sist
 
 ### Keyboard
 Funzionalità che permette di usare gli input fisici per inviare dei comandi di tastiera simulata che possono essere usati per stampare a video od inviare comandi come se fossero digitati sulla tastiera di sistema.  
-Se il file [**"io_decoder-keymap.cfg"**](IOdecoder-keymap.cfg.md) (o quello che è specificato da **keymap_file**) è presente nella cartella della configurazione della macchina, la funzionalità è abilitata. Se non è presente oppure è vuoto o contiene solo commenti, la funzionalità non viene abilitata.  
+  
+**Abilitare la funzionalità Tastiera (uinput)**  
+Per permettere al componente di simulare la pressione dei tasti senza privilegi di amministratore (root), è necessario configurare i permessi del modulo uinput.  
+
+1. Verifica il modulo uinput  
+Assicurati che il modulo sia caricato nel sistema con il comando:
+```Bash
+sudo modprobe uinput
+```
+
+2. Crea la regola udev per i permessi  
+Proprio come fatto per la porta USB, dobbiamo dire al sistema di rendere accessibile la tastiera virtuale all'utente.
+
+3. Crea un nuovo file di regola:
+```Bash
+sudo nano /etc/udev/rules.d/99-uinput.rules
+```
+
+4. Incolla all'interno la seguente riga:
+```Bash
+KERNEL=="uinput", MODE="0666", GROUP="input"
+```
+
+Questa regola assegna il dispositivo al gruppo input e garantisce i permessi di lettura/scrittura (0666).
+
+Premi Ctrl + O, Invio e poi Ctrl + X per salvare e uscire.
+
+Applica le modifiche Ricarica la configurazione di udev per rendere operativa la regola immediatamente:
+```Bash
+sudo udevadm control --reload-rules
+sudo udevadm trigger
+```
+
+Verifica finale Controlla che i permessi siano stati applicati correttamente:
+```Bash
+ls -l /dev/uinput
+```
+
+Dovresti ottenere un risultato simile a questo:
+
+crw-rw-rw- 1 root input 10, 223 ... /dev/uinput
+
+Se vedi le lettere rw-rw-rw-, la configurazione è andata a buon fine e il componente potrà inviare i tasti a LinuxCNC.  
+
+NOTA SULLA SICUREZZA > Come per la porta USB, l'uso di MODE="0666" rende la tastiera virtuale accessibile a ogni utente del sistema. Se preferisci una configurazione più restrittiva, assicurati che il tuo utente appartenga al gruppo input e usa MODE="0660".  
   
 **Configurare le corrispondenze input=>keyboard:**  
+Se il file [**"io_decoder-keymap.cfg"**](IOdecoder-keymap.cfg.md) (o quello che è specificato da **keymap_file**) è presente nella cartella della configurazione della macchina, la funzionalità è abilitata. Se non è presente oppure è vuoto o contiene solo commenti, la funzionalità non viene abilitata.  
+
 La fuzionalità utilizza UINPUT per inviare i comandi, per cui ogni codice numerico che invia indica la posizione sulla tastiera; non è un numero assoluto per ogni tipo di tastiera (US, UK, IT, FR, etc) ma è un codice che indica la posizione del tasto sulla tastiera installata nel sistema. Se viene inviato un codice 27 ed è installata una tastiera US il risultato a video sarà ] (parentesi quadra destra); su una tastiera IT si avrà un + (più).  
 Può essere inviato anche un codice singolo o composto per creare combinazioni come:  
  - shift+a = A 
