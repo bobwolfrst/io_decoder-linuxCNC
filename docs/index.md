@@ -134,6 +134,7 @@ While the HAL software is open to the community, it requires our dedicated **io_
 * **Project Status:** In development.
 * **Technical Specs:** Available in the Installation-Requirements section of the [README.en](./README.en.md).
 * **Contact:** For prototypes, or integration support, please use the [✉️ Contact]
+* [🛒 Get the Hardware: Ready-to-use kits are available on eBay here (Limited stock: 5 units)](https://www.ebay.it/itm/277867309687)
 
 ---
 
