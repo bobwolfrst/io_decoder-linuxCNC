@@ -131,6 +131,7 @@ Il software HAL è aperto alla comunità, e per usarlo è necessaria la nostra s
 * **Stato del progetto:** In sviluppo.
 * **Documentazione tecnica:** Disponibile nel paragrafo Installazione-Requisiti del [README.it](./README.it.md) .
 * **Contatti:** Per prototipi o supporto all'integrazione, utilizza il pulsante [✉️ Contatto]
+* [🛒 Ottieni l'Hardware:Kit pronti all'uso disponibili su eBay (Stock limitato: 5 unità)](https://www.ebay.it/itm/277867309687)
 
 ---
 
